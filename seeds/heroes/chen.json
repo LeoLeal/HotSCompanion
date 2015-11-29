@@ -1,0 +1,181 @@
+{
+  "name": {
+    "enUS": "Chen",
+    "ptBR": "Chen"
+  },
+  "skins": [
+  	{
+  		"name": {
+  			"enUS": "Legendary Brewmaster",
+  			"ptBR": "Cervejeiro Lendário"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_legendaryBrewmaster.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/legendaryBrewmaster_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_legendaryBrewmaster.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Master Legendary Brewmaster",
+  			"ptBR": "Cervejeiro Lendário Mestre"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_masterChen.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterChen_frame.jpg",
+  		"videoUrl": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_masterChen.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Warmaster",
+  			"ptBR": "Mestre Guerreiro"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_warmasterChen.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/warmasterChen_frame.jpg",
+  		"videoUrl": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_warmasterChen.mp4"
+  	},
+    {
+      "name": {
+        "enUS": "Elder Brewmaster",
+        "ptBR": "Cervejeiro Ansião"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_elderChen.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/elderChen_frame.jpg",
+      "videoUrl": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_elderChen.mp4"
+    }
+  ],
+  "fightDistance": "melee",
+  "role": "warrior",
+  "universe": "warcraft",
+  "lore": {
+    "enUS": "To be a Brewmaster is to be an explorer, a lover of nature, and when the need arises; a powerful fighter. For years Chen Stormstout has wandered the world of Azeroth in search of rare ingredients, stirring stories, and of course, good brew.",
+    "ptBR": "Ser um Mestre Cervejeiro é ser um explorador, um amante da natureza e quando necessário, um poderoso guerreiro. Chen Malte do Trovão viajou por toda Azeroth em busca de ingredientes, histórias fascinantes, e claro, boa cerveja."
+  },
+  "attributes": {
+    "damage": 0.3,
+    "utility": 0.4,
+    "survival": 1,
+    "complexity": 0.6
+  },
+  "stats": {
+  	"hp": {
+  		"pool": [1040,240],
+  		"regen": [2.168,0.5]
+  	},
+  	"mana": {
+  		"pool": 100,
+  		"regen": 0
+  	},
+  	"attack": {
+  		"damage": [50,7],
+  		"speed": 1.11
+  	}
+  },
+  "skills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_flyingKick.jpg",
+      "name": {
+        "enUS": "Flying Kick",
+        "ptBR": "Voadora"
+      },
+      "description": {
+        "enUS": "Kick through target enemy, dealing 55 (+10 per level) damage.",
+        "ptBR": "Chuta o inimigo alvejado, causando 55 (+10 por nível) de dano."
+      },
+      "cost": 10,
+      "charges": 1,
+      "cooldown": 5000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_kegSmash.jpg",
+      "name": {
+        "enUS": "Keg Smash",
+        "ptBR": "Pancada de Barril"
+      },
+      "description": {
+        "enUS": "Smash your keg, dealing 15 (+5 per level) damage and drenching affected enemies in Brew, slowing them by 25% for 2.5 seconds.",
+        "ptBR": "Quebra o barril, causando 15 (+5 por nível) de dano e encharca de cerveja os inimigos atingidos, desacelerando-os em 25% por 2,5 segundos."
+      },
+      "cost": 20,
+      "charges": 1,
+      "cooldown": 5000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_breathOfFire.jpg",
+      "name": {
+        "enUS": "Breath of Fire",
+        "ptBR": "Bafo de Fogo"
+      },
+      "description": {
+        "enUS": "Breathe a cone of flames, dealing 39 (+9 per level) damage. Enemies soaked in Brew are set on fire, dealing additional 39 (+9 per level) damage over 3 seconds.",
+        "ptBR": "Você cospe chamas em uma área cônica, causando 39 (+9 por nível) de dano. Inimigos encharcados de cerveja pegam fogo, recebendo 39 (+9 por nível) de dano adicional ao longo de 3 segundos."
+      },
+      "cost": 30,
+      "charges": 1,
+      "cooldown": 5000
+    },
+    {
+      "icon": null,
+      "name": {
+        "enUS": "Triple Attack",
+        "ptBR": "Ataque Triplo"
+      },
+      "description": {
+        "enUS": "Order the Spirits to smash the targeted point, dealing 14 (+4 per level) damage per Spirit alive and slowing enemies in the targeted area by 20% for 2 seconds.",
+        "ptBR": "Ordena os espíritos a esmagar a área, causando 14 (+4 por nível) de dano por espírito vivo e desacelerando os inimigos na área em 20% por 2 segundos."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 6000
+    }
+  ],
+  "heroicSkills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_wanderingKeg.jpg",
+      "name": {
+        "enUS": "Wandering Keg",
+        "ptBR": "Barril Rolante"
+      },
+      "description": {
+        "enUS": "Roll around inside the barrel, dealing 35 (+5 per level) damage to enemies in the way and knocking them back. Lasts for 5 seconds.",
+        "ptBR": "Rola dentro do barril, causando 35 (+5 por nível) de dano aos inimigos no caminho e repelindo-os. Dura 5 segundos."
+      },
+      "cost": 30,
+      "charges": 1,
+      "cooldown": 90000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_stormEarthFire.jpg",
+      "name": {
+        "enUS": "Storm, Earth, Fire",
+        "ptBR": "Tempestade, Terra, Fogo"
+      },
+      "description": {
+        "enUS": "Split into 3 elemental spirits for 15 seconds, each with 50% of your maximum Health, and enables two new leaping attacks for use. Storm attacks at range for 35 (+5 per level) damage. Earth attacks slowly for 23 (+3 per level) damage and slows enemies by 25%. Fire attacks quickly for 19 (+1 per level) damage.",
+        "ptBR": "Divide-se em três espíritos elementais por 15 segundos, cada qual com 50% do máximo de Vida, e habilita o uso de dois novos ataques que se propagam. Tempestade ataca de longe e causa 35 (+5 por nível) de dano. O ataque de Terra é lento, porém causa 23 (+3 por nível) de dano e desacelera os inimigos em 25%. Fogo ataca rápido e seus ataques causam 19 (+1 por nível) de dano."
+      },
+      "cost": 10,
+      "charges": 1,
+      "cooldown": 100000
+    }
+  ],
+  "trait": {
+    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_fortifyingBrew.jpg",
+    "name": {
+      "enUS": "Fortifying Brew",
+      "ptBR": "Cerveja Fortificante"
+    },
+    "description": {
+      "enUS": "Drink from your keg, gaining 40 Brew and 64 (+24 per level) temporary Shields each second, eventually resulting in a massive Shield of 192 (+72 per level) that persists for 2 seconds after you stop drinking.",
+      "ptBR": "Bebe do seu barril, recebendo 40 de Cerveja e Escudos temporários de 64 (+24 por nível) a cada segundo, resultando em um escudo poderoso de 192 (+72 por nível) que dura 2 segundos após parar de beber."
+    },
+    "cost": [-40,1000],
+    "charges": 1,
+    "cooldown": 5000
+  },
+  "talents": {
+    "1": ["regeneration_master","bottomless_mug","consuming_flame","full_keg"],
+    "4": ["amplified_healing","deep_breath","deadly_strike","swift_reflexes"],
+    "7": ["ring_of_fire","brewmasters_balance","combat_stance","keg_toss"],
+    "13": ["relentless","brew_strike","enough_to_share","a_touch_of_honey"],
+    "16": ["combination_attack","pressure_point","bolder_flavor","chug"],
+    "20": ["hardened_shield","bolt_of_the_storm","elemental_conduit","untapped_potential"]
+  }
+}

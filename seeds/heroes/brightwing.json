@@ -1,0 +1,167 @@
+{
+  "name": {
+    "enUS": "Brightwing",
+    "ptBR": "Asaluz"
+  },
+  "skins": [
+  	{
+  		"name": {
+  			"enUS": "Faerie Dragon",
+  			"ptBR": "Dragoleta"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/brightwing_faerieDragon.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/faerieDragon_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/brightwing_faerieDragon.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Master Faerie Dragon",
+  			"ptBR": "Dragoleta Mestre"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/brightwing_masterBrightwing.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterBrightwing_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/brightwing_masterBrightwing.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Monarch Faerie Dragon",
+  			"ptBR": "Dragoleta Monarca"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/brightwing_monarchBrightwing.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/monarchBrightwing_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/brightwing_monarchBrightwing.mp4"
+  	},
+    {
+      "name": {
+        "enUS": "Luxorian Monkey",
+        "ptBR": "Macaco Luxoriano"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/brightwing_luxorianMonkeyBrightwing.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/luxorianMonkeyBrightwing_frame.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/brightwing_luxorianMonkeyBrightwing.mp4"
+    }
+  ],
+  "fightDistance": "ranged",
+  "role": "support",
+  "universe": "warcraft",
+  "lore": {
+    "enUS": "The Faerie Dragons of Ashenvale are known for their playful demeanor, seemingly disappearing at a whim. The mischievous Brightwing is no exception, often materializing out of nowhere to save her allies or just to mock her foes.",
+    "ptBR": "As Dragoletas do Vale Gris são conhecidas por serem brincalhonas, desaparecendo num piscar de olhos. A peralta Asaluz não é exceção, materializando-se do nada para salvar os aliados ou zombar dos inimigos."
+  },
+  "attributes": {
+    "damage": 0.4,
+    "utility": 0.9,
+    "survival": 0.5,
+    "complexity": 0.7
+  },
+  "stats": {
+  	"hp": {
+  		"pool": [750,130],
+  		"regen": [1.613,0.27]
+  	},
+  	"mana": {
+  		"pool": [500,10],
+  		"regen": [3,0.098]
+  	},
+  	"attack": {
+  		"damage": [34,8],
+  		"speed": 1.11
+  	}
+  },
+  "skills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_arcaneFlare.jpg",
+      "name": {
+        "enUS": "Arcane Flare",
+        "ptBR": "Chama Arcana"
+      },
+      "description": {
+        "enUS": "Deal 91 (+11 per level) damage in a small area and 48 (+8 per level) damage in a larger area.",
+        "ptBR": "Causa 91 (+11 por nível) de dano numa pequena área e 48 (+8 por nível) de dano numa área maior."
+      },
+      "cost": 50,
+      "charges": 1,
+      "cooldown": 8000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_polymorph.jpg",
+      "name": {
+        "enUS": "Polymorph",
+        "ptBR": "Polimorfia"
+      },
+      "description": {
+        "enUS": "Target is slowed by 20% movement speed, and cannot attack or use Abilities for 2 seconds.",
+        "ptBR": "O alvo é desacelerado em 20% da velocidade de movimento, e não pode atacar nem usar Habilidades por 2 segundos."
+      },
+      "cost": 75,
+      "charges": 1,
+      "cooldown": 15000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_pixieDust.jpg",
+      "name": {
+        "enUS": "Pixie Dust",
+        "ptBR": "Pó Feérico"
+      },
+      "description": {
+        "enUS": "Increase targets Movement Speed by 20% and block 2 Hero Basic Attacks, reducing their damage by 50%. Lasts 4 seconds.",
+        "ptBR": "Aumenta a Velocidade de Movimento do alvo em 20% e bloqueia 2 Ataques Básicos de Herói, reduzindo o dano causado por ele em 50%. Dura 4 segundos."
+      },
+      "cost": 60,
+      "charges": 1,
+      "cooldown": 10000
+    }
+  ],
+  "heroicSkills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_emeraldWind.jpg",
+      "name": {
+        "enUS": "Emerald Wind",
+        "ptBR": "Vento Esmeralda"
+      },
+      "description": {
+        "enUS": "Create an expanding nova of wind, dealing 130 (+30 per level) damage and pushing enemies away.",
+        "ptBR": "Cria uma nova de vento que se expande, causando 130 (+13 por nível) de dano e empurrando os inimigos para longe."
+      },
+      "cost": 90,
+      "charges": 1,
+      "cooldown": 60000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_blinkHeal.jpg",
+      "name": {
+        "enUS": "Blink Heal",
+        "ptBR": "Cura Lampejante"
+      },
+      "description": {
+        "enUS": "Teleport to nearby ally, healing them for 125 (+17 per level) Health. Can store 2 charges.",
+        "ptBR": "Teleporta-se até um aliado próximo, curando-o em 125 (+17 por nível) de Vida. Pode acumular 2 cargas."
+      },
+      "cost": 40,
+      "charges": 2,
+      "cooldown": 10000
+    }
+  ],
+  "trait": {
+    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_soothingMist.jpg",
+    "name": {
+      "enUS": "Soothing Mist",
+      "ptBR": "Névoa Calmante"
+    },
+    "description": {
+      "enUS": "Brightwing heals nearby allied Heroes for 39 (+9 per level) Health every 4 seconds.",
+      "ptBR": "Asaluz cura 39 (+9 por nível) de Vida dos aliados próximos a cada 4 segundos."
+    },
+    "cost": 0,
+    "charges": 0,
+    "cooldown": 4000
+  },
+  "talents": {
+    "1": ["hyper_shift","unfurling_spray","arcane_precision","bribe"],
+    "4": ["arcane_barrage","manic_pixie","peekaboo","unstable_anomaly"],
+    "7": ["dream_shot","mistified","phase_shield","cleanse"],
+    "13": ["pixie_boots","sticky_flare","shield_dust","ice_block"],
+    "16": ["bouncy_dust","greater_polymorph","critterize","hardened_focus"],
+    "20": ["double_wyrmhole","revitalizing_mist","continuous_wind","storm_shield","rewind"]
+  }
+}

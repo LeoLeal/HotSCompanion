@@ -1,0 +1,167 @@
+{
+  "name": {
+    "enUS": "Arthas",
+    "ptBR": "Arthas"
+  },
+  "skins": [
+  	{
+  		"name": {
+  			"enUS": "The Lich King",
+  			"ptBR": "O Lich Rei"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_theLichKing.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/theLichKing_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_theLichKing.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "The Lich King Master",
+  			"ptBR": "O Lich Rei Mestre"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_masterArthas.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterArthas_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_masterArthas.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Frost Wyrm",
+  			"ptBR": "Serpe Gélida"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_frostWyrmArthas.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/frostWyrmArthas_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_frostWyrmArthas.mp4"
+  	},
+    {
+      "name": {
+        "enUS": "Crown Prince",
+        "ptBR": "Príncipe Herdeiro"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_crownPrinceArthas.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/crownPrinceArthas_frame.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_crownPrinceArthas.mp4"
+    }
+  ],
+  "fightDistance": "melee",
+  "role": "warrior",
+  "universe": "warcraft",
+  "lore": {
+    "enUS": "Once the crown prince of Lordaeron and the protégé of the legendary paladin Uther the Lightbringer, Prince Arthas fell to darkness. In a desperate bid to save his people he was corrupted by the cursed blade Frostmourne, its hatred consuming him. Now he serves the Lich King as a death knight eternally bound to his terrible destiny...and always a little cold.",
+    "ptBR": "Outrora o príncipe herdeiro de Lordaeron e protegido do lendário paladino Uther, o Arauto da Luz, o príncipe Arthas sucumbiu às trevas. Em um ato desesperado para salvar seu povo, ele foi corrompido pela espada amaldiçoada Gélido Lamento e o ódio da espada o consumiu. Agora serve ao Lich Rei como cavaleiro da morte, eternamente preso a esse terrível destino... e sempre com um pouco de frio."
+  },
+  "attributes": {
+    "damage": 0.6,
+    "utility": 0.5,
+    "survival": 0.8,
+    "complexity": 0.4
+  },
+  "stats": {
+  	"hp": {
+  		"pool": [1040,220],
+  		"regen": [2.168,0.457]
+  	},
+  	"mana": {
+  		"pool": [500,10],
+  		"regen": [3,0.098]
+  	},
+  	"attack": {
+  		"damage": [47,9],
+  		"speed": 1
+  	}
+  },
+  "skills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_deathCoil.jpg",
+      "name": {
+        "enUS": "Death Coil",
+        "ptBR": "Espiral da Morte"
+      },
+      "description": {
+        "enUS": "Deals 94 (+14 per level) damage to target enemy. Can be self-cast to heal for 104 (+22 per level) Health.",
+        "ptBR": "Causa 94 (+14 por nível) de dano ao inimigo atingido. Pode ser usado em si mesmo para recuperar 104 (+22 por nível) de Vida."
+      },
+      "cost": 50,
+      "charges": 1,
+      "cooldown": 9000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_howlingBlast.jpg",
+      "name": {
+        "enUS": "Howling Blast",
+        "ptBR": "Impacto Uivante"
+      },
+      "description": {
+        "enUS": "Root enemies within the target area for 1.5 seconds and deals 36 (+6 per level) damage.",
+        "ptBR": "Enraíza os inimigos na área por 1,5 segundo e causa 36 (+6 por nível) de dano."
+      },
+      "cost": 70,
+      "charges": 1,
+      "cooldown": 12000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frozenTempest.jpg",
+      "name": {
+        "enUS": "Frozen Tempest",
+        "ptBR": "Tempestade Congelada"
+      },
+      "description": {
+        "enUS": "Deals 30 (+4 per level) damage each second to nearby enemies. Slows enemy Move Speed by 6% per second, stacking up to 30%.",
+        "ptBR": "Causa 30 (+4 por nível) de dano por segundo aos inimigos próximos. Reduz a Velocidade de Movimento do inimigo em 6% por segundo, acumulando até 30%."
+      },
+      "cost": [15,1000],
+      "charges": 1,
+      "cooldown": 1000
+    }
+  ],
+  "heroicSkills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_summonSindragosa.jpg",
+      "name": {
+        "enUS": "Summon Sindragosa",
+        "ptBR": "Evocar Sindragosa"
+      },
+      "description": {
+        "enUS": "Deals 165 (+15 per level) damage, slows enemy Heroes by 60%, and freezes Minions for 10 seconds and Structures for 20 seconds.",
+        "ptBR": "Causa 165 (+15 por nível) de dano, desacelera os Heróis inimigos em 60% e congela as Tropas por 10 segundos e as Estruturas por 20 segundos."
+      },
+      "cost": 100,
+      "charges": 1,
+      "cooldown": 80000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_armyOfTheDead.jpg",
+      "name": {
+        "enUS": "Army of the Dead",
+        "ptBR": "Exército dos Mortos"
+      },
+      "description": {
+        "enUS": "Summons Ghouls that last 15 seconds. Sacrifice Ghouls to heal for 128 (+24 per level) Health.",
+        "ptBR": "Evoca Carniçais que duram 15 segundos. Sacrifica os Carniçais para curar 128 (+24 por nível) de Vida."
+      },
+      "cost": 100,
+      "charges": 1,
+      "cooldown": 100000
+    }
+  ],
+  "trait": {
+    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frostmourneHungers.jpg",
+    "name": {
+      "enUS": "Frostmourne Hungers",
+      "ptBR": "Gélido Lamento Tem Fome"
+    },
+    "description": {
+      "enUS": "Activate to make your next Basic Attack strike immediately, do 100% increased damage, and restore 30 Mana.",
+      "ptBR": "Ative para fazer com que o próximo Ataque Básico seja desferido imediatamente, causando dano aumentado em 100% e restaurando 30 de Mana."
+    },
+    "cost": 0,
+    "charges": 1,
+    "cooldown": 12000
+  },
+  "talents": {
+    "1": ["eternal_hunger","frost_presence","regeneration_master","block"],
+    "4": ["destruction","frozen_wastes","mercenary_lord"],
+    "7": ["death_touch","obliterate","frost_strike","rune_tap"],
+    "13": ["biting_cold","trail_of_frost","relentless","spell_shield"],
+    "16": ["immortal_coil","frostmourne_feeds","embrace_death","stoneskin"],
+    "20": ["absolute_zero","legion_of_northrend","hardened_shield","rewind"]
+  }
+}

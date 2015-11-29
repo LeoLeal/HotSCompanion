@@ -1,0 +1,18 @@
+"#widgetContainer": {
+	width: Ti.UI.FILL,
+	height: 48
+}
+
+".cardTabs": {
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+}
+
+"#selectMarker": {
+	bottom: 0,
+	left: 0,
+	width: 0,
+	height: 2,
+	backgroundColor: Alloy.Globals.color.colorAccent	
+}

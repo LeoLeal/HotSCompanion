@@ -1,0 +1,17 @@
+<resources>
+    <string name="Search">Search</string>
+    <string name="Current_Free_Week">Current Free Week</string>
+    <string name="Next_Free_Week">Free Week %s</string>
+    <string name="Back">Back</string>
+    <string name="Info">Info</string>
+    <string name="Abilities">Abilities</string>
+    <string name="Talents">Talents</string>
+    <string name="Lore">Lore</string>
+    <string name="Survivability">Survivability</string>
+    <string name="Damage">Damage</string>
+    <string name="Complexity">Complexity</string>
+    <string name="Utility">Utility</string>
+    
+    <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
+    <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>
+</resources>

@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="widgetContainer">
+		<View class="cardTabs" id="cardTabs"></View>
+		<View id="selectMarker"></View>
+	</View>
+</Alloy>

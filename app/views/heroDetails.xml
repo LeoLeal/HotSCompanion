@@ -1,0 +1,57 @@
+<Alloy>
+	<Window>
+		<View id="statusBar"></View>
+		<View id="actionBar">
+			<Button class="backButton" id="backButton" onClick="closeWindow"></Button>
+			<Label id="actionBarHeroName">Azmodan</Label>
+		</View>
+		<View id="heroHeaderActionBar">
+			<Button class="backButton" id="headerBackButton" onClick="closeWindow"></Button>
+		</View>
+		<View id="heroHeader">
+			<ImageView class="heroImage" platform="android" image="http://us.battle.net/heroes/static/images/heroes/skins/frames/lordOfSin_frame.jpg" />
+			<VideoPlayer id="videoPlayer" ns="Ti.Media" url="http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_lordOfSin.mp4" />
+			<View id="headerText">
+				<View id="headerUniverse">
+					<ImageView id="headerUniverseIcon" image="/images/dark/touchable_universe-diablo.png"></ImageView>
+					<Label id="headerUniverseLabel">Diablo</Label>
+				</View>
+				<Label id="headerName">AZMODAN</Label>
+				<Label id="headerSubtitle">SENHOR DO PECADO</Label>
+				<View id="headerRole">
+					<ImageView id="headerRoleIcon" image="/images/dark/touchable_role-specialist.png"></ImageView>
+					<Label id="headerRoleLabel">Especialista Longo Alcance</Label>
+				</View>
+			</View>
+		</View>
+		<View class="tabsWrapper" id="actionTab">
+			<TabbedBar class="cardTabs" id="actionTabObj" platform="ios">
+	            <Labels>
+	                <Label>L('Info')</Label>
+	                <Label>L('Abilities')</Label>
+	                <Label>L('Talents')</Label>
+	            </Labels>
+	        </TabbedBar>
+			<Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
+		</View>
+		<ScrollView id="contentScroll">
+			<View id="contentWrapper">
+				<View class="tabsWrapper" id="contentTab">
+					<TabbedBar class="cardTabs" id="contentTabObj" platform="ios">
+			            <Labels>
+			                <Label>L('Info')</Label>
+			                <Label>L('Abilities')</Label>
+			                <Label>L('Talents')</Label>
+			            </Labels>
+			        </TabbedBar>
+					<Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
+			    </View>
+		        <ScrollableView id="scrollableCards" class="tabContent">
+		        	<View id="page_0"><Require src="heroDetailsInfo" id="page_0View" /></View>
+		        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
+		        	<View id="page_2"><Require src="heroDetailsInfo" id="page_2View" /></View>
+		        </ScrollableView>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

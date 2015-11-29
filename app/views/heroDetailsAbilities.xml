@@ -1,0 +1,55 @@
+<Alloy>
+	<View class="statsContainer">
+		<View class="stat">
+			<Label class="title">L('Survivability')</Label>
+			<View class="statScore">
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_1.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<Label class="score">5</Label>
+			</View>
+		</View>
+		<View class="stat">
+			<Label class="title">L('Damage')</Label>
+			<View class="statScore">
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<Label class="score">10</Label>
+			</View>
+		</View>
+		<View class="stat">
+			<Label class="title">L('Utility')</Label>
+			<View class="statScore">
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<Label class="score">4</Label>
+			</View>
+		</View>
+		<View class="stat">
+			<Label class="title">L('Complexity')</Label>
+			<View class="statScore">
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
+				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
+				<Label class="score">8</Label>
+			</View>
+		</View>
+
+		<View class="loreContainer">
+			<Label class="title">L('Lore')</Label>
+			<Label id="loreData">The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary.</Label>
+			<!-- SPACER -->
+			<View id="spacer" height="60"></View>
+		</View>
+	</View>
+</Alloy>

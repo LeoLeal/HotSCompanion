@@ -1,0 +1,195 @@
+{
+  "name": {
+    "enUS": "Abathur",
+    "ptBR": "Abathur"
+  },
+  "skins": [
+  	{
+  		"name": {
+  			"enUS": "Evolution Master",
+  			"ptBR": "Mestre Evolucionário"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/abathur_evolutionMaster.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/evolutionMaster_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/abathur_evolutionMaster.mp4"
+  	},
+  	{
+  		"name": {
+  			"enUS": "Master Evolutionary Master",
+  			"ptBR": "Mestre Evolucionário Mestre"
+  		},
+  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/abathur_masterAbathur.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterAbathur_frame.jpg",
+  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/abathur_masterAbathur.mp4"
+  	},
+    {
+      "name": {
+        "enUS": "Pajamathur",
+        "ptBR": "Pijamathur"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/abathur_pajamathurAbathur.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/pajamathurAbathur_frame.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/abathur_pajamathurAbathur.mp4"
+    },
+    {
+      "name": {
+        "enUS": "Pajamathur",
+        "ptBR": "Pijamathur"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/abathur_skelethurAbathur.jpg",
+      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/skelethurAbathur_frame.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/abathur_skelethurAbathur.mp4"
+    }
+  ],
+  "fightDistance": "melee",
+  "role": "specialist",
+  "universe": "starcraft",
+  "lore": {
+    "enUS": "Abathur, the Evolution Master of Kerrigan's Swarm, works ceaselessly to improve the Zerg from the genetic level up. His hate for chaos and imperfection almost rivals his hatred of pronouns.",
+    "ptBR": "Abathur, o Mestre Evolucionário do Enxame de Kerrigan, está sempre trabalhando para aprimorar o nível genético dos zergs. Seu ódio pelo caos e pela imperfeição só se compara à sua aversão pelos pronomes."
+  },
+  "attributes": {
+    "damage": 0.3,
+    "utility": 0.7,
+    "survival": 0.1,
+    "complexity": 0.9
+  },
+  "stats": {
+  	"hp": {
+  		"pool": [550,50],
+  		"regen": [1.145,0.105]
+  	},
+  	"mana": {
+  		"pool": 0,
+  		"regen": 0
+  	},
+  	"attack": {
+  		"damage": [18,2],
+  		"speed": 1.43
+  	}
+  },
+  "skills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_symbiote.jpg",
+      "name": {
+        "enUS": "Symbiote",
+        "ptBR": "Simbionte"
+      },
+      "description": {
+        "enUS": "Assist another allied Unit or Combat Structure, allowing you to shield them and use new Abilities. Cannot be used on another Hero's Summons.",
+        "ptBR": "Ajuda outra Unidade ou Estrutura aliada, permitindo que você a proteja e use novas habilidades. Não pode ser usado em Unidades Evocadas por outro Herói."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 4000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_toxicNest.jpg",
+      "name": {
+        "enUS": "Toxic Nest",
+        "ptBR": "Ninho Tóxico"
+      },
+      "description": {
+        "enUS": "Spawn a mine that becomes active after a short time. Deals 51 (+15 per level) damage and reveals the enemy for 4 seconds. Lasts 90 seconds.",
+        "ptBR": "Gera uma mina que se arma após um curto período. Causa 51 (+15 por nível) de dano e revela o inimigo por 4 segundos. Dura 90 segundos."
+      },
+      "cost": 0,
+      "charges": 3,
+      "cooldown": 10000
+    },
+    {
+      "icon": null,
+      "name": {
+        "enUS": "Stab",
+        "ptBR": "Apunhalar"
+      },
+      "description": {
+        "enUS": "Shoots a spike towards target area that deals 56 (+9,5 per level) damage to the first enemy it contacts.",
+        "ptBR": "Atira um espinho na direção da área selecionada causando 56 (+9,5 por nível) de dano ao primeiro inimigo que toca."
+      },
+      "cost": 0,
+      "charges": 2,
+      "cooldown": 3000
+    },
+    {
+      "icon": null,
+      "name": {
+        "enUS": "Spike Burst",
+        "ptBR": "Erupção de Espinhos"
+      },
+      "description": {
+        "enUS": "Deals 42 (+10 per level) damage to nearby enemies.",
+        "ptBR": "Causa 42 (+10 por nível) de dano aos inimigos próximos."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 6000
+    },
+    {
+      "icon": null,
+      "name": {
+        "enUS": "Carapace",
+        "ptBR": "Carapaça"
+      },
+      "description": {
+        "enUS": "Shields the assisted ally for 140 (+8 per level) for 8 seconds.",
+        "ptBR": "Protege o aliado por 140 (+8 por nível) por 8 segundos. "
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 12000
+    }
+  ],
+  "heroicSkills": [
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_ultimateEvolution.jpg",
+      "name": {
+        "enUS": "Ultimate Evolution",
+        "ptBR": "Evolução Final"
+      },
+      "description": {
+        "enUS": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Ability Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.",
+        "ptBR": "Clona o Herói aliado e controla o clone por 20 segundos. Abathur aperfeiçoou a clonagem, concedendo ao clone 20% de Poder de Habilidade, 20% de bônus de Dano de Ataque e 10% de bônus de Velocidade de Movimento. Não é possível usar a Habilidade Heroica do Herói clonado."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 50000
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_evolveMonstrosity.jpg",
+      "name": {
+        "enUS": "Evolve Monstrosity",
+        "ptBR": "Evoluir Monstruosidade"
+      },
+      "description": {
+        "enUS": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 30 times. The Monstrosity takes 50% less damage from Minions and Structures. Using Symbiote on the Monstrosity allows you to control it, in addition to Symbiote's normal benefits.",
+        "ptBR": "Transforma uma Tropa ou Gafanhoto aliado em Monstruosidade. Quando Tropas inimigas próximas da Monstruosidade morrem, ela ganha 5% de Vida e 5% de dano de Ataque Básico, acumulando até 30 vezes. A Monstruosidade recebe 50% menos dano de Tropas e Estruturas. Usar Simbionte na Monstruosidade permite que você a controle, além de conceder os benefícios normais do Simbionte."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 90000
+    }
+  ],
+  "trait": {
+    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_locustStrain.jpg",
+    "name": {
+      "enUS": "Locust Strain",
+      "ptBR": "Variante de Gafanhoto"
+    },
+    "description": {
+      "enUS": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 25 seconds.",
+      "ptBR": "Gera um Gafanhoto que ataca a trilha mais próxima a cada 15 segundos. O Gafanhoto dura 25 segundos."
+    },
+    "cost": 0,
+    "charges": 0,
+    "cooldown": 15000
+  },
+  "talents": {
+    "1": ["survival_instincts","envenomed_nest","pressurized_glands","regenerative_microbes"],
+    "4": ["ballistopores","prolific_dispersal","sustained_carapace","adrenal_overload"],
+    "7": ["needlespine","vile_nest","networked_carapace","calldown_mule"],
+    "13": ["bombard_strain","assault_strain","spatial_efficiency","soma_transference"],
+    "16": ["locust_brood","adrenaline_boost","envenomed_spikes","volatile_mutation"],
+    "20": ["locust_nest","hivemind","evolutionary_link","evolution_complete"]
+  }
+}

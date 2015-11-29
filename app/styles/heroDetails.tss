@@ -1,0 +1,266 @@
+"Window": {
+	backgroundImage: "Default.png"
+}
+"Window[platform=ios]": {
+	backgroundImage: "/images/Default.png"
+}
+
+"#statusBar": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 25,
+	backgroundColor: "#5e35b1",
+	opacity: 0,
+	zIndex: 4
+}
+"#statusBar[platform=ios]": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 20,
+	backgroundColor: "#eeffffff",
+	opacity: 1
+}
+
+// ACTION BAR
+
+"#actionBar": {
+	height: 80,
+	top: 0,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: "#5e35b1",
+	zIndex: 4,
+	opacity: 0
+}
+"#actionBar[platform=ios]": {
+	height: 48,
+	top: 20,
+	backgroundColor: "#eeffffff"
+}
+"#actionBarHeroName": {
+	top: 24,
+	left: 64,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: 18
+	}
+}
+"#actionBarHeroName[platform=ios]": {
+	top: 0,
+	left: null,
+	center: {x: "50%"},
+	font: {
+		fontSize: 14
+	}
+}
+".backButton": {
+	top: 28,
+	backgroundColor: "transparent",
+	left: 0,
+	height: 48,
+	center: {y: "50%"},
+	image: "/images/dark/touchable_back-android.png"
+}
+".backButton[platform=ios]": {
+	top: 0,
+	title: L('Back'),
+	image: "/images/dark/touchable_back-ios.png"
+}
+
+
+
+// HERO HEADER
+"#heroHeader": {
+	top: 0,
+	height: 320,
+	width: Ti.UI.FILL,
+	zIndex: 1
+}
+"#heroHeaderActionBar": {
+	height: Ti.UI.SIZE,
+	top: 0,
+	zIndex: 3,
+	elevation: 8
+}
+"#heroHeaderActionBar[platform=ios]": {
+	height: 56,
+	top: 20,
+	zIndex: 3
+}
+
+"#headerBackButton[platform=ios]": {
+	tintColor: "#fff"
+}
+
+"VideoPlayer": {
+	width: 550,
+	center: {x: "50%", y: 110},
+	autoplay: true,
+	mediaControlStyle: Titanium.Media.VIDEO_CONTROL_HIDDEN,
+	zIndex: 2,
+	backgroundColor: "#000",
+	opacity: 0
+}
+"VideoPlayer[platform=ios]": {
+	width: 500,
+	top: "-12%",
+	center: {x: "50%"},
+	repeatMode: Ti.Media.VIDEO_REPEAT_MODE_ONE,
+	opacity: 1
+}
+".heroImage": {
+	width: 550,
+	center: {x: "50%", y: 110},
+	zIndex: 1
+}
+
+"#headerText": {
+	bottom: 92,
+	left: 10,
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	zIndex: 3
+}
+
+
+"#headerUniverse": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	left: 0,
+	layout: "horizontal",
+	bottom: 0
+}
+"#headerUniverseIcon": {
+	width: 40,
+	height: 40
+}
+"#headerUniverseLabel": {
+	center: {y: "55%"},
+	left: -4,
+	font: {
+		fontSize: 16,
+		fontFamily: 'MetronicProBold'
+	},
+	color:"#cfffffff"
+}
+
+"#headerName": {
+	left: 10,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 36,
+		fontFamily: 'MetronicProBlack'
+	},
+	color:"#fff"
+}
+"#headerSubtitle": {
+	left: 10,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 16,
+		fontFamily: 'MetronicProSemiBold'
+	},
+	color:"#48acef"
+}
+"#headerRole": {
+	layout: "horizontal",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	top: 4,
+	left: 0
+}
+"#headerRoleIcon": {
+	width: 36,
+	height: 36
+}
+"#headerRoleLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	center: {y:"55%"} ,
+	font: {
+		fontSize: 18,
+		fontFamily: 'MetronicProSemiBold'
+	},
+	color:"#ddffffff"
+}
+
+// CONTEÚDO
+
+"#contentScroll": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	zIndex: 2,
+	layout: "vertical",
+	disableBounce: false
+}
+
+".tabsWrapper": {
+	backgroundColor: "#eee",
+	height: Ti.UI.SIZE,
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	zIndex: 3
+}
+
+".tabsWrapper[platform=ios]": {
+	backgroundColor: "#fff",
+	viewShadowColor: "#cc000000",
+	viewShadowOffset: {x:0,y:0},
+	viewShadowRadius: 4,
+	height: 44
+}
+"#contentTab[platform=ios]": {
+	viewShadowColor: "transparent",
+	viewShadowOffset: {x: 0, y: 0},
+	viewShadowRadius: 0,
+}
+
+"#actionTab": {
+	top: 80,
+	visible: false,
+	elevation: 8
+}
+"#actionTab[platform=ios]": {
+	top: 68,
+	backgroundColor: "#eeffffff"
+}
+
+// TABS IOS
+".cardTabs": {
+	top: 4,
+	left: 4,
+	right: 4,
+	height: 36,
+	tintColor: "#5e35b1",
+	zIndex: 4
+}
+
+// FIM TABS
+
+"#contentWrapper": {
+	top: 240,
+	layout: "vertical",
+	height: Ti.UI.SIZE,
+	backgroundColor: "#fff"
+}
+
+".tabContent": {
+	top: 0,
+	backgroundColor: "#fff",
+	height: Ti.UI.SIZE,
+	opacity: 0
+}

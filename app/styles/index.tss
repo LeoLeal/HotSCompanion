@@ -1,0 +1,179 @@
+"Window": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	exitOnClose: true
+}
+
+".container": {
+	backgroundImage: "Default.png",
+	layout: "absolute",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	top: 0,
+	left: 0
+}
+".container[platform=ios]": {
+	backgroundImage: "/images/Default.png",
+}
+
+// SEARCH BOX
+
+"#searchView": {
+	backgroundColor: "#fff",
+	height: 48,
+	width: Ti.UI.FILL,
+	left: 8,
+	right: 8,
+	top: 32,
+	borderRadius: 2,
+	zIndex: 3
+}
+
+"#searchView[platform=ios]":{
+	backgroundColor: "#eeffffff",
+	viewShadowColor: "#cc000000",
+	viewShadowOffset: {x:0,y:0},
+	viewShadowRadius: 4,
+	top: 0,
+	left: 0,
+	right: 0,
+	borderRadius: 0,
+	height: 68,
+}
+
+"#searchIcon": {
+ 	width: 36,
+ 	height: 36,
+ 	left: 8,
+ 	bottom: 6,
+ 	opacity: 0.6
+}
+
+"#searchIcon[platform=ios]": {
+	left: 4,
+	bottom: 4
+}
+
+"#searchField": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	height: 48,
+	left: 56,
+	right: 188,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	font: {
+		fontSize: 16
+	},
+	autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_WORDS,
+	autocorrect: false,
+	backgroundColor: "#fff",
+	hintTextColor: "#ccc",
+	color: Alloy.Globals.color.colorPrimary,
+	visible: false,
+	opacity: 0
+}
+
+"#searchField[platform=ios]": {
+	backgroundColor: "#11000000",
+	height: 28,
+	bottom: 8,
+	right: 196,
+	left: 40,
+	borderRadius: 4,
+	paddingLeft: 8	
+}
+
+"#filterDisplay": {
+	layout: "horizontal",
+	right: 0,
+	width: Ti.UI.SIZE,
+	height: 48,
+	bottom: 2
+}
+
+"#filterDisplay[platform=ios]": {
+	bottom: -2
+}
+
+".filterIcon": {
+	width: 28,
+	left: -6,
+	opacity: 0.6,
+	center: { y: "50%" }
+}
+
+// LISTAGEM
+
+"#appLogo": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	zIndex: 1,
+	center: {
+		y: 156,
+		x: "50%"
+	},
+}
+
+"ScrollView": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: "vertical",
+	zIndex: 2
+}
+
+".legendContainer": {
+	layout: "vertical",
+	top: 232,
+	width: 196,
+	height: Ti.UI.SIZE
+}
+
+".listLegend": {
+	font: {
+		fontSize: 14,
+		fontFamily: 'MetronicProBold'
+	}
+}
+
+"#heroesContainer": {
+	width: 320,
+	height: Ti.UI.SIZE,
+	center: { x: "50%" },
+	layout: "horizontal"
+}
+
+".hero": {
+	top: -30,
+	left: 8,
+	width: 110,
+	height: 110,
+	right: -20
+}
+".firstRow": {
+	top: 0
+}
+".honeyMark": {
+	left: 56
+}
+
+".heroPortraitBorder": {
+	touchEnabled: false
+}
+
+".heroName": {
+	touchEnabled: false,
+	width: "60%",
+	color: "#fff",
+	transform: Alloy.Globals.portraitNameTransform,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 11,
+		fontFamily: 'MetronicProSemiBold'
+	},
+	center: {
+		x: 36,
+		y: 84
+	}
+}

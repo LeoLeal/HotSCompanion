@@ -1,0 +1,14 @@
+<resources>
+    <string name="Search">Procurar</string>
+    <string name="Current_Free_Week">Free Week Atual</string>
+    <string name="Next_Free_Week">Free Week %s</string>
+    <string name="Back">Voltar</string>
+    <string name="Info">Info</string>
+    <string name="Abilities">Habilidades</string>
+    <string name="Talents">Talentos</string>
+    <string name="Lore">História</string>
+    <string name="Survivability">Sobrevivência</string>
+    <string name="Damage">Dano</string>
+    <string name="Complexity">Complexidade</string>
+    <string name="Utility">Utilidade</string>
+</resources>
