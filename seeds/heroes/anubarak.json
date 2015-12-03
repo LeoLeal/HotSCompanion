@@ -1,13 +1,13 @@
 {
   "name": {
-    "enUS": "Anub'arak",
-    "ptBR": "Anub'arak"
+    "en": "Anub'arak",
+    "pt": "Anub'arak"
   },
   "skins": [
   	{
   		"name": {
-  			"enUS": "Traitor King",
-  			"ptBR": "Rei Traidor"
+  			"en": "Traitor King",
+  			"pt": "Rei Traidor"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/anubarak_traitorKing.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/traitorKing_frame.jpg",
@@ -15,8 +15,8 @@
   	},
   	{
   		"name": {
-  			"enUS": "Master Traitor King",
-  			"ptBR": "Rei Traidor Mestre"
+  			"en": "Master Traitor King",
+  			"pt": "Rei Traidor Mestre"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/anubarak_masterAnubarak.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterAnubarak_frame.jpg",
@@ -24,8 +24,8 @@
   	},
     {
       "name": {
-        "enUS": "Cib'arak",
-        "ptBR": "Cib'arak"
+        "en": "Cib'arak",
+        "pt": "Cib'arak"
       },
       "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/anubarak_cybarakAnubarak.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/cybarakAnubarak_frame.jpg",
@@ -33,8 +33,8 @@
     },
     {
       "name": {
-        "enUS": "Lovebug",
-        "ptBR": "Inseto do Amor"
+        "en": "Lovebug",
+        "pt": "Inseto do Amor"
       },
       "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/anubarak_loveBugAnubarak.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/loveBugAnubarak_frame.jpg",
@@ -45,8 +45,8 @@
   "role": "warrior",
   "universe": "warcraft",
   "lore": {
-    "enUS": "Once a proud nerubian king, Anub'arak dared to stand against the Lich King's invasion, but despite his bravery, he too fell to the unrelenting Scourge. Resurrected into undeath, the Traitor King now serves as a towering, weapon of destruction.",
-    "ptBR": "Outrora, um rei nerubiano orgulhoso, Anub'arak, ousou se opor à invasão do Lich Rei. Apesar da sua bravura, ele também sucumbiu à força implacável do Flagelo. Ressuscitado, o Rei Traidor agora é um poderoso instrumento de destruição."
+    "en": "Once a proud nerubian king, Anub'arak dared to stand against the Lich King's invasion, but despite his bravery, he too fell to the unrelenting Scourge. Resurrected into undeath, the Traitor King now serves as a towering, weapon of destruction.",
+    "pt": "Outrora, um rei nerubiano orgulhoso, Anub'arak, ousou se opor à invasão do Lich Rei. Apesar da sua bravura, ele também sucumbiu à força implacável do Flagelo. Ressuscitado, o Rei Traidor agora é um poderoso instrumento de destruição."
   },
   "attributes": {
     "damage": 0.4,
@@ -72,12 +72,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_impale.jpg",
       "name": {
-        "enUS": "Impale",
-        "ptBR": "Empalar"
+        "en": "Impale",
+        "pt": "Empalar"
       },
       "description": {
-        "enUS": "Deals 68 (+8 per level) damage. Stuns for 1 second.",
-        "ptBR": "Causa 68 (+8 por nível) de dano. Atordoa por 1 segundo."
+        "en": "Deals 68 (+8 per level) damage. Stuns for 1 second.",
+        "pt": "Causa 68 (+8 por nível) de dano. Atordoa por 1 segundo."
       },
       "cost": 65,
       "charges": 1,
@@ -86,12 +86,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_hardenCarapace.jpg",
       "name": {
-        "enUS": "Harden Carapace",
-        "ptBR": "Endurecer Carapaça"
+        "en": "Harden Carapace",
+        "pt": "Endurecer Carapaça"
       },
       "description": {
-        "enUS": "Gain a strong shield that absorbs 112 (+22 per level) damage over 3 seconds.",
-        "ptBR": "Recebe um escudo poderoso que absorve 112 (+22 por nível) de dano por 3 segundos."
+        "en": "Gain a strong shield that absorbs 112 (+22 per level) damage over 3 seconds.",
+        "pt": "Recebe um escudo poderoso que absorve 112 (+22 por nível) de dano por 3 segundos."
       },
       "cost": 35,
       "charges": 1,
@@ -100,12 +100,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_burrowCharge.jpg",
       "name": {
-        "enUS": "Burrow Charge",
-        "ptBR": "Investida Subterrânea"
+        "en": "Burrow Charge",
+        "pt": "Investida Subterrânea"
       },
       "description": {
-        "enUS": "Burrows to location, dealing 64 (+6.4 per level) damage and briefly stunning enemies in a small area upon surfacing. Can reactivate the Ability to surface early.",
-        "ptBR": "Entoca-se no chão, causando 64 (+6,4 por nível) de dano e atordoando brevemente os inimigos em uma área pequena ao reemergir. Use a habilidade de novo para reemergir quando quiser."
+        "en": "Burrows to location, dealing 64 (+6.4 per level) damage and briefly stunning enemies in a small area upon surfacing. Can reactivate the Ability to surface early.",
+        "pt": "Entoca-se no chão, causando 64 (+6,4 por nível) de dano e atordoando brevemente os inimigos em uma área pequena ao reemergir. Use a habilidade de novo para reemergir quando quiser."
       },
       "cost": 65,
       "charges": 1,
@@ -116,12 +116,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_locustSwarm.jpg",
       "name": {
-        "enUS": "Locust Swarm",
-        "ptBR": "Enxame de Gafanhotos"
+        "en": "Locust Swarm",
+        "pt": "Enxame de Gafanhotos"
       },
       "description": {
-        "enUS": "Deal 22.4 (+6.4 per level) damage per second in an area around Anub'arak. Each enemy damaged heals Anub'arak for a small amount of health.",
-        "ptBR": "Causa 22,4 (+6,4 por nível) de dano por segundo em uma área ao redor de Anub'arak. Cada inimigo atingido cura uma pequena quantidade de vida de Anub'arak."
+        "en": "Deal 22.4 (+6.4 per level) damage per second in an area around Anub'arak. Each enemy damaged heals Anub'arak for a small amount of health.",
+        "pt": "Causa 22,4 (+6,4 por nível) de dano por segundo em uma área ao redor de Anub'arak. Cada inimigo atingido cura uma pequena quantidade de vida de Anub'arak."
       },
       "cost": 100,
       "charges": 1,
@@ -130,12 +130,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_webBlast.jpg",
       "name": {
-        "enUS": "Web Blast",
-        "ptBR": "Explosão de Teias"
+        "en": "Web Blast",
+        "pt": "Explosão de Teias"
       },
       "description": {
-        "enUS": "Wraps target enemy Hero in a cocoon for 8 seconds. Enemies wrapped in the cocoon are unable to act and are untargetable. Allies of the Hero can attack the cocoon to break it and free them early.",
-        "ptBR": "Prende o Herói inimigo em um casulo por 8 segundos. Os inimigos presos no casulo ficam impossibilitados de agir e se tornam inatingíveis. Os aliados do Herói preso podem atacar o casulo para quebrá-lo antes do tempo."
+        "en": "Wraps target enemy Hero in a cocoon for 8 seconds. Enemies wrapped in the cocoon are unable to act and are untargetable. Allies of the Hero can attack the cocoon to break it and free them early.",
+        "pt": "Prende o Herói inimigo em um casulo por 8 segundos. Os inimigos presos no casulo ficam impossibilitados de agir e se tornam inatingíveis. Os aliados do Herói preso podem atacar o casulo para quebrá-lo antes do tempo."
       },
       "cost": 70,
       "charges": 1,
@@ -145,12 +145,12 @@
   "trait": {
     "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_scarabHost.jpg",
     "name": {
-      "enUS": "Scarab Host",
-      "ptBR": "Hospedeiro de Escaravelho"
+      "en": "Scarab Host",
+      "pt": "Hospedeiro de Escaravelho"
     },
     "description": {
-      "enUS": "Spawn a Beetle and Anub'arak's location whenever he casts a spell. Beetles last for 10 seconds, attacking nearby enemies for 8.8 (+1.8 per level) damage.",
-      "ptBR": "Gera um besouro na posição de Anub'arak toda vez que ele lança um feitiço. Besouros duram 10 segundos, atacando inimigos próximos e causando 8,8 (+1,8 por nível) de dano."
+      "en": "Spawn a Beetle and Anub'arak's location whenever he casts a spell. Beetles last for 10 seconds, attacking nearby enemies for 8.8 (+1.8 per level) damage.",
+      "pt": "Gera um besouro na posição de Anub'arak toda vez que ele lança um feitiço. Besouros duram 10 segundos, atacando inimigos próximos e causando 8,8 (+1,8 por nível) de dano."
     },
     "cost": 0,
     "charges": 1,

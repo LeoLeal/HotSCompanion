@@ -1,13 +1,13 @@
 {
   "name": {
-    "enUS": "Azmodan",
-    "ptBR": "Azmodan"
+    "en": "Azmodan",
+    "pt": "Azmodan"
   },
   "skins": [
   	{
   		"name": {
-  			"enUS": "Lord of Sin",
-  			"ptBR": "Senhor do Pecado"
+  			"en": "Lord of Sin",
+  			"pt": "Senhor do Pecado"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_lordOfSin.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/lordOfSin_frame.jpg",
@@ -15,8 +15,8 @@
   	},
   	{
   		"name": {
-  			"enUS": "Master Lord of Sin",
-  			"ptBR": "Senhor do Pecado Mestre"
+  			"en": "Master Lord of Sin",
+  			"pt": "Senhor do Pecado Mestre"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_masterAzmodan.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterAzmodan_frame.jpg",
@@ -24,8 +24,8 @@
   	},
   	{
   		"name": {
-  			"enUS": "Az'guldan",
-  			"ptBR": "Az'guldan"
+  			"en": "Az'guldan",
+  			"pt": "Az'guldan"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_azguldanAzmodan.jpg",
       "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/azguldanAzmodan_frame.jpg",
@@ -36,8 +36,8 @@
   "role": "specialist",
   "universe": "diablo",
   "lore": {
-    "enUS": "The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary.",
-    "ptBR": "O Senhor do Pecado reina sobre uma área bastante populada do inferno onde as maiores alegrias e desesperos, e até as mais profundas depravações podem ser experimentadas. Mas nunca é o bastante para Azmodan, que está de olho no reino de Santuário."
+    "en": "The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary.",
+    "pt": "O Senhor do Pecado reina sobre uma área bastante populada do inferno onde as maiores alegrias e desesperos, e até as mais profundas depravações podem ser experimentadas. Mas nunca é o bastante para Azmodan, que está de olho no reino de Santuário."
   },
   "attributes": {
     "damage": 0.3,
@@ -63,12 +63,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_globeOfAnnihilation.jpg",
       "name": {
-        "enUS": "Globe of Annihilation",
-        "ptBR": "Globo da Aniquilação"
+        "en": "Globe of Annihilation",
+        "pt": "Globo da Aniquilação"
       },
       "description": {
-        "enUS": "Shoot a Globe of Destruction, dealing 75 (+15 per level) damage on impact. Long range.",
-        "ptBR": "Dispara um Globo da Destruição, causando  75 (+15 por nível) de dano com o impacto. Longo alcance."
+        "en": "Shoot a Globe of Destruction, dealing 75 (+15 per level) damage on impact. Long range.",
+        "pt": "Dispara um Globo da Destruição, causando  75 (+15 por nível) de dano com o impacto. Longo alcance."
       },
       "cost": 60,
       "charges": 1,
@@ -77,12 +77,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_summonDemonWarrior.jpg",
       "name": {
-        "enUS": "Summon Demon Warrior",
-        "ptBR": "Evocar Demônio Guerreiro"
+        "en": "Summon Demon Warrior",
+        "pt": "Evocar Demônio Guerreiro"
       },
       "description": {
-        "enUS": "Spawn a Demon Warrior that marches toward a point. Warriors deal 42 (+1 per level) damage and last 10.5 seconds.",
-        "ptBR": "Evoca um Demônio Guerreiro que marcha em uma direção. Os Guerreiros causam 42 (+1 por nível) de dano e duram 10.5 segundos."
+        "en": "Spawn a Demon Warrior that marches toward a point. Warriors deal 42 (+1 per level) damage and last 10.5 seconds.",
+        "pt": "Evoca um Demônio Guerreiro que marcha em uma direção. Os Guerreiros causam 42 (+1 por nível) de dano e duram 10.5 segundos."
       },
       "cost": 40,
       "charges": 2,
@@ -91,12 +91,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_allShallBurn.jpg",
       "name": {
-        "enUS": "All Shall Burn",
-        "ptBR": "Todos Queimarão"
+        "en": "All Shall Burn",
+        "pt": "Todos Queimarão"
       },
       "description": {
-        "enUS": "Channel a death beam of 68 (+8 per level) damage per second on an enemy. The damage amount grows the longer it is channeled, to a maximum of 136 (+16 per level) damage per second. Does 25% more damage to Structures.",
-        "ptBR": "Canaliza e dispara um feixe mortal que causa 68 (+8 por nível) de dano por segundo em um inimigo. O dano aumenta conforme o tempo que é canalizado até o máximo de 136 (+16 por nível) por segundo. Causa 25% a mais de dano a estruturas."
+        "en": "Channel a death beam of 68 (+8 per level) damage per second on an enemy. The damage amount grows the longer it is channeled, to a maximum of 136 (+16 per level) damage per second. Does 25% more damage to Structures.",
+        "pt": "Canaliza e dispara um feixe mortal que causa 68 (+8 por nível) de dano por segundo em um inimigo. O dano aumenta conforme o tempo que é canalizado até o máximo de 136 (+16 por nível) por segundo. Causa 25% a mais de dano a estruturas."
       },
       "cost": [16,1000],
       "charges": 1,
@@ -107,12 +107,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_demonicInvasion.jpg",
       "name": {
-        "enUS": "Demonic Invasion",
-        "ptBR": "Invasão Demoníaca"
+        "en": "Demonic Invasion",
+        "pt": "Invasão Demoníaca"
       },
       "description": {
-        "enUS": "Rain a small army of Demonic Grunts down on enemies, each impact dealing 25 (+5 per level) damage. Demon Grunts deal 22 (+2 per level) damage which is doubled against non-Heroic targets and have 230 (+30 per level) health.",
-        "ptBR": "Evoca uma chuva de Brutos Demoníacos sobre os inimigos, causando 25 (+5 por nível) de dano a cada impacto. Os Brutos Demoníacos causam 22 (+2 por nível) de dano, que dobra contra alvos que não sejam Heróis e possuem 230 (+30 por nível) de vida."
+        "en": "Rain a small army of Demonic Grunts down on enemies, each impact dealing 25 (+5 per level) damage. Demon Grunts deal 22 (+2 per level) damage which is doubled against non-Heroic targets and have 230 (+30 per level) health.",
+        "pt": "Evoca uma chuva de Brutos Demoníacos sobre os inimigos, causando 25 (+5 por nível) de dano a cada impacto. Os Brutos Demoníacos causam 22 (+2 por nível) de dano, que dobra contra alvos que não sejam Heróis e possuem 230 (+30 por nível) de vida."
       },
       "cost": 100,
       "charges": 1,
@@ -121,12 +121,12 @@
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_blackPool.jpg",
       "name": {
-        "enUS": "Black Pool",
-        "ptBR": "Poça Negra"
+        "en": "Black Pool",
+        "pt": "Poça Negra"
       },
       "description": {
-        "enUS": "Create a pool that empowers Azmodan, his Demons, and allied Minions, increasing their attack and ability damage by 75%. Pools last 5 seconds.",
-        "ptBR": "Cria uma poça que potencializa Azmodan, seus demônios e suas tropas aliadas, aumentando o ataque e o dano de habilidade deles em 75%. Poças duram 5 segundos."
+        "en": "Create a pool that empowers Azmodan, his Demons, and allied Minions, increasing their attack and ability damage by 75%. Pools last 5 seconds.",
+        "pt": "Cria uma poça que potencializa Azmodan, seus demônios e suas tropas aliadas, aumentando o ataque e o dano de habilidade deles em 75%. Poças duram 5 segundos."
       },
       "cost": 60,
       "charges": 2,
@@ -136,12 +136,12 @@
   "trait": {
     "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.jpg",
     "name": {
-      "enUS": "General of Hell",
-      "ptBR": "General do Inferno"
+      "en": "General of Hell",
+      "pt": "General do Inferno"
     },
     "description": {
-      "enUS": "Summon a Demon Lieutenant at an allied Mercenary, Minion, or Summon. The lieutenant will march with the target, granting 15% increased damage and 15% increased maximum health to all nearby friendly Mercenaries, Minions, and Summons. Unlimited range.",
-      "ptBR": "Evoca um Tenente Demoníaco ao lado de uma Tropa, Mercenário ou Evocação aliado. O Tenente marchará com o alvo, concedendo 15% de dano a mais e 15% de vida máxima a Tropas, Mercenários e Evocações aliados próximos. Alcance ilimitado."
+      "en": "Summon a Demon Lieutenant at an allied Mercenary, Minion, or Summon. The lieutenant will march with the target, granting 15% increased damage and 15% increased maximum health to all nearby friendly Mercenaries, Minions, and Summons. Unlimited range.",
+      "pt": "Evoca um Tenente Demoníaco ao lado de uma Tropa, Mercenário ou Evocação aliado. O Tenente marchará com o alvo, concedendo 15% de dano a mais e 15% de vida máxima a Tropas, Mercenários e Evocações aliados próximos. Alcance ilimitado."
     },
     "cost": 0,
     "charges": 1,
