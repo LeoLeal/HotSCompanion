@@ -151,12 +151,6 @@
 	height: 110,
 	right: -20
 }
-".firstRow": {
-	top: 0
-}
-".honeyMark": {
-	left: 56
-}
 
 ".heroPortraitBorder": {
 	touchEnabled: false

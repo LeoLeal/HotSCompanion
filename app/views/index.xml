@@ -32,7 +32,7 @@
 				</View>
 				
 				<!-- HEROES LIST -->
-				<View id="heroesContainer" class="heroesRepeater" dataCollection="Heroes" dataTransform="transformFunction">
+				<View id="heroesContainer" dataCollection="Heroes" dataTransform="transformFunction">
 					<View class="hero" id="Azmodan" onClick="openHero" top="{topPosition}" left="{leftPosition}">
 						<ImageView class="heroPortraitBorder" image="/images/portrait-freeweek-next.png"></ImageView>
 						<Label class="heroName">{name}</Label>
