@@ -40,7 +40,8 @@ function transformFunction(model) {
   var topPosition = '-30';
   var leftPosition = '8';
   var rowIndex = Alloy.Globals.heroesListIndex;
-  transform.name = transform.name["enUS"];
+  
+  transform.name = transform.name[Ti.Locale.currentLanguage];
   
   if(rowIndex < 3){
   	topPosition = '0';
@@ -49,7 +50,7 @@ function transformFunction(model) {
   if((rowIndex + 2)%5 == 0 ){
   	leftPosition = '56';
   }
-  Ti.API.info(rowIndex+"|"+transform.name);
+
   transform.topPosition = topPosition;
   transform.leftPosition = leftPosition;
 
