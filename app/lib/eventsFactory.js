@@ -21,9 +21,13 @@ function getLatestHeroesUpdate(){
 	Events.fetch();
 	return Q.Promise(function(resolve,reject){
 		var updateArray = Events.where({id: "latest_heroes_update"}); 
-		var updateObj = updateArray[0].get("date");
+		var updateObj = "2000-01-01T00:00:00";
+		
+		if(updateArray.length > 0)
+		  updateArray[0].get("date");
+		  
 		Ti.API.info("updateObj: "+updateObj);
-		resolve(updateObj || "2000-01-01T00:00:00");
+		resolve(updateObj);
 	});
 }
 

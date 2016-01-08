@@ -50,6 +50,7 @@ function getHeroesList() {
 		// Não pôde fazer a Query no ArrowDB. 
 		// Resolve a base de dados Local
 		Ti.API.info("Sem Internet");
+		Ti.API.error(err);
 		return Q.Promise(function(resolve,reject){
 			if(Heroes.length > 0)
 				resolve(Heroes.toJSON());
