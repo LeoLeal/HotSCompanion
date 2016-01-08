@@ -41,6 +41,7 @@ function transformFunction(model) {
   var leftPosition = '8';
   var rowIndex = Alloy.Globals.heroesListIndex;
   
+  Ti.API.info('[INDEX CONTROLLER] CurrentLanguage: ' + Ti.Locale.currentLanguage);
   transform.name = transform.name[Ti.Locale.currentLanguage];
   
   if(rowIndex < 3){

@@ -42,15 +42,15 @@ function getHeroesList() {
 				eventsFactory.setLatestHeroesUpdate(dateNow.toISOString());
 			}
 
-			Ti.API.info("Got a list of Heroes: " + Heroes.length);
+			Ti.API.info("[HEROES FACTORY] Got a list of Heroes: " + Heroes.length);
 			return Heroes.toJSON();
 		});
 	})
 	.fail(function(err){
 		// Não pôde fazer a Query no ArrowDB. 
 		// Resolve a base de dados Local
-		Ti.API.info("Sem Internet");
-		Ti.API.error(err);
+		Ti.API.info("[HEROES FACTORY] Sem Internet");
+		Ti.API.error('[HEROES FACTORY] ' + err);
 		return Q.Promise(function(resolve,reject){
 			if(Heroes.length > 0)
 				resolve(Heroes.toJSON());

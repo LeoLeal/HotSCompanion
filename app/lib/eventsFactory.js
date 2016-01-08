@@ -26,7 +26,7 @@ function getLatestHeroesUpdate(){
 		if(updateArray.length > 0)
 		  updateArray[0].get("date");
 		  
-		Ti.API.info("updateObj: "+updateObj);
+		Ti.API.info("[EVENTS FACTORY] updateObj: "+updateObj);
 		resolve(updateObj);
 	});
 }
