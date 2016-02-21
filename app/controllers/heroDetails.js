@@ -1,5 +1,6 @@
 var args = arguments[0] || {};
-var heroObj = arguments[0].heroObj;
+var heroId = arguments[0].heroId;
+var heroesFactory = require("heroesFactory");
 
 var actionTab = false;
 var targetScroll;
@@ -73,6 +74,11 @@ function closeWindow(){
 }
 
 function init(selectedHero){
+  heroesFactory.getHero(selectedHero)
+  .then(function(response){
+    Ti.API.info('[HERO DETAILS CONTROLLER][GET HERO]: '+JSON.stringify(response));
+  });
+  
   Ti.API.info('[HERO DETAILS CONTROLLER] '+JSON.stringify(selectedHero));
 	var fadeIn = Ti.UI.createAnimation({
 		duration: 300,
@@ -100,4 +106,4 @@ function init(selectedHero){
 	
 }
 
-init(heroObj);
+init(heroId);

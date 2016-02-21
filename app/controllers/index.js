@@ -6,7 +6,6 @@ var fadeIn = Ti.UI.createAnimation({
 
 var targetSize;
 var targetOpacity;
-var heroInteractionStarted;
 
 init();
 $.index.open();
@@ -49,36 +48,16 @@ function transformFunction(model) {
 }
 
 function openHero(event){
-  if(!!heroInteractionStarted == true)
-    return;
-
-  var activityIndicator = event.source.children[0];
-  activityIndicator.visible = true;
-  heroInteractionStarted = true;
   
   var heroId = event.source.heroId; 
   
   Ti.API.info('[INDEX CONTROLLER][EVENT SOURCE] '+ heroId);
   
-  heroesFactory.getHero(heroId)
-  .then(function(response){
-    Ti.API.info("[INDEX CONTROLLER][CLICK HERO] " + response);
-    activityIndicator.visible = false;
-    heroInteractionStarted = false;
-    
-    var heroDetails = Alloy.createController('heroDetails',{"heroObj" : response}).getView();
-    heroDetails.open({
-      modal: (OS_IOS)?true:false,
-      modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
-    });
-  })
-  .fail(function(err){
-    Ti.API.info("[INDEX CONTROLLER][CLICK HERO] " + err);
-    activityIndicator.visible = false;
-    heroInteractionStarted = false;
-    alert(err);
+  var heroDetails = Alloy.createController('heroDetails',{"heroId" : heroId}).getView();
+  heroDetails.open({
+    modal: (OS_IOS)?true:false,
+    modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
   });
-  
 };
 
 function scrollListener(event){
