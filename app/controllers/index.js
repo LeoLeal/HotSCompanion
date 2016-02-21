@@ -63,18 +63,22 @@ function openHero(event){
   heroesFactory.getHero(heroId)
   .then(function(response){
     Ti.API.info("[INDEX CONTROLLER][CLICK HERO] " + response);
+    activityIndicator.visible = false;
+    heroInteractionStarted = false;
+    
+    var heroDetails = Alloy.createController('heroDetails',{"heroObj" : response}).getView();
+    heroDetails.open({
+      modal: (OS_IOS)?true:false,
+      modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
+    });
   })
   .fail(function(err){
     Ti.API.info("[INDEX CONTROLLER][CLICK HERO] " + err);
+    activityIndicator.visible = false;
+    heroInteractionStarted = false;
+    alert(err);
   });
   
-/*
-  var heroDetails = Alloy.createController('heroDetails',{"id" : heroId}).getView();
-  
-  heroDetails.open({
-    modal: (OS_IOS)?true:false,
-    modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
-  });*/
 };
 
 function scrollListener(event){

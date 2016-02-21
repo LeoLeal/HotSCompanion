@@ -73,6 +73,7 @@ function closeWindow(){
 }
 
 function init(selectedHero){
+  Ti.API.info('[HERO DETAILS CONTROLLER] '+JSON.stringify(selectedHero));
 	var fadeIn = Ti.UI.createAnimation({
 		duration: 300,
 		opacity: 1
@@ -99,4 +100,4 @@ function init(selectedHero){
 	
 }
 
-init();
+init(heroObj);

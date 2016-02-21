@@ -1,4 +1,5 @@
 <Alloy>
+  <Model src="Heroes"/>
 	<Window>
 		<View id="statusBar"></View>
 		<View id="actionBar">
