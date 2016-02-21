@@ -42,7 +42,6 @@ function getHeroesList() {
 				eventsFactory.setLatestHeroesUpdate(dateNow.toISOString());
 			}
 
-			Ti.API.info("[HEROES FACTORY] Got a list of Heroes: " + Heroes.length);
 			return Heroes.toJSON();
 		});
 	})
@@ -62,11 +61,16 @@ function getHeroesList() {
 }
 
 function getHeroById(heroId) {
-	return Q.Promise(function(resolve,reject){
-		var heroObj = Heroes.get(heroId);
-		if(heroObj.length > 0)
-			resolve(heroObj[0].toJSON());
-		else
-			reject("error_loading_hero");
+  Ti.API.info("[HEROES FACTORY] getHeroById: " + heroId);
+	return Q.Promise(function(resolve,reject,notify){
+		var heroArray = Heroes.get(heroId);
+		Ti.API.info("[HEROES FACTORY][PROMISE] " + heroArray);
+		var heroObj = heroArray.toJSON();
+		Ti.API.info("[HEROES FACTORY][PROMISE] " + JSON.stringify(heroObj));
+		if(!!heroObj == true){
+			resolve(heroObj);
+		} else {
+		  reject("error_loading_hero");
+		}
 	});
 }

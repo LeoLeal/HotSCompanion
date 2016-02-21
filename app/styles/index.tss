@@ -156,6 +156,14 @@
 	touchEnabled: false
 }
 
+".heroActivity": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG,
+	center: {
+		x: "50%",
+		y: "50%"	
+	}
+}
+
 ".heroName": {
 	touchEnabled: false,
 	width: "60%",

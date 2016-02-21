@@ -1,4 +1,5 @@
 var args = arguments[0] || {};
+var heroObj = arguments[0].heroObj;
 
 var actionTab = false;
 var targetScroll;
@@ -7,8 +8,10 @@ var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
 
-var scrollListener = function scrollListener(event){
 
+// EVENT HANDLERS
+
+var scrollListener = function scrollListener(event){
 	targetScroll = $.contentScroll.contentOffset.y;	
 	targetOpacity = (Math.round((targetScroll/SCROLL)*10)/10);
 	
@@ -32,7 +35,6 @@ var scrollListener = function scrollListener(event){
 		$.actionTab.setVisible(false);
 		actionTab = false;
 	}
-	
 };
 $.contentScroll.addEventListener("scroll",scrollListener);
 
@@ -42,7 +44,6 @@ var tabListener = function tabListener(event){
 var tab2Listener = function tabListener(event){
 	$.scrollableCards.scrollToView($.contentTabObj.getIndex());
 };
-
 $.actionTabObj.addEventListener("click",tabListener);
 $.contentTabObj.addEventListener("click",tab2Listener);
 
@@ -60,14 +61,18 @@ var cardsListener = function cardsListener(event){
 	
 		$.contentWrapper.height = cardHeight;
 
-	},125);}; 
+	},125);
+};
 $.scrollableCards.addEventListener("scrollend", cardsListener);
+
+
+// CONTROLLER FUNCTIONS
 
 function closeWindow(){
 	$.heroDetails.close();
 }
 
-function init(){
+function init(selectedHero){
 	var fadeIn = Ti.UI.createAnimation({
 		duration: 300,
 		opacity: 1
@@ -85,11 +90,13 @@ function init(){
 	            $.videoPlayer.play();
 	        }
 	    });
-	    $.videoPlayer.addEventListener("preload" , function (e) {
-	    	setTimeout(function(){
-	    		$.videoPlayer.opacity = 1;
-	    	},500);
-	    });
+    $.videoPlayer.addEventListener("preload" , function (e) {
+    	setTimeout(function(){
+    		$.videoPlayer.opacity = 1;
+    	},500);
+    });
 	}
+	
 }
+
 init();
