@@ -1,9 +1,8 @@
 var Q = require('q');
 var repository = require('repository');
-
 var Events = Alloy.Collections.instance('Events');
 
-// Public Methods
+// PUBLIC METHODS
 exports.getWeeklyRotation = getWeeklyRotation;
 exports.getWeeklySale = getWeeklySale;
 exports.getLatestHeroesUpdate = getLatestHeroesUpdate;

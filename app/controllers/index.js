@@ -3,14 +3,13 @@ var fadeIn = Ti.UI.createAnimation({
   duration: 300,
   opacity: 1
 });
-
 var targetSize;
 var targetOpacity;
 
 init();
 $.index.open();
 
-// FUNCTIONS
+// PRIVATE METHODS
 function init(){
 	$.nextFreeWeekLegend.setText(String.format(L('Next_Free_Week'), '10/10/2015'));
 	setTimeout(function(){
@@ -58,7 +57,7 @@ function openHero(event){
     modal: (OS_IOS)?true:false,
     modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
   });
-};
+}
 
 function scrollListener(event){
   targetSize = 264-(Math.round(($.scrollList.contentOffset.y/40)*10));
@@ -67,7 +66,7 @@ function scrollListener(event){
     opacity: (targetOpacity < 0)?0:targetOpacity,
     width: ((targetSize > 264)?264:targetSize),
   });
-};
+}
 
 // EVENT HANDLERS
 $.scrollList.addEventListener("scroll",scrollListener);

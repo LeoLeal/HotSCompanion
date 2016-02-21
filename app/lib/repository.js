@@ -1,6 +1,7 @@
 var Cloud = require("ti.cloud");
 var Q = require("q");
 
+// PUBLIC METHODS
 exports.queryObject = queryObject;
 
 function queryObject(options){

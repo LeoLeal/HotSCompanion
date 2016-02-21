@@ -1,21 +1,16 @@
 var repository = require('repository');
 var eventsFactory = require('eventsFactory');
 var Q = require('q');
-
-// TODO: Falta tratar quando não vem nada da internet.
-
-// Alloy Models
+var dateNow = new Date();
 var Heroes = Alloy.Collections.instance('Heroes');
+
 Heroes.fetch({
 	success: function(model, response, options){
 		Alloy.Globals.heroesListIndex = 0;
 	}
 });
 
-// Date for Update Check
-var dateNow = new Date();
-
-///////////////// Public Methods
+// PUBLIC METHODS
 exports.getHeroesList = getHeroesList;
 exports.getHero = getHeroById;
 
