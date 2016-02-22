@@ -47,8 +47,7 @@ function transformFunction(model) {
 }
 
 function openHero(event){
-  
-  var heroId = event.source.heroId; 
+  var heroId = event.source.heroId;
   
   Ti.API.info('[INDEX CONTROLLER][EVENT SOURCE] '+ heroId);
   

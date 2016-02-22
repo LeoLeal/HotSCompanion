@@ -58,9 +58,9 @@ function getHeroesList() {
 function getHeroById(heroId) {
   Ti.API.info("[HEROES FACTORY] getHeroById: " + heroId);
 	return Q.Promise(function(resolve,reject,notify){
-		var heroArray = Heroes.get(heroId);
-		Ti.API.info("[HEROES FACTORY][PROMISE] " + heroArray);
-		var heroObj = heroArray.toJSON();
+		var heroObj = Heroes.get(heroId);
+		Ti.API.info("[HEROES FACTORY][PROMISE] " + heroObj);
+		var heroObj = heroObj.toJSON();
 		Ti.API.info("[HEROES FACTORY][PROMISE] " + JSON.stringify(heroObj));
 		if(!!heroObj == true){
 			resolve(heroObj);

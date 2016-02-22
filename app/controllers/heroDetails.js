@@ -66,6 +66,8 @@ function init(selectedHero){
   heroesFactory.getHero(selectedHero)
   .then(function(response){
     Ti.API.info('[HERO DETAILS CONTROLLER][GET HERO]: '+JSON.stringify(response));
+    $.Hero.set(response);
+    Ti.API.info('[HERO DETAILS CONTROLLER][HERO MODEL]: '+JSON.stringify($.Hero.id));
   });
   
   Ti.API.info('[HERO DETAILS CONTROLLER] '+JSON.stringify(selectedHero));

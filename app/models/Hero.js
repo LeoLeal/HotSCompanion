@@ -1,16 +1,14 @@
 exports.definition = {
 	config: {
+
 		adapter: {
 			type: "properties",
-			collection_name: "Heroes"
+			collection_name: "Hero"
 		}
 	},
 	extendModel: function(Model) {
 		_.extend(Model.prototype, {
-      transform: function transform() {
-        var transformed = this.toJSON();
-        return transformed;
-      }
+			// extended functions and properties go here
 		});
 
 		return Model;
