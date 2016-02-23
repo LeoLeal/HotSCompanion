@@ -31,7 +31,6 @@ function transformFunction(model) {
   var rowIndex = Alloy.Globals.heroesListIndex;
   
   transform.name = transform.name[Ti.Locale.currentLanguage];
-  transform.heroId = transform.id;
   
   if(rowIndex < 3)
   	topPosition = '0';
@@ -48,14 +47,23 @@ function transformFunction(model) {
 
 function openHero(event){
   var heroId = event.source.heroId;
+  var model = null;
   
-  Ti.API.info('[INDEX CONTROLLER][EVENT SOURCE] '+ heroId);
-  
-  var heroDetails = Alloy.createController('heroDetails',{"heroId" : heroId}).getView();
-  heroDetails.open({
-    modal: (OS_IOS)?true:false,
-    modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
+  heroesFactory.getHero(heroId)
+  .then(function(response){
+    model = response;
+    Ti.API.info('[INDEX CONTROLLER][EVENT SOURCE MODEL] '+ model);
+
+/*
+    var heroDetails = Alloy.createController('heroDetails',{"$model" : model}).getView();
+    heroDetails.open({
+      modal: (OS_IOS)?true:false,
+      modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
+    });*/
+
+
   });
+
 }
 
 function scrollListener(event){

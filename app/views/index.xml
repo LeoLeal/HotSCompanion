@@ -33,7 +33,7 @@
 				
 				<!-- HEROES LIST -->
 				<View id="heroesContainer" dataCollection="Heroes" dataTransform="transformFunction">
-					<View class="hero" heroId="{heroId}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
+					<View class="hero" heroId="{id}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
 						<ImageView class="heroPortraitBorder" image="/images/portrait-freeweek-next.png"></ImageView>
 						<Label class="heroName">{name}</Label>
 					</View>
