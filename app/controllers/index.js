@@ -16,12 +16,8 @@ function init(){
 		$.searchField.visible = true;
 		$.searchField.animate(fadeIn);	
 	},1000);
-	
-	Ti.API.info("[INDEX CONTROLLER] Executando Query...");
-	heroesFactory.getHeroesList()
-	.then(function(response){
-	  Ti.API.info("[INDEX CONTROLLER][INIT: heroesFactory.getHeroesList()] " + response);
-	});
+
+	heroesFactory.getHeroesList(); //Doesn't need to manipulate de results the Factory fetches the Model if the Model is declared on the View.
 }
 
 function transformFunction(model) {
@@ -52,18 +48,13 @@ function openHero(event){
   heroesFactory.getHero(heroId)
   .then(function(response){
     model = response;
-    Ti.API.info('[INDEX CONTROLLER][EVENT SOURCE MODEL] '+ model);
-
-/*
+    
     var heroDetails = Alloy.createController('heroDetails',{"$model" : model}).getView();
     heroDetails.open({
       modal: (OS_IOS)?true:false,
       modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
-    });*/
-
-
+    });
   });
-
 }
 
 function scrollListener(event){

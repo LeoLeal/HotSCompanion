@@ -1,16 +1,56 @@
 var args = arguments[0] || {};
-var heroId = arguments[0].heroId;
-var heroesFactory = require("heroesFactory");
-var actionTab = false;
+var selectedHero;
 var targetScroll;
 var targetOpacity;
+var actionTab = false;
 var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
+var fadeIn = Ti.UI.createAnimation({
+  duration: 300,
+  opacity: 1
+});
 
-init(heroId);
+init();
 
 // PRIVATE METHODS
+
+function init(){
+  $.selectedHero = $model.toJSON();
+	populateViewObjects();
+  fadeInElements();
+}
+
+function populateViewObjects(){
+  
+}
+
+function fadeInElements(){
+  setTimeout(function(){
+    $.scrollableCards.setCurrentPage(2);
+    $.scrollableCards.scrollToView(0);
+    
+    setTimeout(function(){$.scrollableCards.animate(fadeIn);},200);
+  },10);
+  
+  if(OS_ANDROID){
+    $.videoPlayer.addEventListener("playbackstate" , function (e) {
+      if (e.playbackState === Titanium.Media.VIDEO_PLAYBACK_STATE_STOPPED) {
+        $.videoPlayer.play();
+      }
+    });
+    $.videoPlayer.addEventListener("preload" , function (e) {
+      setTimeout(function(){
+        $.videoPlayer.opacity = 1;
+      },500);
+    });
+  }
+}
+
+function closeWindow(){
+  $.heroDetails.close();
+}
+
 function scrollListener(event){
   targetScroll = $.contentScroll.contentOffset.y; 
   targetOpacity = (Math.round((targetScroll/SCROLL)*10)/10);
@@ -48,53 +88,14 @@ function cardsListener(event){
   
   $.contentWrapper.height = 5000;
   
-  setTimeout(function(){
+  setTimeout(function cardListenerTimeout(){
     var cardHeight = $.scrollableCards.views[$.scrollableCards.currentPage].children[0].rect.height+60;
     
     if(cardHeight < $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height -1)
       cardHeight = $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height;
   
     $.contentWrapper.height = cardHeight;
-
   },125);
-}
-
-function closeWindow(){
-	$.heroDetails.close();
-}
-function init(selectedHero){
-  heroesFactory.getHero(selectedHero)
-  .then(function(response){
-    Ti.API.info('[HERO DETAILS CONTROLLER][GET HERO]: '+JSON.stringify(response));
-    $.Hero.set(response);
-    Ti.API.info('[HERO DETAILS CONTROLLER][HERO MODEL]: '+JSON.stringify($.Hero.id));
-  });
-  
-  Ti.API.info('[HERO DETAILS CONTROLLER] '+JSON.stringify(selectedHero));
-	var fadeIn = Ti.UI.createAnimation({
-		duration: 300,
-		opacity: 1
-	});
-	setTimeout(function(){
-		$.scrollableCards.setCurrentPage(2);
-		$.scrollableCards.scrollToView(0);
-		
-		setTimeout(function(){$.scrollableCards.animate(fadeIn);},200);
-	},10);
-	
-	if(OS_ANDROID){
-		$.videoPlayer.addEventListener("playbackstate" , function (e) {
-	        if (e.playbackState === Titanium.Media.VIDEO_PLAYBACK_STATE_STOPPED) {
-	            $.videoPlayer.play();
-	        }
-	    });
-    $.videoPlayer.addEventListener("preload" , function (e) {
-    	setTimeout(function(){
-    		$.videoPlayer.opacity = 1;
-    	},500);
-    });
-	}
-	
 }
 
 // EVENT HANDLERS

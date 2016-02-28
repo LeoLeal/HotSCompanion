@@ -26,31 +26,31 @@
 		</View>
 		<View class="tabsWrapper" id="actionTab">
 			<TabbedBar class="cardTabs" id="actionTabObj" platform="ios">
-	            <Labels>
-	                <Label>L('Info')</Label>
-	                <Label>L('Abilities')</Label>
-	                <Label>L('Talents')</Label>
-	            </Labels>
-	        </TabbedBar>
+        <Labels>
+          <Label>L('Info')</Label>
+          <Label>L('Abilities')</Label>
+          <Label>L('Talents')</Label>
+        </Labels>
+      </TabbedBar>
 			<Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
 		</View>
 		<ScrollView id="contentScroll">
 			<View id="contentWrapper">
 				<View class="tabsWrapper" id="contentTab">
 					<TabbedBar class="cardTabs" id="contentTabObj" platform="ios">
-			            <Labels>
-			                <Label>L('Info')</Label>
-			                <Label>L('Abilities')</Label>
-			                <Label>L('Talents')</Label>
-			            </Labels>
-			        </TabbedBar>
+            <Labels>
+              <Label>L('Info')</Label>
+              <Label>L('Abilities')</Label>
+              <Label>L('Talents')</Label>
+            </Labels>
+	        </TabbedBar>
 					<Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
 			    </View>
-		        <ScrollableView id="scrollableCards" class="tabContent">
-		        	<View id="page_0"><Require src="heroDetailsInfo" id="page_0View" /></View>
-		        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
-		        	<View id="page_2"><Require src="heroDetailsInfo" id="page_2View" /></View>
-		        </ScrollableView>
+	        <ScrollableView id="scrollableCards" class="tabContent">
+	        	<View id="page_0"><Require src="heroDetailsInfo" id="page_0View" /></View>
+	        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
+	        	<View id="page_2"><Require src="heroDetailsInfo" id="page_2View" /></View>
+	        </ScrollableView>
 			</View>
 		</ScrollView>
 	</Window>
