@@ -16,13 +16,25 @@ init();
 // PRIVATE METHODS
 
 function init(){
-  $.selectedHero = $model.toJSON();
+  selectedHero = $model.toJSON();
 	populateViewObjects();
   fadeInElements();
 }
 
 function populateViewObjects(){
-  
+  $.headerName.text = selectedHero.name[Ti.Locale.currentLanguage].toUpperCase();
+  $.actionBarHeroName.text = selectedHero.name[Ti.Locale.currentLanguage];
+  selectSkin(0);
+  $.headerUniverseIcon.image = '/images/dark/touchable_universe-'+selectedHero.universe+'.png';
+  $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
+  $.headerRoleIcon.image = '/images/dark/touchable_role-' + selectedHero.role + '.png';
+  $.headerRoleLabel.text = L(selectedHero.fightDistance + '_' + selectedHero.role);
+}
+
+function selectSkin(skinIndex){
+  $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
+  $.videoPlayer.url = selectedHero.skins[skinIndex].video;
+  //selectedHero.skins[skinIndex].icon
 }
 
 function fadeInElements(){

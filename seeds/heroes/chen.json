@@ -10,7 +10,6 @@
   			"pt": "Cervejeiro Lendário"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_legendaryBrewmaster.jpg",
-      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/legendaryBrewmaster_frame.jpg",
   		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_legendaryBrewmaster.mp4"
   	},
   	{
@@ -19,7 +18,6 @@
   			"pt": "Cervejeiro Lendário Mestre"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_masterChen.jpg",
-      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/masterChen_frame.jpg",
   		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_masterChen.mp4"
   	},
   	{
@@ -28,7 +26,6 @@
   			"pt": "Mestre Guerreiro"
   		},
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_warmasterChen.jpg",
-      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/warmasterChen_frame.jpg",
   		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_warmasterChen.mp4"
   	},
     {
@@ -37,7 +34,6 @@
         "pt": "Cervejeiro Ansião"
       },
       "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/chen_elderChen.jpg",
-      "image": "http://us.battle.net/heroes/static/images/heroes/skins/frames/elderChen_frame.jpg",
       "video": "http://media.blizzard.com/heroes/videos/heroes/skins/chen_elderChen.mp4"
     }
   ],

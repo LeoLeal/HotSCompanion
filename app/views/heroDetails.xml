@@ -9,8 +9,7 @@
 			<Button class="backButton" id="headerBackButton" onClick="closeWindow"></Button>
 		</View>
 		<View id="heroHeader">
-			<ImageView class="heroImage" platform="android" image="http://us.battle.net/heroes/static/images/heroes/skins/frames/lordOfSin_frame.jpg" />
-			<VideoPlayer id="videoPlayer" ns="Ti.Media" url="http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_lordOfSin.mp4" />
+			<VideoPlayer id="videoPlayer" ns="Ti.Media" />
 			<View id="headerText">
 				<View id="headerUniverse">
 					<ImageView id="headerUniverseIcon" image="/images/dark/touchable_universe-diablo.png"></ImageView>

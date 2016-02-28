@@ -11,4 +11,16 @@
     <string name="Damage">Dano</string>
     <string name="Complexity">Complexidade</string>
     <string name="Utility">Utilidade</string>
+    
+    <string name="melee_warrior">Guerreiro Corpo a Corpo</string>
+    <string name="ranged_warrior">Guerreiro Longa Distância</string>
+    <string name="melee_specialist">Especialista Corpo a Corpo</string>
+    <string name="ranged_specialist">Especialista Longa Distância</string>
+    <string name="melee_assassin">Assassino Corpo a Corpo</string>
+    <string name="ranged_assassin">Assassino Longa Distância</string>
+    <string name="melee_support">Suporte Corpo a Corpo</string>
+    <string name="ranged_support">Suporte Longa Distância</string>
+    
+    <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
+    <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>
 </resources>

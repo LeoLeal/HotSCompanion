@@ -12,6 +12,15 @@
     <string name="Complexity">Complexity</string>
     <string name="Utility">Utility</string>
     
+    <string name="melee_warrior">Melee Warrior</string>
+    <string name="ranged_warrior">Ranged Warrior</string>
+    <string name="melee_specialist">Melee Specialist</string>
+    <string name="ranged_specialist">Ranged Specialist</string>
+    <string name="melee_assassin">Melee Assassin</string>
+    <string name="ranged_assassin">Ranged Assassin</string>
+    <string name="melee_support">Melee Support</string>
+    <string name="ranged_support">Ranged Support</string>
+    
     <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
     <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>
 </resources>
