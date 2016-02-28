@@ -110,11 +110,6 @@
 	repeatMode: Ti.Media.VIDEO_REPEAT_MODE_ONE,
 	opacity: 1
 }
-".heroImage": {
-	width: 550,
-	center: {x: "50%", y: 110},
-	zIndex: 1
-}
 
 "#headerText": {
 	bottom: 92,
@@ -125,6 +120,12 @@
 	zIndex: 3
 }
 
+"#skinSelectContainer": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 8
+}
 
 "#headerUniverse": {
 	height: Ti.UI.SIZE,

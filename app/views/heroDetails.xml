@@ -17,6 +17,7 @@
 				</View>
 				<Label id="headerName">AZMODAN</Label>
 				<Label id="headerSubtitle">SENHOR DO PECADO</Label>
+				<View id="skinSelectContainer"></View>
 				<View id="headerRole">
 					<ImageView id="headerRoleIcon" image="/images/dark/touchable_role-specialist.png"></ImageView>
 					<Label id="headerRoleLabel">Especialista Longo Alcance</Label>

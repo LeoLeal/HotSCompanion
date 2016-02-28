@@ -5,6 +5,7 @@ var targetOpacity;
 var actionTab = false;
 var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
+var skinSelectorArray = [];
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -29,11 +30,29 @@ function populateViewObjects(){
   $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
   $.headerRoleIcon.image = '/images/dark/touchable_role-' + selectedHero.role + '.png';
   $.headerRoleLabel.text = L(selectedHero.fightDistance + '_' + selectedHero.role);
+
+  for(var i=0; i<selectedHero.skins.length; i++){
+    skinSelectorArray.push(
+      Ti.UI.createImageView({
+        image: selectedHero.skins[i].icon,
+        width: 32,
+        height: 32,
+        left: 0,
+        right: 2,
+        borderRadius: 16,
+        borderColor: '#48acef',
+        borderWidth: 1
+      })
+    );
+    $.skinSelectContainer.add(skinSelectorArray[i]);
+  }
+
 }
 
 function selectSkin(skinIndex){
   $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
   $.videoPlayer.url = selectedHero.skins[skinIndex].video;
+  
   //selectedHero.skins[skinIndex].icon
 }
 
