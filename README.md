@@ -19,3 +19,9 @@ ToDo
 -
 * Portrait Highlight for Heroes and Skins Sales
 * Talent Calculator with Sharing and a Like-System rank
+
+Developer Highlights and Facts
+-
+* This project uses Titanium for Native Compilation for both iOS and Android
+* This project features Alloy Widget TabbedBar, that mimics the same API for iOS but with native Material Design Language
+* This project uses ArrowDB and Model Syncing for cached content stored as a Deep JSON Object.
