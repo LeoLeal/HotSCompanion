@@ -18,6 +18,7 @@ function getHeroesList() {
 	
 	return eventsFactory.getLatestHeroesUpdate()
 	.then(function(updateResponse){
+	  Ti.API.info('[HEROES FACTORY][LATEST HEROES UPDATE] ' + updateResponse); 
 		return repository.queryObject({
 			objClass: "Heroes",
 			refDate: updateResponse

@@ -1,3 +1,10 @@
+/**
+ * TODO
+ * - Adicionar eventos de Free Week e acertar bordas dos heróis de acordo
+ * - Mostrar última data de atualização
+ * - Mostrar Patch do Jogo atual
+ */
+
 var heroesFactory = require("heroesFactory");
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -11,6 +18,7 @@ $.index.open();
 
 // PRIVATE METHODS
 function init(){
+  Ti.API.info('[INDEX CONTROLLER][INIT STARTED][CURRENT LOCALE LANGUAGE] ' + Ti.Locale.currentLanguage);
 	$.nextFreeWeekLegend.setText(String.format(L('Next_Free_Week'), '10/10/2015'));
 	setTimeout(function(){
 		$.searchField.visible = true;

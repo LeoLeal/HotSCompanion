@@ -8,22 +8,6 @@
 		<View id="heroHeaderActionBar">
 			<Button class="backButton" id="headerBackButton" onClick="closeWindow"></Button>
 		</View>
-		<View id="heroHeader">
-			<VideoPlayer id="videoPlayer" ns="Ti.Media" />
-			<View id="headerText">
-				<View id="headerUniverse">
-					<ImageView id="headerUniverseIcon" image="/images/dark/touchable_universe-diablo.png"></ImageView>
-					<Label id="headerUniverseLabel">Diablo</Label>
-				</View>
-				<Label id="headerName">AZMODAN</Label>
-				<Label id="headerSubtitle">SENHOR DO PECADO</Label>
-				<View id="skinSelectContainer"></View>
-				<View id="headerRole">
-					<ImageView id="headerRoleIcon" image="/images/dark/touchable_role-specialist.png"></ImageView>
-					<Label id="headerRoleLabel">Especialista Longo Alcance</Label>
-				</View>
-			</View>
-		</View>
 		<View class="tabsWrapper" id="actionTab">
 			<TabbedBar class="cardTabs" id="actionTabObj" platform="ios">
         <Labels>
@@ -35,6 +19,22 @@
 			<Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
 		</View>
 		<ScrollView id="contentScroll">
+      <View id="heroHeader">
+        <VideoPlayer id="videoPlayer" ns="Ti.Media" />
+        <View id="headerText">
+          <View id="headerUniverse">
+            <ImageView id="headerUniverseIcon" image="/images/dark/touchable_universe-diablo.png"></ImageView>
+            <Label id="headerUniverseLabel">Diablo</Label>
+          </View>
+          <Label id="headerName">AZMODAN</Label>
+          <Label id="headerSubtitle">SENHOR DO PECADO</Label>
+          <View id="skinSelectContainer"></View>
+          <View id="headerRole">
+            <ImageView id="headerRoleIcon" image="/images/dark/touchable_role-specialist.png"></ImageView>
+            <Label id="headerRoleLabel">Especialista Longo Alcance</Label>
+          </View>
+        </View>
+      </View>
 			<View id="contentWrapper">
 				<View class="tabsWrapper" id="contentTab">
 					<TabbedBar class="cardTabs" id="contentTabObj" platform="ios">
@@ -45,12 +45,12 @@
             </Labels>
 	        </TabbedBar>
 					<Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
-			    </View>
-	        <ScrollableView id="scrollableCards" class="tabContent">
-	        	<View id="page_0"><Require src="heroDetailsInfo" id="page_0View" /></View>
-	        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
-	        	<View id="page_2"><Require src="heroDetailsInfo" id="page_2View" /></View>
-	        </ScrollableView>
+		    </View>
+        <ScrollableView id="scrollableCards" class="tabContent">
+        	<View id="page_0"><Require src="heroDetailsInfo" id="page_0View" /></View>
+        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
+        	<View id="page_2"><Require src="heroDetailsInfo" id="page_2View" /></View>
+        </ScrollableView>
 			</View>
 		</ScrollView>
 	</Window>

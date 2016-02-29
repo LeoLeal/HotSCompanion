@@ -1,3 +1,10 @@
+/**
+ * TODO
+ * - Adicionar um Loading para as Skins
+ * - Fazer cache das Skins e Ícones (Verificar necessidade)
+ * - Parte de baixo da skin no Android não encaixa nas tabs
+ */
+
 var args = arguments[0] || {};
 var selectedHero;
 var targetScroll;
@@ -6,6 +13,7 @@ var actionTab = false;
 var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
 var skinSelectorArray = [];
+var currentSelectedSkin = 0;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -25,7 +33,6 @@ function init(){
 function populateViewObjects(){
   $.headerName.text = selectedHero.name[Ti.Locale.currentLanguage].toUpperCase();
   $.actionBarHeroName.text = selectedHero.name[Ti.Locale.currentLanguage];
-  selectSkin(0);
   $.headerUniverseIcon.image = '/images/dark/touchable_universe-'+selectedHero.universe+'.png';
   $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
   $.headerRoleIcon.image = '/images/dark/touchable_role-' + selectedHero.role + '.png';
@@ -41,19 +48,27 @@ function populateViewObjects(){
         right: 2,
         borderRadius: 16,
         borderColor: '#48acef',
-        borderWidth: 1
+        borderWidth: 1,
+        skinIndex: i
       })
     );
+    skinSelectorArray[i].addEventListener('click',selectSkinListener);
     $.skinSelectContainer.add(skinSelectorArray[i]);
   }
-
+  selectSkin(0);
 }
 
+
 function selectSkin(skinIndex){
+  skinSelectorArray[currentSelectedSkin].borderColor = '#48acef';
+  skinSelectorArray[skinIndex].borderColor = '#fff';
+  currentSelectedSkin = skinIndex;
   $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
   $.videoPlayer.url = selectedHero.skins[skinIndex].video;
-  
-  //selectedHero.skins[skinIndex].icon
+}
+
+function selectSkinListener(event){
+  selectSkin(event.source.skinIndex);
 }
 
 function fadeInElements(){
@@ -127,6 +142,9 @@ function cardsListener(event){
   
     $.contentWrapper.height = cardHeight;
   },125);
+}
+function scrollClickListener(event){
+  $.skinSelectContainer.fireEvent(event);
 }
 
 // EVENT HANDLERS
