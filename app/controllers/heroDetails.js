@@ -6,6 +6,7 @@
  */
 
 var args = arguments[0] || {};
+var cacheFactory = require('cacheFactory');
 var selectedHero;
 var targetScroll;
 var targetOpacity;
@@ -65,6 +66,9 @@ function selectSkin(skinIndex){
   currentSelectedSkin = skinIndex;
   $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
   $.videoPlayer.url = selectedHero.skins[skinIndex].video;
+  cacheFactory.getFile({
+    url: selectedHero.skins[skinIndex].video
+  });
 }
 
 function selectSkinListener(event){
