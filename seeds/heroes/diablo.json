@@ -3,6 +3,14 @@
     "en": "Diablo",
     "pt": "Diablo"
   },
+  "portrait": {
+    "url": "http://media.heroesnexus.com/avatars/422/270/635705649456874988.png",
+    "scale": 1,
+    "center": {
+      "x": "-100%",
+      "y": "80%"
+    }
+  },
   "skins": [
   	{
   		"name": {

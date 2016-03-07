@@ -3,6 +3,14 @@
     "en": "Azmodan",
     "pt": "Azmodan"
   },
+  "portrait": {
+    "url": "http://media.heroesnexus.com/avatars/422/267/635705649292311860.png",
+    "scale": 1,
+    "center": {
+      "x": "-100%",
+      "y": "80%"
+    }
+  },
   "skins": [
   	{
   		"name": {

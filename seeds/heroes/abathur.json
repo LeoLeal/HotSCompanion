@@ -3,6 +3,14 @@
     "en": "Abathur",
     "pt": "Abathur"
   },
+  "portrait": {
+    "url": "http://media.heroesnexus.com/avatars/422/264/635705649128020173.png",
+    "scale": 1,
+    "center": {
+      "x": "-100%",
+      "y": "80%"
+    }
+  },
   "skins": [
     {
       "name": {

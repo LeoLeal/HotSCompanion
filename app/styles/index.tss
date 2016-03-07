@@ -156,6 +156,22 @@
 	touchEnabled: false
 }
 
+".portraitContainer": {
+	borderRadius: 37,
+	width: 74,
+	height: 74,
+	touchEnabled: false
+}
+
+".heroPortrait": {
+	width: 500,
+	height: 256,
+	center: {
+		x: '-100%',
+		y: '80%'
+	}
+}
+
 ".heroName": {
 	touchEnabled: false,
 	width: "60%",

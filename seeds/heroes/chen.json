@@ -3,6 +3,14 @@
     "en": "Chen",
     "pt": "Chen"
   },
+  "portrait": {
+    "url": "http://media.heroesnexus.com/avatars/422/269/635705649401334096.png",
+    "scale": 1,
+    "center": {
+      "x": "-100%",
+      "y": "80%"
+    }
+  },
   "skins": [
   	{
   		"name": {

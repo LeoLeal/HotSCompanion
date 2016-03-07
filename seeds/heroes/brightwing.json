@@ -3,6 +3,14 @@
     "en": "Brightwing",
     "pt": "Asaluz"
   },
+  "portrait": {
+    "url": "http://media.heroesnexus.com/avatars/422/268/635705649347463086.png",
+    "scale": 1,
+    "center": {
+      "x": "-100%",
+      "y": "80%"
+    }
+  },
   "skins": [
   	{
   		"name": {

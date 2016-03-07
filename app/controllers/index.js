@@ -35,6 +35,10 @@ function transformFunction(model) {
   var rowIndex = Alloy.Globals.heroesListIndex;
   
   transform.name = transform.name[Ti.Locale.currentLanguage];
+  transform.portraitUrl = transform.portrait.url;
+  transform.portraitWidth = transform.portrait.scale * Alloy.Globals.PORTRAIT_DEFAULT_WIDTH;
+  transform.portraitHeight = transform.portrait.scale * Alloy.Globals.PORTRAIT_DEFAULT_HEIGHT;
+  transform.portraitCenter = transform.portrait.center;
   
   if(rowIndex < 3)
   	topPosition = '0';

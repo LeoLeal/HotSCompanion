@@ -19,8 +19,9 @@
 
 Alloy.Globals.env = Ti.App.deployType.toLowerCase() === 'production' ? 'production' : 'development',
 Alloy.Globals.portraitNameTransform = Ti.UI.create2DMatrix().rotate(30.3);
+Alloy.Globals.PORTRAIT_DEFAULT_WIDTH = 500;
+Alloy.Globals.PORTRAIT_DEFAULT_HEIGHT = 256;
 Alloy.Globals.heroesListIndex = 0;
-
 Alloy.Globals.color = {
     "colorPrimary": "#1565C0",
     "colorPrimaryDark": "#0D47A1",
