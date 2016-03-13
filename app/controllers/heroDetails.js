@@ -6,15 +6,12 @@
  */
 
 var args = arguments[0] || {};
-var cacheFactory = require('cacheFactory');
 var selectedHero;
 var targetScroll;
 var targetOpacity;
 var actionTab = false;
 var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
-var skinSelectorArray = [];
-var currentSelectedSkin = 0;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -32,47 +29,24 @@ function init(){
 }
 
 function populateViewObjects(){
-  $.headerName.text = selectedHero.name[Ti.Locale.currentLanguage].toUpperCase();
   $.actionBarHeroName.text = selectedHero.name[Ti.Locale.currentLanguage];
-  $.headerUniverseIcon.image = '/images/dark/touchable_universe-'+selectedHero.universe+'.png';
-  $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
-  $.headerRoleIcon.image = '/images/dark/touchable_role-' + selectedHero.role + '.png';
-  $.headerRoleLabel.text = L(selectedHero.fightDistance + '_' + selectedHero.role);
-
-  for(var i=0; i<selectedHero.skins.length; i++){
-    skinSelectorArray.push(
-      Ti.UI.createImageView({
-        image: selectedHero.skins[i].icon,
-        width: 32,
-        height: 32,
-        left: 0,
-        right: 2,
-        borderRadius: 16,
-        borderColor: '#48acef',
-        borderWidth: 1,
-        skinIndex: i
-      })
-    );
-    skinSelectorArray[i].addEventListener('click',selectSkinListener);
-    $.skinSelectContainer.add(skinSelectorArray[i]);
-  }
-  selectSkin(0);
-}
 
 
-function selectSkin(skinIndex){
-  skinSelectorArray[currentSelectedSkin].borderColor = '#48acef';
-  skinSelectorArray[skinIndex].borderColor = '#fff';
-  currentSelectedSkin = skinIndex;
-  $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
-  $.videoPlayer.url = selectedHero.skins[skinIndex].video;
-  cacheFactory.getFile({
-    url: selectedHero.skins[skinIndex].video
-  });
-}
+  var DetailsHeaderController = Alloy.createController('heroDetailsHeader', { 
+    id: "heroHeader",
+    selectedHero: selectedHero
+  });  
+  var DetailsHeaderView = DetailsHeaderController.getView();
+  $.heroHeaderContainer.add(DetailsHeaderView);
 
-function selectSkinListener(event){
-  selectSkin(event.source.skinIndex);
+
+  var DetailsInfoController = Alloy.createController('heroDetailsInfo', { 
+    id: "page_0View",
+    selectedHero: selectedHero
+  });  
+  var DetailsInfoView = DetailsInfoController.getView(); 
+  $.page_0.add(DetailsInfoView);
+  
 }
 
 function fadeInElements(){
@@ -82,19 +56,6 @@ function fadeInElements(){
     
     setTimeout(function(){$.scrollableCards.animate(fadeIn);},200);
   },10);
-  
-  if(OS_ANDROID){
-    $.videoPlayer.addEventListener("playbackstate" , function (e) {
-      if (e.playbackState === Titanium.Media.VIDEO_PLAYBACK_STATE_STOPPED) {
-        $.videoPlayer.play();
-      }
-    });
-    $.videoPlayer.addEventListener("preload" , function (e) {
-      setTimeout(function(){
-        $.videoPlayer.opacity = 1;
-      },500);
-    });
-  }
 }
 
 function closeWindow(){
@@ -146,9 +107,6 @@ function cardsListener(event){
   
     $.contentWrapper.height = cardHeight;
   },125);
-}
-function scrollClickListener(event){
-  $.skinSelectContainer.fireEvent(event);
 }
 
 // EVENT HANDLERS

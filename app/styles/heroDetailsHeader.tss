@@ -1,0 +1,107 @@
+".heroHeader": {
+	top: 0,
+	height: 240,
+	width: '100%',
+	zIndex: 1,
+}
+
+"VideoPlayer": {
+	width: 550,
+	center: {x: "50%", y: 110},
+	autoplay: true,
+	mediaControlStyle: Ti.Media.VIDEO_CONTROL_HIDDEN,
+	zIndex: 2,
+	backgroundColor: "#000",
+	opacity: 0
+}
+"VideoPlayer[platform=ios]": {
+	width: 500,
+	top: "-12%",
+	center: {x: "50%"},
+	repeatMode: Ti.Media.VIDEO_REPEAT_MODE_ONE,
+	opacity: 1
+}
+
+"#headerText": {
+	bottom: 8,
+	left: 10,
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	zIndex: 3
+}
+
+"#skinSelectContainer": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 8
+}
+
+"#headerUniverse": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	left: 0,
+	layout: "horizontal",
+	bottom: 0
+}
+"#headerUniverseIcon": {
+	width: 40,
+	height: 40
+}
+"#headerUniverseLabel": {
+	center: {y: "55%"},
+	left: -4,
+	font: {
+		fontSize: 16,
+		fontFamily: 'MetronicProBold'
+	},
+	color:"#cfffffff"
+}
+
+"#headerName": {
+	left: 10,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 34,
+		fontFamily: 'MetronicProBlack'
+	},
+	color:"#fff"
+}
+"#headerSubtitle": {
+	left: 10,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 16,
+		fontFamily: 'MetronicProSemiBold'
+	},
+	color:"#48acef"
+}
+"#headerRole": {
+	layout: "horizontal",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	top: 4,
+	left: 0
+}
+"#headerRoleIcon": {
+	width: 36,
+	height: 36
+}
+"#headerRoleLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	center: {y:"55%"} ,
+	font: {
+		fontSize: 18,
+		fontFamily: 'MetronicProSemiBold'
+	},
+	color:"#ddffffff"
+}

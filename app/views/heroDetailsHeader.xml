@@ -1,0 +1,18 @@
+<Alloy>
+	<View class="heroHeader">
+    <VideoPlayer id="videoPlayer" ns="Ti.Media" />
+    <View id="headerText">
+      <View id="headerUniverse">
+        <ImageView id="headerUniverseIcon" image="/images/dark/touchable_universe-diablo.png"></ImageView>
+        <Label id="headerUniverseLabel">Diablo</Label>
+      </View>
+      <Label id="headerName">AZMODAN</Label>
+      <Label id="headerSubtitle">SENHOR DO PECADO</Label>
+      <View id="skinSelectContainer"></View>
+      <View id="headerRole">
+        <ImageView id="headerRoleIcon" image="/images/dark/touchable_role-specialist.png"></ImageView>
+        <Label id="headerRoleLabel">Especialista Longo Alcance</Label>
+      </View>
+    </View>
+	</View>
+</Alloy>
