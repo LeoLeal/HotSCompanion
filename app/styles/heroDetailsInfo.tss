@@ -9,19 +9,29 @@
   }
 }
 
-".statsContainer": {
+".infoContainer": {
 	layout: "horizontal",
 	width: Ti.UI.FILL,
 	height: Ti.UI.SIZE,
-	top: 16
+	top: 8
 }
 
-".stat": {
+".separator": {
+	left: 16,
+	right: 16,
+	height: 1,
+	backgroundColor: '#eee',
+	top: 8,
+	bottom: 8
+}
+
+".difficulty": {
 	width: "50%",
 	height: Ti.UI.SIZE,
 	layout: "vertical",
+	bottom: -8
 }
-".statScore": {
+".difficultyScore": {
 	layout: "horizontal",
 	width: Ti.UI.FILL,
 	height: 28,
@@ -45,10 +55,65 @@
 	height: 24,
 }
 
+".statsContainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	left: 16,
+	right: 16,
+	layout: 'horizontal',
+	center: {
+		x: '50%'
+	},
+	bottom: 4
+}
+
+".statIcons": {
+	height: 36,
+	bottom: 4
+}
+
+".stat": {
+	width: '33.33%',
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+	top: 8,
+	bottom: 8
+}
+
+".statLabel": {
+	center: {
+		x: '50%'
+	},
+	width: Ti.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	}
+}
+
+".statLabel2": {
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: Ti.UI.FILL,
+	font: {
+		fontSize: 10
+	},
+}
+
+".statLabel3": {
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: Ti.UI.FILL,
+	top: 4,
+	font: {
+		fontSize: 11,
+		fontWeight: 'bold'
+	},
+}
+
 ".loreContainer": {
 	width: Ti.UI.FILL,
 	height: Ti.UI.SIZE,
-	layout: "vertical",
+	layout: "vertical"
 }
 
 ".title": {

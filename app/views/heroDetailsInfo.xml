@@ -1,8 +1,9 @@
 <Alloy>
-	<View class="statsContainer">
-		<View class="stat">
+	<View class="infoContainer">
+	  <View id="spacer" height="12" platform="android"></View>
+		<View class="difficulty">
 			<Label class="title" text="L('Survivability')"></Label>
-			<View class="statScore">
+			<View class="difficultyScore">
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_1.png"></ImageView>
@@ -11,9 +12,9 @@
 				<Label class="score">5</Label>
 			</View>
 		</View>
-		<View class="stat">
+		<View class="difficulty">
 			<Label class="title" text="L('Damage')"></Label>
-			<View class="statScore">
+			<View class="difficultyScore">
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
@@ -22,9 +23,9 @@
 				<Label class="score">10</Label>
 			</View>
 		</View>
-		<View class="stat">
+		<View class="difficulty">
 			<Label class="title" text="L('Utility')"></Label>
-			<View class="statScore">
+			<View class="difficultyScore">
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
@@ -33,9 +34,9 @@
 				<Label class="score">4</Label>
 			</View>
 		</View>
-		<View class="stat">
+		<View class="difficulty">
 			<Label class="title" text="L('Complexity')"></Label>
-			<View class="statScore">
+			<View class="difficultyScore">
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
 				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
@@ -45,12 +46,34 @@
 			</View>
 		</View>
 		
+		<View class="separator"></View>
+		
+		<View class="statsContainer">
+		  <View class="stat">
+        <ImageView image="/images/icon-health.png" class="statIcons"></ImageView>
+        <Label class="statLabel" id="initialHealth">2200</Label>
+        <Label class="statLabel2" id="healthIncrement">(+4 por nível)</Label>
+      </View>
+      <View class="stat">
+        <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
+        <Label class="statLabel" id="initialMana">1000</Label>
+        <Label class="statLabel2" id="manaIncrement">(+4 por nível)</Label>
+      </View>
+      <View class="stat">
+        <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>
+        <Label class="statLabel3" id="initialDamage">88@1.25/s</Label>
+        <Label class="statLabel2" id="damageIncrement">(+4 por nível)</Label>
+      </View>
+		</View>
+		
+		<View class="separator"></View>
+		
 		<View class="loreContainer">
 			<Label class="title" text="L('Lore')"></Label>
 			<Label id="loreData" text="The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary. The Lord of Sin rules over a densely populated land of hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary."></Label>
-			<!-- SPACER -->
-			<View id="spacer" height="60"></View>
 		</View>
+		
+		<View id="spacer" height="60" platform="android"></View>
 
 	</View>
 </Alloy>
