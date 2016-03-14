@@ -26,7 +26,7 @@
 }
 
 ".difficulty": {
-	width: "50%",
+	width: "49.9999999%",
 	height: Ti.UI.SIZE,
 	layout: "vertical",
 	bottom: -8

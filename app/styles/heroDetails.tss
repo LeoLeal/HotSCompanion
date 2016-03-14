@@ -22,7 +22,6 @@
 }
 
 // ACTION BAR
-
 "#actionBar": {
 	height: 80,
 	top: 0,
@@ -69,8 +68,6 @@
 	image: "/images/dark/touchable_back-ios.png"
 }
 
-
-
 // HERO HEADER
 "#heroHeaderContainer": {
 	top: 0,
@@ -89,13 +86,11 @@
 	top: 20,
 	zIndex: 3
 }
-
 "#headerBackButton[platform=ios]": {
 	tintColor: "#fff"
 }
 
 // CONTEÚDO
-
 "#contentScroll": {
 	top: 0,
 	left: 0,
@@ -106,7 +101,6 @@
 	layout: "vertical",
 	disableBounce: false
 }
-
 ".tabsWrapper": {
 	backgroundColor: "#eee",
 	height: Ti.UI.SIZE,
@@ -115,7 +109,6 @@
 	width: Ti.UI.FILL,
 	zIndex: 3
 }
-
 ".tabsWrapper[platform=ios]": {
 	backgroundColor: "#fff",
 	viewShadowColor: "#cc000000",
@@ -150,14 +143,12 @@
 }
 
 // FIM TABS
-
 "#contentWrapper": {
 	top: 0,
 	layout: "vertical",
 	height: Ti.UI.SIZE,
 	backgroundColor: "#fff"
 }
-
 ".tabContent": {
 	top: 0,
 	backgroundColor: "#fff",

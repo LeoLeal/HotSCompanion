@@ -1,17 +1,16 @@
-".heroHeader": {
+"#heroHeader": {
 	top: 0,
 	height: 240,
 	width: '100%',
 	zIndex: 1,
+	layout: 'absolute'
 }
-
 "VideoPlayer": {
 	width: 550,
-	center: {x: "50%", y: 110},
+	center: {x: "50%", y: 120},
 	autoplay: true,
 	mediaControlStyle: Ti.Media.VIDEO_CONTROL_HIDDEN,
 	zIndex: 2,
-	backgroundColor: "#000",
 	opacity: 0
 }
 "VideoPlayer[platform=ios]": {
@@ -21,7 +20,6 @@
 	repeatMode: Ti.Media.VIDEO_REPEAT_MODE_ONE,
 	opacity: 1
 }
-
 "#headerText": {
 	bottom: 8,
 	left: 10,
@@ -30,14 +28,12 @@
 	height: Ti.UI.SIZE,
 	zIndex: 3
 }
-
 "#skinSelectContainer": {
 	layout: "horizontal",
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	left: 8
 }
-
 "#headerUniverse": {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
@@ -58,7 +54,6 @@
 	},
 	color:"#cfffffff"
 }
-
 "#headerName": {
 	left: 10,
 	top: 0,

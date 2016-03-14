@@ -58,6 +58,8 @@ function selectSkin(skinIndex){
   currentSelectedSkin = skinIndex;
   $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
   $.videoPlayer.url = selectedHero.skins[skinIndex].video;
+  Ti.API.info('[HERO DETAILS HEADER CONTROLLER] Video Player: ' + JSON.stringify($.videoPlayer));
+  Ti.API.info('[HERO DETAILS HEADER CONTROLLER] Video Player URL: ' + JSON.stringify($.videoPlayer.url));
 }
 
 function selectSkinListener(event){

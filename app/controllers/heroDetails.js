@@ -2,7 +2,6 @@
  * TODO
  * - Adicionar um Loading para as Skins
  * - Fazer cache das Skins e Ícones (Verificar necessidade)
- * - Parte de baixo da skin no Android não encaixa nas tabs
  */
 
 var args = arguments[0] || {};
@@ -30,7 +29,6 @@ function init(){
 
 function populateViewObjects(){
   $.actionBarHeroName.text = selectedHero.name[Ti.Locale.currentLanguage];
-
 
   var DetailsHeaderController = Alloy.createController('heroDetailsHeader', { 
     id: "heroHeader",

@@ -1,5 +1,5 @@
 <Alloy>
-	<View class="heroHeader">
+	<View id="heroHeader">
     <VideoPlayer id="videoPlayer" ns="Ti.Media" />
     <View id="headerText">
       <View id="headerUniverse">

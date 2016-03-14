@@ -169,7 +169,8 @@
 	center: {
 		x: '-100%',
 		y: '80%'
-	}
+	},
+	touchEnabled: false
 }
 
 ".heroName": {
