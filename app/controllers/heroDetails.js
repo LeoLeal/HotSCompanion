@@ -11,6 +11,7 @@ var targetOpacity;
 var actionTab = false;
 var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
+var HEADER_HEIGHT = 240;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -99,9 +100,13 @@ function cardsListener(event){
   
   setTimeout(function cardListenerTimeout(){
     var cardHeight = $.scrollableCards.views[$.scrollableCards.currentPage].children[0].rect.height+60;
-    
+/*    
     if(cardHeight < $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height -1)
       cardHeight = $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height;
+*/
+
+    if(cardHeight < $.contentScroll.rect.height - HEADER_HEIGHT)
+      cardHeight = $.contentScroll.rect.height - HEADER_HEIGHT;
   
     $.contentWrapper.height = cardHeight;
   },125);

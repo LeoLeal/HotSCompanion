@@ -1,6 +1,7 @@
 <Alloy>
 	<View class="infoContainer">
-	  <View id="spacer" height="12" platform="android"></View>
+	  <View id="spacer" height="8" platform="android"></View>
+	  <View id="spacer" height="4"></View>
 		<View class="difficulty">
 			<Label class="title" text="L('Survivability')"></Label>
 			<View class="difficultyScore">
@@ -69,7 +70,6 @@
 		<View class="separator"></View>
 		
 		<View class="loreContainer">
-			<Label class="title" text="L('Lore')"></Label>
 			<Label id="loreData"></Label>
 		</View>
 		

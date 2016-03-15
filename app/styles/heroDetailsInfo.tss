@@ -26,7 +26,7 @@
 }
 
 ".difficulty": {
-	width: "49.9999999%",
+	width: "49.99999%",
 	height: Ti.UI.SIZE,
 	layout: "vertical",
 	bottom: -8
@@ -116,14 +116,8 @@
 	layout: "vertical"
 }
 
-".title": {
-	font: {
-		fontSize: 16
-	}
-}
-
 "#loreData": {
-	top: 8,
+	top: 4,
 	bottom: 16,
 	width: Ti.UI.FILL,
 	height: Ti.UI.SIZE
