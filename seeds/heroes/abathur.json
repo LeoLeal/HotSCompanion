@@ -60,15 +60,15 @@
   },
   "stats": {
     "hp": {
-      "pool": [550, 50],
-      "regen": [1.145, 0.105]
+      "pool": [550, 4],
+      "regen": [1.145, 4]
     },
     "mana": {
       "pool": 0,
       "regen": 0
     },
     "attack": {
-      "damage": [18, 2],
+      "damage": [18, 4],
       "speed": 1.43
     }
   },

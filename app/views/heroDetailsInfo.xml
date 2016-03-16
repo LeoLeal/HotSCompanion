@@ -53,17 +53,20 @@
 		  <View class="stat">
         <ImageView image="/images/icon-health.png" class="statIcons"></ImageView>
         <Label class="statLabel" id="initialHealth">2200</Label>
-        <Label class="statLabel2" id="healthIncrement">(+4 por nível)</Label>
+        <Label class="statLabel2" id="initalHealthIncrement">(+4% por nível)</Label>
+        <Label class="statLabel3" id="healthRegen">Regen 10,5/s</Label>
+        <Label class="statLabel2" id="healthRegenIncrement">(+4% por nível)</Label>
       </View>
       <View class="stat">
         <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
         <Label class="statLabel" id="initialMana">1000</Label>
-        <Label class="statLabel2" id="manaIncrement">(+4 por nível)</Label>
+        <Label class="statLabel3" id="manaRegen">Regen 3/s</Label>
       </View>
       <View class="stat">
         <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>
-        <Label class="statLabel3" id="initialDamage">88@1.25/s</Label>
-        <Label class="statLabel2" id="damageIncrement">(+4 por nível)</Label>
+        <Label class="statLabel" id="initialDamage">88</Label>
+        <Label class="statLabel2" id="damageIncrement">(+4% por nível)</Label>
+        <Label class="statLabel3" id="damageSpeed">Cada 1,3/s</Label>
       </View>
 		</View>
 		
