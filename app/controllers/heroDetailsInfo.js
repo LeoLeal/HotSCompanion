@@ -12,14 +12,64 @@ function init(){
   $.loreData.text = selectedHero.lore[Ti.Locale.currentLanguage];
   Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + JSON.stringify(stats));
   
-    $.initialHealth.text = stats.hp.pool[0];
-    $.initalHealthIncrement.text = stats.hp.pool[1];
-    $.healthRegen.text = stats.hp.regen[0];
-    $.healthRegenIncrement.text = stats.hp.regen[1];
-    $.initialMana.text = stats.mana.pool;
-    $.manaRegen.text = stats.mana.regen;
-    $.initialDamage.text = stats.attack.damage[0];
-    $.damageIncrement.text = stats.attack.damage[1];
-    $.damageSpeed.text = stats.attack.speed;
+  if (typeof stats.hp.pool == "object"){
+    $.initialHealth.text =  stats.hp.pool[0];
+    $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1]));  
+  } else {
+    $.initialHealth.text =  stats.hp.pool;
+    $.initalHealthIncrement.applyProperties({
+      height: 0,
+      top: 0,
+      bottom: null,
+      visible: false
+    });
+  }
+  if (typeof stats.hp.regen == "object"){
+    $.healthRegen.text =  String.format(L('regen_text'), String.formatDecimal(stats.hp.regen[0]));
+    $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1]));  
+  } else {
+    $.healthRegen.text =  stats.hp.regen;
+    $.healthRegenIncrement.applyProperties({
+      height: 0,
+      top: 0,
+      bottom: null,
+      visible: false
+    });
+  }
+  
+  Ti.API.info(typeof stats.mana.pool);
+  if (typeof stats.mana.pool == "object"){
+    $.initialMana.text =  stats.mana.pool[0];
+    $.initalManaIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.pool[1]));  
+  } else {
+    $.initialMana.text =  stats.mana.pool;
+    $.initalManaIncrement.applyProperties({
+      height: 0,
+      top: 0,
+      bottom: null,
+      visible: false,
+      text: ''
+    });
+  }
+  
+  Ti.API.info(typeof stats.mana.regen);
+  if (typeof stats.mana.regen == "object"){
+    $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen[0]));
+    $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1]));  
+  } else {
+    $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
+    $.manaRegenIncrement.applyProperties({
+      height: 0,
+      top: 0,
+      bottom: null,
+      visible: false,
+      text: ''
+    });
+  }
+
+  
+  $.initialDamage.text = stats.attack.damage[0];
+  $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1]));
+  $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(stats.attack.speed));
   
 }

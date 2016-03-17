@@ -59,8 +59,10 @@
       </View>
       <View class="stat">
         <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialMana">1000</Label>
-        <Label class="statLabel3" id="manaRegen">Regen 3/s</Label>
+        <Label class="statLabel" id="initialMana">2200</Label>
+        <Label class="statLabel2" id="initalManaIncrement">(+4% por nível)</Label>
+        <Label class="statLabel3" id="manaRegen">Regen 10,5/s</Label>
+        <Label class="statLabel2" id="manaRegenIncrement">(+4% por nível)</Label>
       </View>
       <View class="stat">
         <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>

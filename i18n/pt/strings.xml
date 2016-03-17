@@ -12,6 +12,10 @@
     <string name="Complexity">Complexidade</string>
     <string name="Utility">Utilidade</string>
     
+    <string name="regen_text">Regen %s/s</string>
+    <string name="increment_text">(+%s% por nível)</string>
+    <string name="speed_text">Cada %s seg.</string>
+    
     <string name="melee_warrior">Guerreiro Corpo a Corpo</string>
     <string name="ranged_warrior">Guerreiro Longa Distância</string>
     <string name="melee_specialist">Especialista Corpo a Corpo</string>
