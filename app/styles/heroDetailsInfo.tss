@@ -31,29 +31,6 @@
 	layout: "vertical",
 	bottom: -8
 }
-".difficultyScore": {
-	layout: "horizontal",
-	width: Ti.UI.FILL,
-	height: 28,
-	left: 16,
-	right: 16,
-	top: 0,
-	bottom: 16,
-}
-".score": {
-	width: Ti.UI.SIZE,
-	left: 2,
-	right: 0,
-	center: {y: "45%"},
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
-	font: {
-		fontFamily: "MetronicProBold",
-		fontSize: 14
-	}
-}
-"ImageView": {
-	height: 24,
-}
 
 ".statsContainer": {
 	height: Ti.UI.SIZE,
@@ -96,7 +73,7 @@
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	width: Ti.UI.FILL,
 	font: {
-		fontSize: 10
+		fontSize: 9
 	},
 }
 
@@ -105,7 +82,7 @@
 	width: Ti.UI.FILL,
 	top: 4,
 	font: {
-		fontSize: 11,
+		fontSize: 10,
 		fontWeight: 'bold'
 	},
 }

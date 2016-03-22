@@ -2,49 +2,17 @@
 	<View class="infoContainer">
 	  <View id="spacer" height="8" platform="android"></View>
 	  <View id="spacer" height="4"></View>
-		<View class="difficulty">
+		<View id="survivabilityContainer" class="difficulty">
 			<Label class="title" text="L('Survivability')"></Label>
-			<View class="difficultyScore">
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_1.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<Label class="score">5</Label>
-			</View>
 		</View>
-		<View class="difficulty">
+		<View id="damageContainer" class="difficulty">
 			<Label class="title" text="L('Damage')"></Label>
-			<View class="difficultyScore">
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<Label class="score">10</Label>
-			</View>
 		</View>
-		<View class="difficulty">
+		<View id="utilityContainer" class="difficulty">
 			<Label class="title" text="L('Utility')"></Label>
-			<View class="difficultyScore">
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<Label class="score">4</Label>
-			</View>
 		</View>
-		<View class="difficulty">
+		<View id="complexityContainer" class="difficulty">
 			<Label class="title" text="L('Complexity')"></Label>
-			<View class="difficultyScore">
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_2.png"></ImageView>
-				<ImageView image="/images/contextual_info_score_0.png"></ImageView>
-				<Label class="score">8</Label>
-			</View>
 		</View>
 		
 		<View class="separator"></View>
@@ -52,23 +20,23 @@
 		<View class="statsContainer">
 		  <View class="stat">
         <ImageView image="/images/icon-health.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialHealth">2200</Label>
-        <Label class="statLabel2" id="initalHealthIncrement">(+4% por nível)</Label>
-        <Label class="statLabel3" id="healthRegen">Regen 10,5/s</Label>
-        <Label class="statLabel2" id="healthRegenIncrement">(+4% por nível)</Label>
+        <Label class="statLabel" id="initialHealth"></Label>
+        <Label class="statLabel2" id="initalHealthIncrement"></Label>
+        <Label class="statLabel3" id="healthRegen"></Label>
+        <Label class="statLabel2" id="healthRegenIncrement"></Label>
       </View>
       <View class="stat">
         <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialMana">2200</Label>
-        <Label class="statLabel2" id="initalManaIncrement">(+4% por nível)</Label>
-        <Label class="statLabel3" id="manaRegen">Regen 10,5/s</Label>
-        <Label class="statLabel2" id="manaRegenIncrement">(+4% por nível)</Label>
+        <Label class="statLabel" id="initialMana"></Label>
+        <Label class="statLabel2" id="initalManaIncrement"></Label>
+        <Label class="statLabel3" id="manaRegen"></Label>
+        <Label class="statLabel2" id="manaRegenIncrement"></Label>
       </View>
       <View class="stat">
         <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialDamage">88</Label>
-        <Label class="statLabel2" id="damageIncrement">(+4% por nível)</Label>
-        <Label class="statLabel3" id="damageSpeed">Cada 1,3/s</Label>
+        <Label class="statLabel" id="initialDamage"></Label>
+        <Label class="statLabel2" id="damageIncrement"></Label>
+        <Label class="statLabel3" id="damageSpeed"></Label>
       </View>
 		</View>
 		

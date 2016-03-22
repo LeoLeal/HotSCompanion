@@ -12,9 +12,9 @@
     <string name="Complexity">Complexity</string>
     <string name="Utility">Utility</string>
     
-    <string name="regen_text">Regen %s/s</string>
-    <string name="increment_text">(+%s% per level)</string>
-    <string name="speed_text">Every %s sec.</string>
+    <string name="regen_text">Regen %s\nper sec.</string>
+    <string name="increment_text">+%s% per level</string>
+    <string name="speed_text">Every\n%s sec.</string>
     
     <string name="melee_warrior">Melee Warrior</string>
     <string name="ranged_warrior">Ranged Warrior</string>
