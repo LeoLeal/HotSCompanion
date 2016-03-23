@@ -163,6 +163,7 @@
 	touchEnabled: false
 }
 
+/*
 ".heroPortrait": {
 	width: 500,
 	height: 256,
@@ -170,6 +171,11 @@
 		x: '-100%',
 		y: '80%'
 	},
+	touchEnabled: false
+}*/
+".heroPortrait": {
+	width: 74,
+	height: 74,
 	touchEnabled: false
 }
 

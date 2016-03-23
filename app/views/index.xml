@@ -35,7 +35,7 @@
 				<View id="heroesContainer" dataCollection="Heroes" dataTransform="transformFunction">
 					<View class="hero" heroId="{id}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
 				    <View class="portraitContainer">
-				      <ImageView class="heroPortrait" image="{portraitUrl}" width="{portraitWidth}" height="{portraitHeight}" center="{portraitCenter}"></ImageView>
+				      <ImageView class="heroPortrait" image="{portraitUrl}" width="74" height="74"></ImageView>
 				    </View>
 						<ImageView class="heroPortraitBorder" image="/images/portrait-freeweek-next.png"></ImageView>
 						<Label class="heroName">{name}</Label>
