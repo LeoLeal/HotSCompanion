@@ -13,10 +13,6 @@ var ANDROID_SCROLL = 160;
 var IOS_SCROLL = 172;
 var HEADER_HEIGHT = 240;
 var SCROLL = (OS_IOS)?IOS_SCROLL:(ANDROID_SCROLL*Ti.Platform.displayCaps.logicalDensityFactor);
-var fadeIn = Ti.UI.createAnimation({
-  duration: 300,
-  opacity: 1
-});
 
 init();
 
@@ -52,8 +48,6 @@ function fadeInElements(){
   setTimeout(function(){
     $.scrollableCards.setCurrentPage(2);
     $.scrollableCards.scrollToView(0);
-    
-    setTimeout(function(){$.scrollableCards.animate(fadeIn);},200);
   },10);
 }
 

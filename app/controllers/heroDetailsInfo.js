@@ -92,7 +92,7 @@ function generateAttribute(attrParam){
   
   var contentView = Ti.UI.createView({
     layout: "horizontal",
-    width: Ti.UI.FILL,
+    width: Ti.UI.SIZE,
     height: 28,
     left: 16,
     right: 16,
@@ -129,7 +129,8 @@ function generateAttribute(attrParam){
       fontFamily: "MetronicProBold",
       fontSize: 12
     },
-    text: score
+    text: score,
+    color: Alloy.Globals.color.colorText
   }));
   
   return contentView;

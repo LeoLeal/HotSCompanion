@@ -73,7 +73,8 @@
 	font: {
 		fontSize: 14,
 		fontWeight: 'bold'
-	}
+	},
+	color: Alloy.Globals.color.colorText
 }
 
 ".statLabel2": {
@@ -82,6 +83,7 @@
 	font: {
 		fontSize: 9
 	},
+	color: Alloy.Globals.color.colorText
 }
 
 ".statLabel3": {
@@ -92,6 +94,7 @@
 		fontSize: 10,
 		fontWeight: 'bold'
 	},
+	color: Alloy.Globals.color.colorText
 }
 
 ".loreContainer": {
