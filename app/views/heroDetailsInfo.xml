@@ -17,27 +17,29 @@
 		
 		<View class="separator"></View>
 		
-		<View class="statsContainer">
-		  <View class="stat">
-        <ImageView image="/images/icon-health.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialHealth"></Label>
-        <Label class="statLabel2" id="initalHealthIncrement"></Label>
-        <Label class="statLabel3" id="healthRegen"></Label>
-        <Label class="statLabel2" id="healthRegenIncrement"></Label>
-      </View>
-      <View class="stat">
-        <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialMana"></Label>
-        <Label class="statLabel2" id="initalManaIncrement"></Label>
-        <Label class="statLabel3" id="manaRegen"></Label>
-        <Label class="statLabel2" id="manaRegenIncrement"></Label>
-      </View>
-      <View class="stat">
-        <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>
-        <Label class="statLabel" id="initialDamage"></Label>
-        <Label class="statLabel2" id="damageIncrement"></Label>
-        <Label class="statLabel3" id="damageSpeed"></Label>
-      </View>
+		<View class="statsBlock">
+  		<View class="statsContainer">
+  		  <View class="stat" id="hpContainer">
+          <Label class="statLabel" id="initialHealth"></Label>
+          <Label class="statLabel2" id="initalHealthIncrement"></Label>
+          <ImageView image="/images/icon-health.png" class="statIcons"></ImageView>
+          <Label class="statLabel3" id="healthRegen"></Label>
+          <Label class="statLabel2" id="healthRegenIncrement"></Label>
+        </View>
+        <View class="stat" id="manaContainer">
+          <Label class="statLabel" id="initialMana"></Label>
+          <Label class="statLabel2" id="initalManaIncrement"></Label>
+          <ImageView image="/images/icon-mana.png" class="statIcons"></ImageView>
+          <Label class="statLabel3" id="manaRegen"></Label>
+          <Label class="statLabel2" id="manaRegenIncrement"></Label>
+        </View>
+        <View class="stat" id="attackContainer">
+          <Label class="statLabel" id="initialDamage"></Label>
+          <Label class="statLabel2" id="damageIncrement"></Label>
+          <ImageView image="/images/icon-damage.png" class="statIcons"></ImageView>
+          <Label class="statLabel3" id="damageSpeed"></Label>
+        </View>
+  		</View>
 		</View>
 		
 		<View class="separator"></View>

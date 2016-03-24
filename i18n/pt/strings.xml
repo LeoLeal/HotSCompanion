@@ -11,9 +11,10 @@
     <string name="Damage">Dano</string>
     <string name="Complexity">Complexidade</string>
     <string name="Utility">Utilidade</string>
+    <string name="NA">N/D</string>
     
-    <string name="regen_text">Regen %s\npor seg.</string>
-    <string name="increment_text">+%s% por nível</string>
+    <string name="regen_text">%s por seg.</string>
+    <string name="increment_text">+%s por nível</string>
     <string name="speed_text">Cada\n%s seg.</string>
     
     <string name="melee_warrior">Guerreiro Corpo a Corpo</string>

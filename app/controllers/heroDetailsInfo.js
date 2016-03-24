@@ -1,6 +1,13 @@
 // Arguments passed into this controller can be accessed off of the `$.args` object directly or:
 var args = $.args;
 var selectedHero = args.selectedHero;
+var HIDDEN_PROPERTIES = {
+  height: 0,
+  width: 0,
+  top: 0,
+  left: 0,
+  visible: false
+};
 
 Ti.API.info('[HERO DETAILS INFO CONTROLLER] Args: ' + JSON.stringify(selectedHero));
 
@@ -17,28 +24,47 @@ function init(){
   $.utilityContainer.add(generateAttribute('utility'));
   $.complexityContainer.add(generateAttribute('complexity'));
   
+
+  if(stats.hp.pool == 0){
+    $.hpContainer.applyProperties(HIDDEN_PROPERTIES);
+  }
+  if(stats.mana.pool == 0){
+    $.manaContainer.applyProperties(HIDDEN_PROPERTIES);
+  }
+  if(stats.attack.damage[0] == 0){
+    $.attackContainer.applyProperties(HIDDEN_PROPERTIES);
+  }
+
+  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.hp.pool);
+  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.hp.regen);
+  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.mana.pool);
+  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.mana.regen);
+
   if (typeof stats.hp.pool == "object"){
     $.initialHealth.text =  stats.hp.pool[0];
     $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1]));  
   } else {
     $.initialHealth.text =  stats.hp.pool;
-    $.initalHealthIncrement.text = '--';
+    $.initalHealthIncrement.applyProperties(HIDDEN_PROPERTIES);
+    $.initialHealth.bottom = 4;
   }
 
   if (typeof stats.hp.regen == "object"){
     $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen[0]));
     $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1]));  
   } else {
-    $.healthRegen.text =  stats.hp.regen;
-    $.healthRegenIncrement = '--';
+    $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen));
+    $.healthRegenIncrement.applyProperties(HIDDEN_PROPERTIES);
+    $.healthRegen.top = 4;
   }
   
   if (typeof stats.mana.pool == "object"){
-    $.initialMana.text =  stats.mana.pool[0];
+    $.initialMana.text = stats.mana.pool[0];
     $.initalManaIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.pool[1]));  
   } else {
-    $.initialMana.text =  stats.mana.pool;
-    $.initalManaIncrement.text = '--';
+    $.initialMana.text = stats.mana.pool;
+    $.initalManaIncrement.applyProperties(HIDDEN_PROPERTIES);
+    $.initialMana.bottom = 4;
   }
   
   if (typeof stats.mana.regen == "object"){
@@ -46,7 +72,8 @@ function init(){
     $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1]));  
   } else {
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
-    $.manaRegenIncrement.text = '--';
+    $.manaRegenIncrement.applyProperties(HIDDEN_PROPERTIES);
+    $.manaRegen.top = 4;
   }
 
   $.initialDamage.text = stats.attack.damage[0];

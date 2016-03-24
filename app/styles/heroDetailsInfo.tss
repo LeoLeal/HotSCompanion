@@ -19,6 +19,7 @@
 ".separator": {
 	left: 16,
 	right: 16,
+	width: Ti.UI.FILL,
 	height: 1,
 	backgroundColor: '#eee',
 	top: 8,
@@ -32,14 +33,19 @@
 	bottom: -8
 }
 
+".statsBlock": {
+	layout: 'absolute',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+}
+
 ".statsContainer": {
 	height: Ti.UI.SIZE,
-	width: Ti.UI.FILL,
-	left: 16,
-	right: 16,
+	width: Ti.UI.SIZE,
 	layout: 'horizontal',
 	center: {
-		x: '50%'
+		x: '50%',
+		y: '50%'
 	},
 	bottom: 4
 }
@@ -50,11 +56,12 @@
 }
 
 ".stat": {
-	width: '33.33%',
+	width: Alloy.Globals.displayWidthThird,
 	height: Ti.UI.SIZE,
 	layout: 'vertical',
-	top: 8,
-	bottom: 8
+	center: {
+		y: '50%'
+	}
 }
 
 ".statLabel": {
@@ -80,7 +87,7 @@
 ".statLabel3": {
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	width: Ti.UI.FILL,
-	top: 4,
+	top: -4,
 	font: {
 		fontSize: 10,
 		fontWeight: 'bold'
