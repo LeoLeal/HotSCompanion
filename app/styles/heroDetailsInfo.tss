@@ -46,54 +46,47 @@
 	center: {
 		x: '50%',
 		y: '50%'
-	},
-	bottom: 4
-}
-
-".statIcons": {
-	height: 36,
-	bottom: 4
+	}
 }
 
 ".stat": {
 	width: Alloy.Globals.displayWidthThird,
 	height: Ti.UI.SIZE,
 	layout: 'vertical',
-	center: {
-		y: '50%'
-	}
+	top: 0
+}
+
+".statIcons": {
+	height: 36
 }
 
 ".statLabel": {
-	center: {
-		x: '50%'
-	},
 	width: Ti.UI.FILL,
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	font: {
 		fontSize: 14,
 		fontWeight: 'bold'
 	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	color: Alloy.Globals.color.colorText
 }
 
 ".statLabel2": {
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	width: Ti.UI.FILL,
 	font: {
 		fontSize: 9
 	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	color: Alloy.Globals.color.colorText
 }
 
 ".statLabel3": {
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	width: Ti.UI.FILL,
-	top: -4,
+	top: 0,
 	font: {
 		fontSize: 10,
 		fontWeight: 'bold'
 	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	color: Alloy.Globals.color.colorText
 }
 

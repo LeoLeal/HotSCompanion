@@ -46,6 +46,7 @@ function init(){
   } else {
     $.initialHealth.text =  stats.hp.pool;
     $.initalHealthIncrement.applyProperties(HIDDEN_PROPERTIES);
+    $.initialHealth.top = 4;
     $.initialHealth.bottom = 4;
   }
 
@@ -54,8 +55,7 @@ function init(){
     $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1]));  
   } else {
     $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen));
-    $.healthRegenIncrement.applyProperties(HIDDEN_PROPERTIES);
-    $.healthRegen.top = 4;
+    $.healthRegenIncrement.text = L('increment_na');
   }
   
   if (typeof stats.mana.pool == "object"){
@@ -63,8 +63,7 @@ function init(){
     $.initalManaIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.pool[1]));  
   } else {
     $.initialMana.text = stats.mana.pool;
-    $.initalManaIncrement.applyProperties(HIDDEN_PROPERTIES);
-    $.initialMana.bottom = 4;
+    $.initalManaIncrement.text = L('increment_na');
   }
   
   if (typeof stats.mana.regen == "object"){
@@ -72,8 +71,7 @@ function init(){
     $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1]));  
   } else {
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
-    $.manaRegenIncrement.applyProperties(HIDDEN_PROPERTIES);
-    $.manaRegen.top = 4;
+    $.manaRegenIncrement.text = L('increment_na');
   }
 
   $.initialDamage.text = stats.attack.damage[0];

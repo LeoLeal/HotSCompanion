@@ -15,7 +15,8 @@
     
     <string name="regen_text">%s por seg.</string>
     <string name="increment_text">+%s por nível</string>
-    <string name="speed_text">Cada\n%s seg.</string>
+    <string name="increment_na">Sem incremento</string>
+    <string name="speed_text">Cada %s seg.</string>
     
     <string name="melee_warrior">Guerreiro Corpo a Corpo</string>
     <string name="ranged_warrior">Guerreiro Longa Distância</string>

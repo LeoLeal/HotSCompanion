@@ -17,13 +17,13 @@
 // application as a client, you should remove this block
 (function(){
 
-var xMultiplier = (OS_ANDROID) ? Ti.Platform.displayCaps.xdpi : 1;
-var yMultiplier = (OS_ANDROID) ? Ti.Platform.displayCaps.ydpi : 1;
+var densityMultiplier = (OS_ANDROID) ? Ti.Platform.displayCaps.logicalDensityFactor : 1;
 
 Alloy.Globals.env = Ti.App.deployType.toLowerCase() === 'production' ? 'production' : 'development';
 
-Alloy.Globals.displayWidthThird = (Ti.Platform.displayCaps.platformWidth * xMultiplier) /3;
-Alloy.Globals.displayHeightThird = (Ti.Platform.displayCaps.platformHeight * yMultiplier) /3;
+Alloy.Globals.displayWidthThird = ((Ti.Platform.displayCaps.platformWidth / densityMultiplier) /3);
+Alloy.Globals.displayHeightThird = ((Ti.Platform.displayCaps.platformHeight / densityMultiplier) /3);
+Ti.API.info(Alloy.Globals.displayWidthThird);
 Alloy.Globals.portraitNameTransform = Ti.UI.create2DMatrix().rotate(30.3);
 Alloy.Globals.PORTRAIT_DEFAULT_WIDTH = 500;
 Alloy.Globals.PORTRAIT_DEFAULT_HEIGHT = 256;

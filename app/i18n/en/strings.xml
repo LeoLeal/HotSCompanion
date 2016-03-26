@@ -15,7 +15,8 @@
     
     <string name="regen_text">%s per sec.</string>
     <string name="increment_text">+%s per level</string>
-    <string name="speed_text">Every\n%s sec.</string>
+    <string name="increment_na">No increment</string>
+    <string name="speed_text">Every %s sec.</string>
     
     <string name="melee_warrior">Melee Warrior</string>
     <string name="ranged_warrior">Ranged Warrior</string>

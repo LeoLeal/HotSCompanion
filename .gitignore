@@ -9,4 +9,5 @@ tmp
 .settings
 Thumbs.db
 tiapp.xml
-
+platform
+i18n
