@@ -1,5 +1,13 @@
 <Alloy>
 	<View>
-    <Label>Teste</Label>
+	  <View class="skillsContainer">
+	    <ImageView class="icon"></ImageView>
+	    <Label class="shortcut"></Label>
+	  </View>
+	  <View class="text">
+	    <Label class="name"></Label>
+	    <label class="description"></label>
+	  </View>
 	</View>
+	<View class="separator"></View>
 </Alloy>
