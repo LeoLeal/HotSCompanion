@@ -33,8 +33,8 @@
 		    </View>
         <ScrollableView id="scrollableCards" class="tabContent">
         	<View id="page_0"></View>
-        	<View id="page_1"><Require src="heroDetailsAbilities" id="page_1View" /></View>
-        	<View id="page_2"><Require src="heroDetailsAbilities" id="page_2View" /></View>
+        	<View id="page_1"></View>
+        	<View id="page_2"><View></View></View>
         </ScrollableView>
 			</View>
 		</ScrollView>

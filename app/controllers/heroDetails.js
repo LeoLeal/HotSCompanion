@@ -42,6 +42,13 @@ function populateViewObjects(){
   var DetailsInfoView = DetailsInfoController.getView(); 
   $.page_0.add(DetailsInfoView);
   
+  var DetailsAbilitiesController = Alloy.createController('heroDetailsAbilities', { 
+    id: "page_1View",
+    selectedHero: selectedHero
+  });  
+  var DetailsAbilitiesView = DetailsAbilitiesController.getView(); 
+  $.page_1.add(DetailsAbilitiesView);
+  
 }
 
 function fadeInElements(){

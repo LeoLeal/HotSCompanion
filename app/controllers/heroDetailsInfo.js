@@ -9,8 +9,6 @@ var HIDDEN_PROPERTIES = {
   visible: false
 };
 
-Ti.API.info('[HERO DETAILS INFO CONTROLLER] Args: ' + JSON.stringify(selectedHero));
-
 init();
 
 function init(){
@@ -34,11 +32,6 @@ function init(){
   if(stats.attack.damage[0] == 0){
     $.attackContainer.applyProperties(HIDDEN_PROPERTIES);
   }
-
-  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.hp.pool);
-  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.hp.regen);
-  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.mana.pool);
-  Ti.API.info('[HERO DETAILS INFO CONTROLLER][STATS] ' + typeof stats.mana.regen);
 
   if (typeof stats.hp.pool == "object"){
     $.initialHealth.text =  stats.hp.pool[0];
