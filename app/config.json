@@ -1,13 +1,13 @@
 {
-	"global": {},
-	"env:development": {},
-	"env:test": {},
-	"env:production": {},
-	"os:android": {},
-	"os:ios": {},
-	"os:mobileweb": {},
-	"os:windows": {},
-	"dependencies": {
-    "TabbedBar":"1.0"
-	}
+    "global": {},
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "os:windows": {},
+    "dependencies": {
+        "TabbedBar": "1.0"
+    }
 }

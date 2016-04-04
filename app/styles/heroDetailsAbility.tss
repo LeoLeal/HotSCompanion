@@ -1,0 +1,175 @@
+".skillsContainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	top: 8,
+	left: 8,
+	right: 8,
+	layout: 'absolute'
+}
+
+".iconContainer": {
+	top: 8,
+	left: 8,
+	right: 8,
+	bottom: 8,
+	width: 60,
+	height: Ti.UI.SIZE,
+}
+
+".textContainer": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+	left: 64,
+	top: 8,
+	right: 8,
+	bottom: 12
+}
+
+".skillInfo": {
+	layout: 'horizontal',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+
+".name": {
+  color: Alloy.Globals.color.colorText,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  left: 8,
+  right: 8,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontFamily: 'MetronicProBold',
+  	fontSize: 14,
+  	fontWeight: 'bold'
+  }
+}
+".skillDetails": {
+	color: Alloy.Globals.color.colorText,
+	right: 8,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+".description": {
+  color: Alloy.Globals.color.colorText,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  left: 8,
+  right: 8,
+  top: 4,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 11
+  }
+}
+
+".icon": {
+	image: 'http://us.battle.net/heroes/static/images/heroes/skills/icons/li-ming_disintegrate.jpg',
+	width: 48,
+	height: 48,
+	top: 0,
+	left: 0,
+	zIndex: 0
+}
+
+".shortcut": {
+  color: '#fff',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  center: {
+  	x: '48',
+  	y: '40'
+  },
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 2
+}
+".shortcutShadow1": {
+  center: {x: 47, y: 39},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow2": {
+  center: {x: 47, y: 41},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow3": {
+  center: {x: 49, y: 39},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow4": {
+  center: {x: 49, y: 41},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow5": {
+  center: {x: 48, y: 39},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow6": {
+  center: {x: 48, y: 41},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow7": {
+  center: {x: 47, y: 40},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow8": {
+  center: {x: 49, y: 40},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}

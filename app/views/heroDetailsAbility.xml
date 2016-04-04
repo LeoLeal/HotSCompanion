@@ -1,0 +1,25 @@
+<Alloy>
+  <View class="skillsContainer">
+    <View class="iconContainer">
+      <ImageView class="icon" id="icon"></ImageView>
+      <Label class="shortcut" id="shortcut"></Label>
+      <Label class="shortcutShadow1" id="shortcut1"></Label>
+      <Label class="shortcutShadow2" id="shortcut2"></Label>
+      <Label class="shortcutShadow3" id="shortcut3"></Label>
+      <Label class="shortcutShadow4" id="shortcut4"></Label>
+      <Label class="shortcutShadow5" id="shortcut5"></Label>
+      <Label class="shortcutShadow6" id="shortcut6"></Label>
+      <Label class="shortcutShadow7" id="shortcut7"></Label>
+      <Label class="shortcutShadow8" id="shortcut8"></Label>
+    </View>
+    <View class="textContainer">
+      <Label class="name" id="name"></Label>
+      <View class="skillInfo">
+        <Label class="skillDetails" id="manacost"></Label>
+        <Label class="skillDetails" id="cooldown"></Label>
+        <Label class="skillDetails" id="charges"></Label>
+      </View>
+      <Label class="description" id="description"></Label>
+    </View>
+  </View>
+</Alloy>
