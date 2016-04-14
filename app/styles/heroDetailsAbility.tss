@@ -29,7 +29,8 @@
 ".skillInfo": {
 	layout: 'horizontal',
 	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE
+	height: Ti.UI.SIZE,
+	left: 8
 }
 
 ".name": {
@@ -45,10 +46,24 @@
   }
 }
 ".skillDetails": {
-	color: Alloy.Globals.color.colorText,
-	right: 8,
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE
+  color: Alloy.Globals.color.colorText,
+  right: 4,
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontFamily: 'MetronicProBold',
+  	fontSize: 11,
+  	fontWeight: 'bold'
+  }
+}
+"#manacost": {
+	color: '#48acef'
+}
+"#cooldown": {
+	color: '48af66'
+}
+"#charges": {
+	color: '#bb9648'
 }
 ".description": {
   color: Alloy.Globals.color.colorText,

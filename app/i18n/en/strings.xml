@@ -14,9 +14,9 @@
     <string name="NA">N/A</string>
     
     <string name="regen_text">%s per sec.</string>
-    <string name="increment_text">+%s per level</string>
+    <string name="increment_text">+%s% per level</string>
     <string name="increment_na">No increment</string>
-    <string name="speed_text">Every %s sec.</string>
+    <string name="speed_text">Hits every %s second(s)</string>
     
     <string name="melee_warrior">Melee Warrior</string>
     <string name="ranged_warrior">Ranged Warrior</string>
@@ -26,6 +26,11 @@
     <string name="ranged_assassin">Ranged Assassin</string>
     <string name="melee_support">Melee Support</string>
     <string name="ranged_support">Ranged Support</string>
+    
+    <string name="manacost">%s Mana</string>
+    <string name="manacostpersecond">%s Mana every %s sec.</string>
+    <string name="charges">%s Charges</string>
+    <string name="cooldown">Cooldown: %s sec.</string>
     
     <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
     <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>

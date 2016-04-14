@@ -6,8 +6,6 @@ var trait = args.selectedHero.trait;
 init();
 
 function init(){
-  Ti.API.info('[DETAILS ABILITIES] ' + JSON.stringify(skills));
-  Ti.API.info('[DETAILS ABILITIES][SKILLS LENGTH] ' + skills.length);
   
   for(var i=0; i<skills.length; i++){
     var separator = Ti.UI.createView({
