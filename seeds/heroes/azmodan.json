@@ -77,7 +77,9 @@
       },
       "cost": 60,
       "charges": 1,
-      "cooldown": 10000
+      "cooldown": 10000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_summonDemonWarrior.jpg",
@@ -91,7 +93,9 @@
       },
       "cost": 40,
       "charges": 2,
-      "cooldown": 10000
+      "cooldown": 10000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_allShallBurn.jpg",
@@ -105,10 +109,10 @@
       },
       "cost": [16,1000],
       "charges": 1,
-      "cooldown": 6000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 6000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_demonicInvasion.jpg",
       "name": {
@@ -121,7 +125,9 @@
       },
       "cost": 100,
       "charges": 1,
-      "cooldown": 100000
+      "cooldown": 100000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_blackPool.jpg",
@@ -135,8 +141,29 @@
       },
       "cost": 60,
       "charges": 2,
-      "cooldown": 20000
+      "cooldown": 20000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.jpg",
+      "name": {
+        "en": "General of Hell",
+        "pt": "General do Inferno"
+      },
+      "description": {
+        "en": "Summon a Demon Lieutenant at an allied Mercenary, Minion, or Summon. The lieutenant will march with the target, granting 15% increased damage and 15% increased maximum health to all nearby friendly Mercenaries, Minions, and Summons. Unlimited range.",
+        "pt": "Evoca um Tenente Demoníaco ao lado de uma Tropa, Mercenário ou Evocação aliado. O Tenente marchará com o alvo, concedendo 15% de dano a mais e 15% de vida máxima a Tropas, Mercenários e Evocações aliados próximos. Alcance ilimitado."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 30000,
+      "type": "trait",
+      "shortcut": "D"
     }
+  ],
+  "heroicSkills": [
+    
   ],
   "trait": {
     "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.jpg",

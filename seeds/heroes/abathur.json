@@ -85,7 +85,9 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 4000
+      "cooldown": 4000,
+      "type": "basic",
+      "shortcut": "Q"
     }, 
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_toxicNest.jpg",
@@ -99,7 +101,9 @@
       },
       "cost": 0,
       "charges": 3,
-      "cooldown": 10000
+      "cooldown": 10000,
+      "type": "basic",
+      "shortcut": "W"
     }, 
     {
       "icon": null,
@@ -113,7 +117,9 @@
       },
       "cost": 0,
       "charges": 2,
-      "cooldown": 3000
+      "cooldown": 3000,
+      "type": "basic",
+      "shortcut": "Q"
     }, 
     {
       "icon": null,
@@ -127,7 +133,9 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 6000
+      "cooldown": 6000,
+      "type": "basic",
+      "shortcut": "W"
     }, 
     {
       "icon": null,
@@ -141,10 +149,10 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 12000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 12000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_ultimateEvolution.jpg",
       "name": {
@@ -157,7 +165,9 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 50000
+      "cooldown": 50000,
+      "type": "heroic",
+      "shortcut": "R"
     }, 
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_evolveMonstrosity.jpg",
@@ -171,23 +181,27 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 90000
+      "cooldown": 90000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_locustStrain.jpg",
+      "name": {
+        "en": "Locust Strain",
+        "pt": "Variante de Gafanhoto"
+      },
+      "description": {
+        "en": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 25 seconds.",
+        "pt": "Gera um Gafanhoto que ataca a trilha mais próxima a cada 15 segundos. O Gafanhoto dura 25 segundos."
+      },
+      "cost": 0,
+      "charges": 0,
+      "cooldown": 15000,
+      "type": "trait",
+      "shortcut": null
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_locustStrain.jpg",
-    "name": {
-      "en": "Locust Strain",
-      "pt": "Variante de Gafanhoto"
-    },
-    "description": {
-      "en": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 25 seconds.",
-      "pt": "Gera um Gafanhoto que ataca a trilha mais próxima a cada 15 segundos. O Gafanhoto dura 25 segundos."
-    },
-    "cost": 0,
-    "charges": 0,
-    "cooldown": 15000
-  },
   "talents": {
     "1": ["survival_instincts", "envenomed_nest", "pressurized_glands", "regenerative_microbes"],
     "4": ["ballistopores", "prolific_dispersal", "sustained_carapace", "adrenal_overload"],

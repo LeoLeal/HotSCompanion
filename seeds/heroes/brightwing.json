@@ -85,7 +85,9 @@
       },
       "cost": 50,
       "charges": 1,
-      "cooldown": 8000
+      "cooldown": 8000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_polymorph.jpg",
@@ -99,7 +101,9 @@
       },
       "cost": 75,
       "charges": 1,
-      "cooldown": 15000
+      "cooldown": 15000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_pixieDust.jpg",
@@ -113,10 +117,10 @@
       },
       "cost": 60,
       "charges": 1,
-      "cooldown": 10000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 10000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_emeraldWind.jpg",
       "name": {
@@ -129,7 +133,9 @@
       },
       "cost": 90,
       "charges": 1,
-      "cooldown": 60000
+      "cooldown": 60000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_blinkHeal.jpg",
@@ -143,23 +149,27 @@
       },
       "cost": 40,
       "charges": 2,
-      "cooldown": 10000
+      "cooldown": 10000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_soothingMist.jpg",
+      "name": {
+        "en": "Soothing Mist",
+        "pt": "Névoa Calmante"
+      },
+      "description": {
+        "en": "Brightwing heals nearby allied Heroes for 39 (+9 per level) Health every 4 seconds.",
+        "pt": "Asaluz cura 39 (+9 por nível) de Vida dos aliados próximos a cada 4 segundos."
+      },
+      "cost": 0,
+      "charges": 0,
+      "cooldown": 4000,
+      "type": "trait",
+      "shortcut": null
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_soothingMist.jpg",
-    "name": {
-      "en": "Soothing Mist",
-      "pt": "Névoa Calmante"
-    },
-    "description": {
-      "en": "Brightwing heals nearby allied Heroes for 39 (+9 per level) Health every 4 seconds.",
-      "pt": "Asaluz cura 39 (+9 por nível) de Vida dos aliados próximos a cada 4 segundos."
-    },
-    "cost": 0,
-    "charges": 0,
-    "cooldown": 4000
-  },
   "talents": {
     "1": ["hyper_shift","unfurling_spray","arcane_precision","bribe"],
     "4": ["arcane_barrage","manic_pixie","peekaboo","unstable_anomaly"],

@@ -85,7 +85,9 @@
       },
       "cost": 10,
       "charges": 1,
-      "cooldown": 5000
+      "cooldown": 5000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_kegSmash.jpg",
@@ -99,7 +101,9 @@
       },
       "cost": 20,
       "charges": 1,
-      "cooldown": 5000
+      "cooldown": 5000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_breathOfFire.jpg",
@@ -113,7 +117,9 @@
       },
       "cost": 30,
       "charges": 1,
-      "cooldown": 5000
+      "cooldown": 5000,
+      "type": "basic",
+      "shortcut": "E"
     },
     {
       "icon": null,
@@ -127,10 +133,10 @@
       },
       "cost": 0,
       "charges": 1,
-      "cooldown": 6000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 6000,
+      "type": "basic",
+      "shortcut": "Q"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_wanderingKeg.jpg",
       "name": {
@@ -143,7 +149,9 @@
       },
       "cost": 30,
       "charges": 1,
-      "cooldown": 90000
+      "cooldown": 90000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_stormEarthFire.jpg",
@@ -157,23 +165,27 @@
       },
       "cost": 10,
       "charges": 1,
-      "cooldown": 100000
+      "cooldown": 100000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_fortifyingBrew.jpg",
+      "name": {
+        "en": "Fortifying Brew",
+        "pt": "Cerveja Fortificante"
+      },
+      "description": {
+        "en": "Drink from your keg, gaining 40 Brew and 64 (+24 per level) temporary Shields each second, eventually resulting in a massive Shield of 192 (+72 per level) that persists for 2 seconds after you stop drinking.",
+        "pt": "Bebe do seu barril, recebendo 40 de Cerveja e Escudos temporários de 64 (+24 por nível) a cada segundo, resultando em um escudo poderoso de 192 (+72 por nível) que dura 2 segundos após parar de beber."
+      },
+      "cost": [-40,1000],
+      "charges": 1,
+      "cooldown": 5000,
+      "type": "trait",
+      "shortcut": "D"
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_fortifyingBrew.jpg",
-    "name": {
-      "en": "Fortifying Brew",
-      "pt": "Cerveja Fortificante"
-    },
-    "description": {
-      "en": "Drink from your keg, gaining 40 Brew and 64 (+24 per level) temporary Shields each second, eventually resulting in a massive Shield of 192 (+72 per level) that persists for 2 seconds after you stop drinking.",
-      "pt": "Bebe do seu barril, recebendo 40 de Cerveja e Escudos temporários de 64 (+24 por nível) a cada segundo, resultando em um escudo poderoso de 192 (+72 por nível) que dura 2 segundos após parar de beber."
-    },
-    "cost": [-40,1000],
-    "charges": 1,
-    "cooldown": 5000
-  },
   "talents": {
     "1": ["regeneration_master","bottomless_mug","consuming_flame","full_keg"],
     "4": ["amplified_healing","deep_breath","deadly_strike","swift_reflexes"],

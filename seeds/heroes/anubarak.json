@@ -85,7 +85,9 @@
       },
       "cost": 65,
       "charges": 1,
-      "cooldown": 12000
+      "cooldown": 12000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_hardenCarapace.jpg",
@@ -99,7 +101,9 @@
       },
       "cost": 35,
       "charges": 1,
-      "cooldown": 8000
+      "cooldown": 8000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_burrowCharge.jpg",
@@ -113,10 +117,10 @@
       },
       "cost": 65,
       "charges": 1,
-      "cooldown": 16000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 16000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_locustSwarm.jpg",
       "name": {
@@ -129,7 +133,9 @@
       },
       "cost": 100,
       "charges": 1,
-      "cooldown": 100000
+      "cooldown": 100000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_webBlast.jpg",
@@ -143,23 +149,27 @@
       },
       "cost": 70,
       "charges": 1,
-      "cooldown": 60000
+      "cooldown": 60000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_scarabHost.jpg",
+      "name": {
+        "en": "Scarab Host",
+        "pt": "Hospedeiro de Escaravelho"
+      },
+      "description": {
+        "en": "Spawn a Beetle and Anub'arak's location whenever he casts a spell. Beetles last for 10 seconds, attacking nearby enemies for 8.8 (+1.8 per level) damage.",
+        "pt": "Gera um besouro na posição de Anub'arak toda vez que ele lança um feitiço. Besouros duram 10 segundos, atacando inimigos próximos e causando 8,8 (+1,8 por nível) de dano."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 0,
+      "type": "trait",
+      "shortcut": null
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_scarabHost.jpg",
-    "name": {
-      "en": "Scarab Host",
-      "pt": "Hospedeiro de Escaravelho"
-    },
-    "description": {
-      "en": "Spawn a Beetle and Anub'arak's location whenever he casts a spell. Beetles last for 10 seconds, attacking nearby enemies for 8.8 (+1.8 per level) damage.",
-      "pt": "Gera um besouro na posição de Anub'arak toda vez que ele lança um feitiço. Besouros duram 10 segundos, atacando inimigos próximos e causando 8,8 (+1,8 por nível) de dano."
-    },
-    "cost": 0,
-    "charges": 1,
-    "cooldown": 0
-  },
   "talents": {
     "1": ["regeneration_master","assault_scarab","extended_spikes","persistent_carapace"],
     "4": ["mercenary_lord","legion_of_beetles","locust_needles","underking"],

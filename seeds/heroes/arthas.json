@@ -85,7 +85,9 @@
       },
       "cost": 50,
       "charges": 1,
-      "cooldown": 9000
+      "cooldown": 9000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_howlingBlast.jpg",
@@ -99,7 +101,9 @@
       },
       "cost": 70,
       "charges": 1,
-      "cooldown": 12000
+      "cooldown": 12000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frozenTempest.jpg",
@@ -113,10 +117,10 @@
       },
       "cost": [15,1000],
       "charges": 1,
-      "cooldown": 1000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 1000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_summonSindragosa.jpg",
       "name": {
@@ -129,7 +133,9 @@
       },
       "cost": 100,
       "charges": 1,
-      "cooldown": 80000
+      "cooldown": 80000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_armyOfTheDead.jpg",
@@ -143,23 +149,27 @@
       },
       "cost": 100,
       "charges": 1,
-      "cooldown": 100000
+      "cooldown": 100000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frostmourneHungers.jpg",
+      "name": {
+        "en": "Frostmourne Hungers",
+        "pt": "Gélido Lamento Tem Fome"
+      },
+      "description": {
+        "en": "Activate to make your next Basic Attack strike immediately, do 100% increased damage, and restore 30 Mana.",
+        "pt": "Ative para fazer com que o próximo Ataque Básico seja desferido imediatamente, causando dano aumentado em 100% e restaurando 30 de Mana."
+      },
+      "cost": 0,
+      "charges": 1,
+      "cooldown": 12000,
+      "type": "trait",
+      "shortcut": "D"
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frostmourneHungers.jpg",
-    "name": {
-      "en": "Frostmourne Hungers",
-      "pt": "Gélido Lamento Tem Fome"
-    },
-    "description": {
-      "en": "Activate to make your next Basic Attack strike immediately, do 100% increased damage, and restore 30 Mana.",
-      "pt": "Ative para fazer com que o próximo Ataque Básico seja desferido imediatamente, causando dano aumentado em 100% e restaurando 30 de Mana."
-    },
-    "cost": 0,
-    "charges": 1,
-    "cooldown": 12000
-  },
   "talents": {
     "1": ["eternal_hunger","frost_presence","regeneration_master","block"],
     "4": ["destruction","frozen_wastes","mercenary_lord"],

@@ -93,7 +93,9 @@
       },
       "cost": 60,
       "charges": 1,
-      "cooldown": 12000
+      "cooldown": 12000,
+      "type": "basic",
+      "shortcut": "Q"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_fireStomp.jpg",
@@ -107,7 +109,9 @@
       },
       "cost": 50,
       "charges": 1,
-      "cooldown": 6000
+      "cooldown": 6000,
+      "type": "basic",
+      "shortcut": "W"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_overpower.jpg",
@@ -121,10 +125,10 @@
       },
       "cost": 60,
       "charges": 1,
-      "cooldown": 12000
-    }
-  ],
-  "heroicSkills": [
+      "cooldown": 12000,
+      "type": "basic",
+      "shortcut": "E"
+    },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_apocalypse.jpg",
       "name": {
@@ -137,7 +141,9 @@
       },
       "cost": 100,
       "charges": 1,
-      "cooldown": 100000
+      "cooldown": 100000,
+      "type": "heroic",
+      "shortcut": "R"
     },
     {
       "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_lightningBreath.jpg",
@@ -151,23 +157,27 @@
       },
       "cost": 80,
       "charges": 1,
-      "cooldown": 60000
+      "cooldown": 60000,
+      "type": "heroic",
+      "shortcut": "R"
+    },
+    {
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_blackSoulstone.jpg",
+      "name": {
+        "en": "Black Soulstone",
+        "pt": "Pedra Negra das Almas"
+      },
+      "description": {
+        "en": "Gain 10 Souls per Hero killed, or 1 per Minion. For each Soul, increase maximum Health by 0.15%. If you have 100 Souls upon dying, you resurrect in 5 seconds and lose 100 Souls. Maximum 100 Souls.",
+        "pt": "Concede 10 Almas por Herói morto ou 1 por Tropa. Para cada Alma, você aumenta a Vida máxima em 0,15%. Se tiver 100 Almas ao morrer, você ressuscitará em 5 segundos e perderá 100 Almas. Máximo de 100 Almas."
+      },
+      "cost": 0,
+      "charges": 0,
+      "cooldown": 30000,
+      "type": "trait",
+      "shortcut": null
     }
   ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_blackSoulstone.jpg",
-    "name": {
-      "en": "Black Soulstone",
-      "pt": "Pedra Negra das Almas"
-    },
-    "description": {
-      "en": "Gain 10 Souls per Hero killed, or 1 per Minion. For each Soul, increase maximum Health by 0.15%. If you have 100 Souls upon dying, you resurrect in 5 seconds and lose 100 Souls. Maximum 100 Souls.",
-      "pt": "Concede 10 Almas por Herói morto ou 1 por Tropa. Para cada Alma, você aumenta a Vida máxima em 0,15%. Se tiver 100 Almas ao morrer, você ressuscitará em 5 segundos e perderá 100 Almas. Máximo de 100 Almas."
-    },
-    "cost": 0,
-    "charges": 0,
-    "cooldown": 30000
-  },
   "talents": {
     "1": ["overwhelming_force","devils_due","soul_feast","block"],
     "4": ["essence_of_the_slain","soul_catcher","demonic_strength","fire_devil"],
