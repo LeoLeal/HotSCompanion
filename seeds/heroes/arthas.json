@@ -74,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_deathCoil.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_deathCoil.png",
       "name": {
         "en": "Death Coil",
         "pt": "Espiral da Morte"
@@ -90,7 +90,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_howlingBlast.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_howlingBlast.png",
       "name": {
         "en": "Howling Blast",
         "pt": "Impacto Uivante"
@@ -106,7 +106,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frozenTempest.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frozenTempest.png",
       "name": {
         "en": "Frozen Tempest",
         "pt": "Tempestade Congelada"
@@ -122,7 +122,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_summonSindragosa.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_summonSindragosa.png",
       "name": {
         "en": "Summon Sindragosa",
         "pt": "Evocar Sindragosa"
@@ -138,7 +138,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_armyOfTheDead.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_armyOfTheDead.png",
       "name": {
         "en": "Army of the Dead",
         "pt": "Exército dos Mortos"
@@ -154,7 +154,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frostmourneHungers.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/arthas_frostmourneHungers.png",
       "name": {
         "en": "Frostmourne Hungers",
         "pt": "Gélido Lamento Tem Fome"

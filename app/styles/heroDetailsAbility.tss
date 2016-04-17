@@ -8,11 +8,11 @@
 }
 
 ".iconContainer": {
-	top: 8,
+	top: 0,
 	left: 8,
 	right: 8,
 	bottom: 8,
-	width: 60,
+	width: 64,
 	height: Ti.UI.SIZE,
 }
 
@@ -20,7 +20,7 @@
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	layout: 'vertical',
-	left: 64,
+	left: 80,
 	top: 8,
 	right: 8,
 	bottom: 12
@@ -79,8 +79,15 @@
 
 ".icon": {
 	image: 'http://us.battle.net/heroes/static/images/heroes/skills/icons/li-ming_disintegrate.jpg',
-	width: 48,
-	height: 48,
+	width: 64,
+	height: 72,
+	top: 0,
+	left: 0,
+	zIndex: 1
+}
+".iconborder": {
+	width: 64,
+	height: 72,
 	top: 0,
 	left: 0,
 	zIndex: 0
@@ -90,8 +97,8 @@
   color: '#fff',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   center: {
-  	x: '48',
-  	y: '40'
+  	x: '56',
+  	y: '50'
   },
   height: Ti.UI.SIZE,
   font: {
@@ -101,7 +108,7 @@
   zIndex: 2
 }
 ".shortcutShadow1": {
-  center: {x: 47, y: 39},
+  center: {x: 55, y: 49},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -112,7 +119,7 @@
   zIndex: 1
 }
 ".shortcutShadow2": {
-  center: {x: 47, y: 41},
+  center: {x: 55, y: 51},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -123,7 +130,7 @@
   zIndex: 1
 }
 ".shortcutShadow3": {
-  center: {x: 49, y: 39},
+  center: {x: 57, y: 49},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -134,7 +141,7 @@
   zIndex: 1
 }
 ".shortcutShadow4": {
-  center: {x: 49, y: 41},
+  center: {x: 57, y: 51},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -145,7 +152,7 @@
   zIndex: 1
 }
 ".shortcutShadow5": {
-  center: {x: 48, y: 39},
+  center: {x: 56, y: 49},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -156,7 +163,7 @@
   zIndex: 1
 }
 ".shortcutShadow6": {
-  center: {x: 48, y: 41},
+  center: {x: 56, y: 51},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -167,7 +174,7 @@
   zIndex: 1
 }
 ".shortcutShadow7": {
-  center: {x: 47, y: 40},
+  center: {x: 55, y: 50},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,
@@ -178,7 +185,7 @@
   zIndex: 1
 }
 ".shortcutShadow8": {
-  center: {x: 49, y: 40},
+  center: {x: 57, y: 50},
   color: '#000',
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
   height: Ti.UI.SIZE,

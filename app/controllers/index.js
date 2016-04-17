@@ -1,10 +1,3 @@
-/**
- * TODO
- * - Adicionar eventos de Free Week e acertar bordas dos heróis de acordo
- * - Mostrar última data de atualização
- * - Mostrar Patch do Jogo atual
- */
-
 var heroesFactory = require("heroesFactory");
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
@@ -61,11 +54,14 @@ function openHero(event){
   heroesFactory.getHero(heroId)
   .then(function(response){
     model = response;
-    
-    var heroDetails = Alloy.createController('heroDetails',{"$model" : model}).getView();
+    Ti.API.info('[INDEX CONTROLLER][MODEL]', JSON.stringify(model));
+    var heroDetailsController = Alloy.createController('heroDetails',{"model" : model});
+    Ti.API.info('[INDEX CONTROLLER][DETAILS CONTROLLER]', JSON.stringify(heroDetailsController));
+    var heroDetails = heroDetailsController.getView(); 
+  
     heroDetails.open({
-      modal: (OS_IOS)?true:false,
-      modalStyle: (OS_IOS)?Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN: null
+      modal: (OS_IOS) ? true : false,
+      modalStyle: (OS_IOS) ? Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN : null
     });
   });
 }

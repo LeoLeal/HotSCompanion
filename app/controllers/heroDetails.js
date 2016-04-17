@@ -1,10 +1,5 @@
-/**
- * TODO
- * - Adicionar um Loading para as Skins
- * - Fazer cache das Skins e Ícones (Verificar necessidade)
- */
-
 var args = arguments[0] || {};
+Ti.API.info('[DETAILS CONTROLLER][ARGS]: '+ JSON.stringify(args));
 var selectedHero;
 var targetScroll;
 var targetOpacity;
@@ -19,7 +14,7 @@ init();
 // PRIVATE METHODS
 
 function init(){
-  selectedHero = $model.toJSON();
+  selectedHero = args.model.toJSON();
 	populateViewObjects();
   fadeInElements();
 }

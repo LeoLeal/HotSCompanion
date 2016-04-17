@@ -23,7 +23,6 @@ Alloy.Globals.env = Ti.App.deployType.toLowerCase() === 'production' ? 'producti
 
 Alloy.Globals.displayWidthThird = ((Ti.Platform.displayCaps.platformWidth / densityMultiplier) /3);
 Alloy.Globals.displayHeightThird = ((Ti.Platform.displayCaps.platformHeight / densityMultiplier) /3);
-Ti.API.info(Alloy.Globals.displayWidthThird);
 Alloy.Globals.portraitNameTransform = Ti.UI.create2DMatrix().rotate(30.3);
 Alloy.Globals.PORTRAIT_DEFAULT_WIDTH = 500;
 Alloy.Globals.PORTRAIT_DEFAULT_HEIGHT = 256;
@@ -39,7 +38,7 @@ Alloy.Globals.color = {
     "colorSwitchThumbNormal": "#BDBDBD",
     "android:colorButtonNormal": "#BDBDBD",
     "android:colorEdgeEffect": "#1565C0",
-    "android:colorEdgeEffect": "#99000000",
+    "android:colorEdgeEffect": "#99000000"
 };
 
 })();

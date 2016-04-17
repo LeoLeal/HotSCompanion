@@ -1,6 +1,7 @@
 <Alloy>
   <View class="skillsContainer">
     <View class="iconContainer">
+      <ImageView class="iconborder" image="/images/iconborder.png"></ImageView>
       <ImageView class="icon" id="icon"></ImageView>
       <Label class="shortcut" id="shortcut"></Label>
       <Label class="shortcutShadow1" id="shortcut1"></Label>

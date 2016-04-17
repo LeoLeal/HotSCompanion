@@ -74,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_arcaneFlare.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_arcaneFlare.png",
       "name": {
         "en": "Arcane Flare",
         "pt": "Chama Arcana"
@@ -90,7 +90,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_polymorph.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_polymorph.png",
       "name": {
         "en": "Polymorph",
         "pt": "Polimorfia"
@@ -106,7 +106,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_pixieDust.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_pixieDust.png",
       "name": {
         "en": "Pixie Dust",
         "pt": "Pó Feérico"
@@ -122,7 +122,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_emeraldWind.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_emeraldWind.png",
       "name": {
         "en": "Emerald Wind",
         "pt": "Vento Esmeralda"
@@ -138,7 +138,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_blinkHeal.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_blinkHeal.png",
       "name": {
         "en": "Blink Heal",
         "pt": "Cura Lampejante"
@@ -154,7 +154,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_soothingMist.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/brightwing_soothingMist.png",
       "name": {
         "en": "Soothing Mist",
         "pt": "Névoa Calmante"

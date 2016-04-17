@@ -28,14 +28,22 @@
   		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_masterAzmodan.jpg",
   		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_masterAzmodan.mp4"
   	},
-  	{
-  		"name": {
-  			"en": "Az'guldan",
-  			"pt": "Az'guldan"
-  		},
-  		"icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_azguldanAzmodan.jpg",
-  		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_azguldanAzmodan.mp4"
-  	}
+    {
+      "name": {
+        "en": "Az'guldan",
+        "pt": "Az'guldan"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_azguldanAzmodan.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_azguldanAzmodan.mp4"
+    },
+    {
+      "name": {
+        "en": "Azmodunk",
+        "pt": "Azmodan Cestinha"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/azmodan_azmodunk.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/azmodan_azmodunk.mp4"
+    }
   ],
   "fightDistance": "ranged",
   "role": "specialist",
@@ -66,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_globeOfAnnihilation.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_globeOfAnnihilation.png",
       "name": {
         "en": "Globe of Annihilation",
         "pt": "Globo da Aniquilação"
@@ -82,7 +90,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_summonDemonWarrior.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_summonDemonWarrior.png",
       "name": {
         "en": "Summon Demon Warrior",
         "pt": "Evocar Demônio Guerreiro"
@@ -98,7 +106,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_allShallBurn.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_allShallBurn.png",
       "name": {
         "en": "All Shall Burn",
         "pt": "Todos Queimarão"
@@ -114,7 +122,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_demonicInvasion.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_demonicInvasion.png",
       "name": {
         "en": "Demonic Invasion",
         "pt": "Invasão Demoníaca"
@@ -130,7 +138,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_blackPool.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_blackPool.png",
       "name": {
         "en": "Black Pool",
         "pt": "Poça Negra"
@@ -146,7 +154,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.png",
       "name": {
         "en": "General of Hell",
         "pt": "General do Inferno"
@@ -162,23 +170,6 @@
       "shortcut": "D"
     }
   ],
-  "heroicSkills": [
-    
-  ],
-  "trait": {
-    "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/azmodan_generalOfHell.jpg",
-    "name": {
-      "en": "General of Hell",
-      "pt": "General do Inferno"
-    },
-    "description": {
-      "en": "Summon a Demon Lieutenant at an allied Mercenary, Minion, or Summon. The lieutenant will march with the target, granting 15% increased damage and 15% increased maximum health to all nearby friendly Mercenaries, Minions, and Summons. Unlimited range.",
-      "pt": "Evoca um Tenente Demoníaco ao lado de uma Tropa, Mercenário ou Evocação aliado. O Tenente marchará com o alvo, concedendo 15% de dano a mais e 15% de vida máxima a Tropas, Mercenários e Evocações aliados próximos. Alcance ilimitado."
-    },
-    "cost": 0,
-    "charges": 1,
-    "cooldown": 30000
-  },
   "talents": {
     "1": ["master_of_destruction","sieging_wrath","taste_for_blood","bribe"],
     "4": ["army_of_hell","gluttony","sins_grasp","mercenary_lord"],

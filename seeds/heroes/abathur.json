@@ -74,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_symbiote.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_symbiote.png",
       "name": {
         "en": "Symbiote",
         "pt": "Simbionte"
@@ -90,7 +90,7 @@
       "shortcut": "Q"
     }, 
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_toxicNest.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_toxicNest.png",
       "name": {
         "en": "Toxic Nest",
         "pt": "Ninho Tóxico"
@@ -154,7 +154,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_ultimateEvolution.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_ultimateEvolution.png",
       "name": {
         "en": "Ultimate Evolution",
         "pt": "Evolução Final"
@@ -170,7 +170,7 @@
       "shortcut": "R"
     }, 
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_evolveMonstrosity.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_evolveMonstrosity.png",
       "name": {
         "en": "Evolve Monstrosity",
         "pt": "Evoluir Monstruosidade"
@@ -186,7 +186,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_locustStrain.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/abathur_locustStrain.png",
       "name": {
         "en": "Locust Strain",
         "pt": "Variante de Gafanhoto"

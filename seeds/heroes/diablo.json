@@ -82,7 +82,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_shadowCharge.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_shadowCharge.png",
       "name": {
         "en": "Shadow Charge",
         "pt": "Investida Sombria"
@@ -98,7 +98,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_fireStomp.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_fireStomp.png",
       "name": {
         "en": "Fire Stomp",
         "pt": "Impacto de Fogo"
@@ -114,7 +114,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_overpower.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_overpower.png",
       "name": {
         "en": "Overpower",
         "pt": "Subjugar"
@@ -130,7 +130,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_apocalypse.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_apocalypse.png",
       "name": {
         "en": "Apocalypse",
         "pt": "Apocalipse"
@@ -146,7 +146,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_lightningBreath.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_lightningBreath.png",
       "name": {
         "en": "Lightning Breath",
         "pt": "Sopro Elétrico"
@@ -162,7 +162,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_blackSoulstone.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/diablo_blackSoulstone.png",
       "name": {
         "en": "Black Soulstone",
         "pt": "Pedra Negra das Almas"

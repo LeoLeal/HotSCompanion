@@ -74,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_flyingKick.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_flyingKick.png",
       "name": {
         "en": "Flying Kick",
         "pt": "Voadora"
@@ -90,7 +90,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_kegSmash.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_kegSmash.png",
       "name": {
         "en": "Keg Smash",
         "pt": "Pancada de Barril"
@@ -106,7 +106,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_breathOfFire.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_breathOfFire.png",
       "name": {
         "en": "Breath of Fire",
         "pt": "Bafo de Fogo"
@@ -138,7 +138,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_wanderingKeg.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_wanderingKeg.png",
       "name": {
         "en": "Wandering Keg",
         "pt": "Barril Rolante"
@@ -154,7 +154,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_stormEarthFire.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_stormEarthFire.png",
       "name": {
         "en": "Storm, Earth, Fire",
         "pt": "Tempestade, Terra, Fogo"
@@ -170,7 +170,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_fortifyingBrew.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/chen_fortifyingBrew.png",
       "name": {
         "en": "Fortifying Brew",
         "pt": "Cerveja Fortificante"

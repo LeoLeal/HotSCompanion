@@ -74,7 +74,7 @@
   },
   "skills": [
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_impale.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_impale.png",
       "name": {
         "en": "Impale",
         "pt": "Empalar"
@@ -90,7 +90,7 @@
       "shortcut": "Q"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_hardenCarapace.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_hardenCarapace.png",
       "name": {
         "en": "Harden Carapace",
         "pt": "Endurecer Carapaça"
@@ -106,7 +106,7 @@
       "shortcut": "W"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_burrowCharge.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_burrowCharge.png",
       "name": {
         "en": "Burrow Charge",
         "pt": "Investida Subterrânea"
@@ -122,7 +122,7 @@
       "shortcut": "E"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_locustSwarm.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_locustSwarm.png",
       "name": {
         "en": "Locust Swarm",
         "pt": "Enxame de Gafanhotos"
@@ -138,7 +138,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_webBlast.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_webBlast.png",
       "name": {
         "en": "Web Blast",
         "pt": "Explosão de Teias"
@@ -154,7 +154,7 @@
       "shortcut": "R"
     },
     {
-      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_scarabHost.jpg",
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skills/icons/anubarak_scarabHost.png",
       "name": {
         "en": "Scarab Host",
         "pt": "Hospedeiro de Escaravelho"

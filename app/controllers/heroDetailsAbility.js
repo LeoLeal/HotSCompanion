@@ -1,4 +1,3 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 var skill = $.args.skill;
 var HIDDEN_PROPERTIES = {
@@ -12,6 +11,8 @@ var HIDDEN_PROPERTIES = {
 init();
 
 function init(){
+  $.icon.image = skill.icon;
+  
   $.shortcut.text = skill.shortcut || '';
   $.shortcut1.text = skill.shortcut || '';
   $.shortcut2.text = skill.shortcut || '';
@@ -22,7 +23,7 @@ function init(){
   $.shortcut7.text = skill.shortcut || '';
   $.shortcut8.text = skill.shortcut || '';
   
-  $.name.text = skill.name[Ti.Locale.currentLanguage];
+  $.name.text = skill.name[Ti.Locale.currentLanguage] + ((skill.type == 'heroic' || skill.type == 'trait') ? ' ('+L(skill.type)+')' : '');
   
   if(typeof skill.cost == 'number'){
     Ti.API.info(skill.cost);
