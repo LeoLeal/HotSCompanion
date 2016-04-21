@@ -26,14 +26,14 @@ function init(){
   $.name.text = skill.name[Ti.Locale.currentLanguage] + ((skill.type == 'heroic' || skill.type == 'trait') ? ' ('+L(skill.type)+')' : '');
   
   if(typeof skill.cost == 'number'){
-    Ti.API.info(skill.cost);
+    //Ti.API.info(skill.cost);
     if(skill.cost > 0)
       $.manacost.text = String.format(L('manacost'), skill.cost.toString());
     else 
       $.manacost.applyProperties(HIDDEN_PROPERTIES);
   } 
   else {
-    Ti.API.info(skill.cost);
+    //Ti.API.info(skill.cost);
     if(skill.cost[0] > 0)
       $.manacost.text = String.format(L('manacostpersecond'), skill.cost[0].toString(), (skill.cost[1]/1000).toString());
     else 

@@ -6,7 +6,7 @@ var trait = args.selectedHero.trait;
 init();
 
 function init(){
-  
+  Ti.API.info('[HERO DETAILS ABILITIES] INIT STARTED');
   for(var i=0; i<skills.length; i++){
     var separator = Ti.UI.createView({
       left: 16,

@@ -5,38 +5,38 @@
 			<Button class="backButton" id="backButton" onClick="closeWindow"></Button>
 			<Label id="actionBarHeroName">Azmodan</Label>
 		</View>
-		<View id="heroHeaderActionBar">
-			<Button class="backButton" id="headerBackButton" onClick="closeWindow"></Button>
-		</View>
-		<View class="tabsWrapper" id="actionTab">
-			<TabbedBar class="cardTabs" id="actionTabObj" platform="ios">
+    <View id="heroHeaderActionBar">
+      <Button class="backButton" id="headerBackButton" onClick="closeWindow"></Button>
+    </View>
+    <View class="tabsWrapper" id="actionTab">
+      <TabbedBar class="cardTabs" id="actionTabObj" platform="ios">
         <Labels>
           <Label>L('Info')</Label>
           <Label>L('Abilities')</Label>
           <Label>L('Talents')</Label>
         </Labels>
       </TabbedBar>
-			<Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
-		</View>
-		<ScrollView id="contentScroll">
+      <Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
+    </View>
+    <ScrollView id="contentScroll">
       <View id="heroHeaderContainer"></View>
-			<View id="contentWrapper">
-				<View class="tabsWrapper" id="contentTab">
-					<TabbedBar class="cardTabs" id="contentTabObj" platform="ios">
+      <View id="contentWrapper">
+        <View class="tabsWrapper" id="contentTab">
+          <TabbedBar class="cardTabs" id="contentTabObj" platform="ios">
             <Labels>
               <Label>L('Info')</Label>
               <Label>L('Abilities')</Label>
               <Label>L('Talents')</Label>
             </Labels>
-	        </TabbedBar>
-					<Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
-		    </View>
+          </TabbedBar>
+          <Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
+        </View>
         <ScrollableView id="scrollableCards" class="tabContent">
-        	<View id="page_0"></View>
-        	<View id="page_1"></View>
-        	<View id="page_2"></View>
+          <View id="page_0"></View>
+          <View id="page_1"></View>
+          <View id="page_2"></View>
         </ScrollableView>
-			</View>
-		</ScrollView>
+      </View>
+    </ScrollView>
 	</Window>
 </Alloy>

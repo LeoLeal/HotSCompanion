@@ -1,21 +1,6 @@
 <Alloy>
-  <View class="skillsContainer">
-    <View class="iconContainer">
-      <ImageView class="icon"></ImageView>
-      <Label class="shortcut">R</Label>
-      <Label class="shortcutShadow1">R</Label>
-      <Label class="shortcutShadow2">R</Label>
-      <Label class="shortcutShadow3">R</Label>
-      <Label class="shortcutShadow4">R</Label>
-      <Label class="shortcutShadow5">R</Label>
-      <Label class="shortcutShadow6">R</Label>
-      <Label class="shortcutShadow7">R</Label>
-      <Label class="shortcutShadow8">R</Label>
-    </View>
-    <View class="textContainer">
-      <Label class="name">Nome da Skill</Label>
-      <Label class="description">Descrição completa com texto indicando o dano causado (mais o dano por level) para a Skill desejada.</Label>
-    </View>
+  <View id="widgetContainer">
+    <View class="cardTabs" id="cardTabs"></View>
+    <View id="selectMarker"></View>
   </View>
-  <View class="separator"></View>
 </Alloy>

@@ -15,7 +15,7 @@ init();
 
 function init(){
   selectedHero = args.model.toJSON();
-	populateViewObjects();
+  populateViewObjects();
   fadeInElements();
 }
 
