@@ -3,16 +3,16 @@
 	  <View id="spacer" height="8" platform="android"></View>
 	  <View id="spacer" height="4"></View>
 		<View id="survivabilityContainer" class="difficulty">
-			<Label class="title" text="L('Survivability')"></Label>
+			<Label text="L('Survivability')"></Label>
 		</View>
 		<View id="damageContainer" class="difficulty">
-			<Label class="title" text="L('Damage')"></Label>
+			<Label text="L('Damage')"></Label>
 		</View>
 		<View id="utilityContainer" class="difficulty">
-			<Label class="title" text="L('Utility')"></Label>
+			<Label text="L('Utility')"></Label>
 		</View>
 		<View id="complexityContainer" class="difficulty">
-			<Label class="title" text="L('Complexity')"></Label>
+			<Label text="L('Complexity')"></Label>
 		</View>
 		
 		<View class="separator"></View>

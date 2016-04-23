@@ -1,4 +1,8 @@
-var heroesFactory = require("heroesFactory");
+function openTest() {
+  Alloy.createController('testwindow').getView().open();
+}
+
+var heroesFactory = require("heroesFactory"); 
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
   opacity: 1
@@ -6,8 +10,7 @@ var fadeIn = Ti.UI.createAnimation({
 var targetSize;
 var targetOpacity;
 
-init();
-$.index.open();
+init(); 
 
 // PRIVATE METHODS
 function init(){
@@ -18,7 +21,10 @@ function init(){
 		$.searchField.animate(fadeIn);	
 	},1000);
 
+	Ti.API.info(heroesFactory.getHeroesList.toString()); 
 	heroesFactory.getHeroesList(); //Doesn't need to manipulate de results the Factory fetches the Model if the Model is declared on the View.
+	
+	$.index.open();
 }
 
 function transformFunction(model) {
@@ -28,10 +34,6 @@ function transformFunction(model) {
   var rowIndex = Alloy.Globals.heroesListIndex;
   
   transform.name = transform.name[Ti.Locale.currentLanguage];
-//  transform.portraitUrl = transform.portrait.url;
-//  transform.portraitWidth = transform.portrait.scale * Alloy.Globals.PORTRAIT_DEFAULT_WIDTH;
-//  transform.portraitHeight = transform.portrait.scale * Alloy.Globals.PORTRAIT_DEFAULT_HEIGHT;
-//  transform.portraitCenter = transform.portrait.center;*/
   transform.portraitUrl = transform.skins[0].icon;
   
   if(rowIndex < 3)
@@ -54,12 +56,9 @@ function openHero(event){
   heroesFactory.getHero(heroId)
   .then(function(response){
     model = response;
-    Ti.API.info('[INDEX CONTROLLER][MODEL]', JSON.stringify(model));
-    var heroDetailsController = Alloy.createController('heroDetails',{"model" : model});
-    Ti.API.info('[INDEX CONTROLLER][DETAILS CONTROLLER]', JSON.stringify(heroDetailsController));
-    var heroDetails = heroDetailsController.getView(); 
-  
-    heroDetails.open({
+    Ti.API.info('[INDEX CONTROLLER][MODEL]', JSON.stringify(response));
+
+    Alloy.createController('heroDetails',{"model" : model}).getView().open({
       modal: (OS_IOS) ? true : false,
       modalStyle: (OS_IOS) ? Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN : null
     });

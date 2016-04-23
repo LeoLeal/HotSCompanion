@@ -91,7 +91,7 @@
 }
 
 // CONTEÚDO
-"#contentScroll": {
+".contentScroll": {
 	top: 0,
 	left: 0,
 	width: Ti.UI.FILL,
@@ -99,7 +99,8 @@
 	contentHeight: Ti.UI.SIZE,
 	zIndex: 2,
 	layout: "vertical",
-	disableBounce: false
+	disableBounce: false,
+	scrollType: "vertical"
 }
 ".tabsWrapper": {
 	backgroundColor: "#eee",

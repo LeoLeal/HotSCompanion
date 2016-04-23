@@ -47,7 +47,7 @@
 }
 ".skillDetails": {
   color: Alloy.Globals.color.colorText,
-  right: 4,
+  right: 8,
   width: Ti.UI.SIZE,
   height: Ti.UI.SIZE,
   font: {
@@ -60,7 +60,7 @@
 	color: '#48acef'
 }
 "#cooldown": {
-	color: '48af66'
+	color: '#48af66'
 }
 "#charges": {
 	color: '#bb9648'

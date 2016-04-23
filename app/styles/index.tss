@@ -120,7 +120,8 @@
 	width: Ti.UI.FILL,
 	height: Ti.UI.FILL,
 	layout: "vertical",
-	zIndex: 2
+	zIndex: 2,
+	scrollType: "vertical"
 }
 
 ".legendContainer": {

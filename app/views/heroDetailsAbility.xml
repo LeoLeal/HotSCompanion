@@ -15,7 +15,7 @@
     </View>
     <View class="textContainer">
       <Label class="name" id="name"></Label>
-      <View class="skillInfo">
+      <View class="skillInfo" id="skillInfo">
         <Label class="skillDetails" id="manacost"></Label>
         <Label class="skillDetails" id="cooldown"></Label>
         <Label class="skillDetails" id="charges"></Label>

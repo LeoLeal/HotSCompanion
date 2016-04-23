@@ -32,7 +32,8 @@
 	layout: "horizontal",
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	left: 8
+	left: 8,
+	top: 4
 }
 "#headerUniverse": {
 	height: Ti.UI.SIZE,

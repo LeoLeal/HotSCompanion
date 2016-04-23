@@ -30,7 +30,7 @@
     <string name="manacost">%s Mana</string>
     <string name="manacostpersecond">%s Mana every %s sec.</string>
     <string name="charges">%s Charges</string>
-    <string name="cooldown">Cooldown: %s sec.</string>
+    <string name="cooldown">%s sec. Cooldown</string>
     
     <string name="heroic">Heroic</string>
     <string name="trait">Trait</string>

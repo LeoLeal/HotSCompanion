@@ -30,25 +30,25 @@ function init(){
     if(skill.cost > 0)
       $.manacost.text = String.format(L('manacost'), skill.cost.toString());
     else 
-      $.manacost.applyProperties(HIDDEN_PROPERTIES);
+      $.skillInfo.remove($.manacost);//.applyProperties(HIDDEN_PROPERTIES);
   } 
   else {
     //Ti.API.info(skill.cost);
     if(skill.cost[0] > 0)
       $.manacost.text = String.format(L('manacostpersecond'), skill.cost[0].toString(), (skill.cost[1]/1000).toString());
     else 
-      $.manacost.applyProperties(HIDDEN_PROPERTIES);    
+      $.skillInfo.remove($.manacost);//.applyProperties(HIDDEN_PROPERTIES);    
   }
     
   if(skill.cooldown > 0)
     $.cooldown.text = String.format(L('cooldown'), (skill.cooldown/1000).toString());
   else 
-    $.cooldown.applyProperties(HIDDEN_PROPERTIES);
+    $.skillInfo.remove($.cooldown);//.applyProperties(HIDDEN_PROPERTIES);
     
   if(skill.charges > 1)
     $.charges.text = String.format(L('charges'), skill.charges.toString());
   else 
-    $.charges.applyProperties(HIDDEN_PROPERTIES);
+    $.skillInfo.remove($.charges);//.applyProperties(HIDDEN_PROPERTIES);
     
   $.description.text = skill.description[Ti.Locale.currentLanguage];
 }

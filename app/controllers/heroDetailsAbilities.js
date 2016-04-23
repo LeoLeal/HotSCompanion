@@ -26,5 +26,9 @@ function init(){
     
     if(i < skills.length -1)
       $.pageContainer.add(separator);
+    else
+      $.pageContainer.add(Ti.UI.createView({
+        height: 48
+      }));
   }
 }

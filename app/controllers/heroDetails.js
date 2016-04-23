@@ -48,7 +48,7 @@ function populateViewObjects(){
 
 function fadeInElements(){
   setTimeout(function(){
-    $.scrollableCards.setCurrentPage(2);
+    $.scrollableCards.setCurrentPage(1);
     $.scrollableCards.scrollToView(0);
   },10);
 }
@@ -96,10 +96,6 @@ function cardsListener(event){
   
   setTimeout(function cardListenerTimeout(){
     var cardHeight = $.scrollableCards.views[$.scrollableCards.currentPage].children[0].rect.height+60;
-/*    
-    if(cardHeight < $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height -1)
-      cardHeight = $.contentScroll.rect.height - ((OS_IOS)?$.statusBar.rect.height:0) - $.actionBar.rect.height;
-*/
 
     if(cardHeight < $.contentScroll.rect.height - HEADER_HEIGHT)
       cardHeight = $.contentScroll.rect.height - HEADER_HEIGHT;
@@ -114,3 +110,4 @@ $.contentScroll.addEventListener("scroll",scrollListener);
 $.actionTabObj.addEventListener("click",tabListener);
 $.contentTabObj.addEventListener("click",tab2Listener);
 $.scrollableCards.addEventListener("scrollend", cardsListener);
+
