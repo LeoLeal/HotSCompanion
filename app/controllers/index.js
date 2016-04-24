@@ -9,7 +9,7 @@ var fadeIn = Ti.UI.createAnimation({
 var listLoadedAnimation = Ti.UI.createAnimation({
   duration: 500,
   curve: Titanium.UI.ANIMATION_CURVE_EASE_OUT,
-  top: 192,
+  top: 212,
   opacity: 1
 });
 

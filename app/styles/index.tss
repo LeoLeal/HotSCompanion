@@ -168,7 +168,7 @@
 
 
 "#heroesContainer": {
-	top: 210,// REMOVER QUANDO EVENTOS VOLTAR
+	top: 220,// REMOVER QUANDO EVENTOS VOLTAR
 	width: 320,
 	height: Ti.UI.SIZE,
 	center: { x: "50%" },

@@ -35,7 +35,7 @@ function init(){
 
   if (typeof stats.hp.pool == "object"){
     $.initialHealth.text =  stats.hp.pool[0];
-    $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1]));  
+    $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1])).replace('%%', '%');  
   } else {
     $.initialHealth.text =  stats.hp.pool;
     $.initalHealthIncrement.applyProperties(HIDDEN_PROPERTIES);
@@ -45,7 +45,7 @@ function init(){
 
   if (typeof stats.hp.regen == "object"){
     $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen[0]));
-    $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1]));  
+    $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1])).replace('%%', '%');  
   } else {
     $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen));
     $.healthRegenIncrement.text = L('increment_na');
@@ -53,7 +53,7 @@ function init(){
   
   if (typeof stats.mana.pool == "object"){
     $.initialMana.text = stats.mana.pool[0];
-    $.initalManaIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.pool[1]));  
+    $.initalManaIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.pool[1])).replace('%%', '%');  
   } else {
     $.initialMana.text = stats.mana.pool;
     $.initalManaIncrement.text = L('increment_na');
@@ -61,14 +61,14 @@ function init(){
   
   if (typeof stats.mana.regen == "object"){
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen[0]));
-    $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1]));  
+    $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1])).replace('%%', '%');  
   } else {
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
     $.manaRegenIncrement.text = L('increment_na');
   }
 
   $.initialDamage.text = stats.attack.damage[0];
-  $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1]));
+  $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1])).replace('%%', '%');
   $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(stats.attack.speed));
   
 }

@@ -8,7 +8,6 @@ init();
 
 function init(){
   
-  Ti.API.info('[HERO DETAILS HEADER CONTROLLER] SelectedHero: ' + JSON.stringify(selectedHero));
   $.headerName.text = selectedHero.name[Ti.Locale.currentLanguage].toUpperCase();
   $.headerUniverseIcon.image = '/images/dark/touchable_universe-'+selectedHero.universe+'.png';
   $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
@@ -45,21 +44,22 @@ function videoInitPreloader() {
       }
     });
     $.videoPlayer.addEventListener("preload" , function (e) {
-      setTimeout(function(){
-        $.videoPlayer.opacity = 1;
-      },500);
+      $.videoPlayer.opacity = 1;
     });
   }
+  $.videoPlayer.addEventListener("playbackstate" , function (e) {
+    if (e.playbackState === Titanium.Media.VIDEO_PLAYBACK_STATE_PLAYING)
+      $.skinActivity.hide();
+  });
 }
 
 function selectSkin(skinIndex){
+  $.skinActivity.show();
   skinSelectorArray[currentSelectedSkin].borderColor = '#48acef';
   skinSelectorArray[skinIndex].borderColor = '#fff';
   currentSelectedSkin = skinIndex;
   $.headerSubtitle.text = selectedHero.skins[skinIndex].name[Ti.Locale.currentLanguage].toUpperCase();
   $.videoPlayer.url = selectedHero.skins[skinIndex].video;
-  Ti.API.info('[HERO DETAILS HEADER CONTROLLER] Video Player: ' + JSON.stringify($.videoPlayer));
-  Ti.API.info('[HERO DETAILS HEADER CONTROLLER] Video Player URL: ' + JSON.stringify($.videoPlayer.url));
 }
 
 function selectSkinListener(event){

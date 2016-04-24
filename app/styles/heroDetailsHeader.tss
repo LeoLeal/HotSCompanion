@@ -5,6 +5,14 @@
 	zIndex: 1,
 	layout: 'absolute'
 }
+"#skinActivity": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG,
+	center: {
+		x: '70%',
+		y: 140
+	},
+	zIndex: 3
+}
 "VideoPlayer": {
 	width: 550,
 	center: {x: "50%", y: 120},

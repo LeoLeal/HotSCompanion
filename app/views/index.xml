@@ -22,6 +22,7 @@
 			</View>-->
 
 			<ImageView id="appLogo" image="/images/logo.png"></ImageView>
+      <ActivityIndicator id="listActivity"></ActivityIndicator>
 			<ScrollView id="scrollList">
 <!--
 				<View class="legendContainer">
@@ -37,7 +38,6 @@
 
 				
 				<!-- HEROES LIST -->
-				<ActivityIndicator id="listActivity"></ActivityIndicator>
 				<View id="heroesContainer" dataCollection="Heroes" dataTransform="transformFunction">
 					<View class="hero" heroId="{id}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
 				    <View class="portraitContainer">
