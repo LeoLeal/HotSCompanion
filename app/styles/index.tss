@@ -4,6 +4,22 @@
 	exitOnClose: true
 }
 
+"#statusBar": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 25,
+	backgroundColor: "#5e35b1",
+	opacity: 0,
+	zIndex: 4
+}
+"#statusBar[platform=ios]": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 20,
+	backgroundColor: "#eeffffff",
+	opacity: 1
+}
+
 ".container": {
 	backgroundImage: "Default.png",
 	layout: "absolute",
@@ -16,7 +32,16 @@
 	backgroundImage: "/images/Default.png",
 }
 
+"#listActivity": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG,
+	center: {
+		x: '50%',
+		y: '50%'
+	}
+}
+
 // SEARCH BOX
+/*
 
 "#searchView": {
 	backgroundColor: "#fff",
@@ -100,7 +125,8 @@
 	left: -6,
 	opacity: 0.6,
 	center: { y: "50%" }
-}
+}*/
+
 
 // LISTAGEM
 
@@ -109,7 +135,8 @@
 	height: Ti.UI.SIZE,
 	zIndex: 1,
 	center: {
-		y: 156,
+//		y: 156,
+		y: 126,
 		x: "50%"
 	},
 }
@@ -124,6 +151,7 @@
 	scrollType: "vertical"
 }
 
+/*
 ".legendContainer": {
 	layout: "vertical",
 	top: 232,
@@ -136,13 +164,16 @@
 		fontSize: 14,
 		fontFamily: 'MetronicProBold'
 	}
-}
+}*/
+
 
 "#heroesContainer": {
+	top: 210,// REMOVER QUANDO EVENTOS VOLTAR
 	width: 320,
 	height: Ti.UI.SIZE,
 	center: { x: "50%" },
-	layout: "horizontal"
+	layout: "horizontal",
+	opacity: 0
 }
 
 ".hero": {

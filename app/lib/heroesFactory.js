@@ -38,17 +38,35 @@ function getHeroesList() {
 				eventsFactory.setLatestHeroesUpdate(dateNow.toISOString());
 			}
 
-			return Heroes.toJSON();
+      var jsonRes = Heroes.toJSON().sort(function(a,b){
+        var aName = a['name'][Ti.Locale.currentLanguage].toLowerCase();
+        var bName = b['name'][Ti.Locale.currentLanguage].toLowerCase();
+        if (aName < bName) //sort string ascending
+          return -1;
+        if (aName > bName)
+          return 1;
+        return 0;
+      });
+
+			return jsonRes;
 		});
 	})
 	.fail(function(err){
-		// Não pôde fazer a Query no ArrowDB. 
-		// Resolve a base de dados Local
 		Ti.API.info("[HEROES FACTORY] Sem Internet");
-		Ti.API.error('[HEROES FACTORY] ' + err);
+		Ti.API.error('[HEROES FACTORY] ' + JSON.strngify(err));
 		return Q.Promise(function(resolve,reject){
-			if(Heroes.length > 0)
-				resolve(Heroes.toJSON());
+			if(Heroes.length > 0){
+        var jsonRes = Heroes.toJSON().sort(function(a,b){
+          var aName = a['name'][Ti.Locale.currentLanguage].toLowerCase();
+          var bName = b['name'][Ti.Locale.currentLanguage].toLowerCase();
+          if (aName < bName) //sort string ascending
+            return -1;
+          if (aName > bName)
+            return 1;
+          return 0;
+        });
+        resolve(jsonRes);
+			}
 			else
 				reject("error_loading_heroes_list");
 		});

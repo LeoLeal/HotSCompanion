@@ -1,29 +1,36 @@
-function openTest() {
-  Alloy.createController('testwindow').getView().open();
-}
-
 var heroesFactory = require("heroesFactory"); 
+var targetSize;
+var targetOpacity;
+
 var fadeIn = Ti.UI.createAnimation({
   duration: 300,
   opacity: 1
 });
-var targetSize;
-var targetOpacity;
+var listLoadedAnimation = Ti.UI.createAnimation({
+  duration: 500,
+  curve: Titanium.UI.ANIMATION_CURVE_EASE_OUT,
+  top: 192,
+  opacity: 1
+});
+
 
 init(); 
 
 // PRIVATE METHODS
 function init(){
-  Ti.API.info('[INDEX CONTROLLER][INIT STARTED][CURRENT LOCALE LANGUAGE] ' + Ti.Locale.currentLanguage);
-	$.nextFreeWeekLegend.setText(String.format(L('Next_Free_Week'), '10/10/2015'));
+  $.listActivity.show();
+/*
 	setTimeout(function(){
 		$.searchField.visible = true;
 		$.searchField.animate(fadeIn);	
-	},1000);
+	},1000);*/
 
-	Ti.API.info(heroesFactory.getHeroesList.toString()); 
-	heroesFactory.getHeroesList(); //Doesn't need to manipulate de results the Factory fetches the Model if the Model is declared on the View.
-	
+	heroesFactory.getHeroesList()
+	.then(function(){
+		$.listActivity.hide();
+		$.heroesContainer.animate(listLoadedAnimation);
+	});
+
 	$.index.open();
 }
 
@@ -56,7 +63,6 @@ function openHero(event){
   heroesFactory.getHero(heroId)
   .then(function(response){
     model = response;
-    Ti.API.info('[INDEX CONTROLLER][MODEL]', JSON.stringify(response));
 
     Alloy.createController('heroDetails',{"model" : model}).getView().open({
       modal: (OS_IOS) ? true : false,

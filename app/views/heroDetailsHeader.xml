@@ -1,5 +1,6 @@
 <Alloy>
 	<View id="heroHeader">
+	  <ActivityIndicator id="skinActivity"></ActivityIndicator>
     <VideoPlayer id="videoPlayer" ns="Ti.Media" />
     <View id="headerText">
       <View id="headerUniverse">

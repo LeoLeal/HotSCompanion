@@ -2,7 +2,9 @@
 	<Collection src="Heroes"/>
 	<Collection src="Events"/>
 	<Window>
+	  <View id="statusBar"></View>
 		<View class="container">
+<!--
 			<View id="searchView">
 				<ImageView id="searchIcon" image="/images/light/touchable_search-ios.png" platform="ios"></ImageView>
 				<ImageView id="searchIcon" image="/images/light/touchable_search-android.png" platform="android"></ImageView>
@@ -17,10 +19,12 @@
 					<ImageView class="filterIcon" image="/images/light/touchable_universe-diablo.png"></ImageView>
 					<ImageView class="filterIcon" image="/images/light/touchable_universe-legacy.png" right="12"></ImageView>
 				</View>
-			</View>
+			</View>-->
+
 			<ImageView id="appLogo" image="/images/logo.png"></ImageView>
 			<ScrollView id="scrollList">
-				<View class="legendContainer" onClick="openTest">
+<!--
+				<View class="legendContainer">
 					<View layout="horizontal" width="Ti.UI.FILL" height="Ti.UI.SIZE">
 						<ImageView image="/images/contextual_freeweek-current.png"></ImageView>
 						<Label class="listLegend" color="#d3ffff" text="L('Current_Free_Week')"></Label>
@@ -29,15 +33,17 @@
 						<ImageView image="/images/contextual_freeweek-next.png"></ImageView>
 						<Label id="nextFreeWeekLegend" class="listLegend" color="#ffd33c"></Label>
 					</View>
-				</View>
+				</View>-->
+
 				
 				<!-- HEROES LIST -->
+				<ActivityIndicator id="listActivity"></ActivityIndicator>
 				<View id="heroesContainer" dataCollection="Heroes" dataTransform="transformFunction">
 					<View class="hero" heroId="{id}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
 				    <View class="portraitContainer">
 				      <ImageView class="heroPortrait" image="{portraitUrl}" width="74" height="74"></ImageView>
 				    </View>
-						<ImageView class="heroPortraitBorder" image="/images/portrait-freeweek-next.png"></ImageView>
+						<ImageView class="heroPortraitBorder" image="/images/portrait.png"></ImageView>
 						<Label class="heroName">{name}</Label>
 					</View>
 				</View>
