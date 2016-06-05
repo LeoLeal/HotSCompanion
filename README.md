@@ -20,7 +20,7 @@ ToDo
 * Portrait Highlight for Heroes and Skins Sales
 * Talent Calculator with Sharing and a Like-System rank
 * Draft Helper: know what to get depending on the enemy team.
-* In-game Map Helper: Get Ingame Timers on the app so you receive alerts for when the map Objectives are coming.
+* In-game Map Helper: Get In-game Timers on the app so you receive alerts for when the map Objectives are coming.
 
 Developer Highlights and Facts
 -

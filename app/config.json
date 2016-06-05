@@ -8,6 +8,7 @@
     "os:mobileweb": {},
     "os:windows": {},
     "dependencies": {
-        "TabbedBar": "1.0"
+        "TabbedBar": "1.0",
+        "HeroListItem": "1.0"
     }
 }

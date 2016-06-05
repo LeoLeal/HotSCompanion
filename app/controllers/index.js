@@ -26,9 +26,9 @@ function init(){
 	},1000);*/
 
 	heroesFactory.getHeroesList()
-	.then(function(){
-		$.listActivity.hide();
-		$.heroesContainer.animate(listLoadedAnimation);
+	.then(function(response){
+    $.listActivity.hide();
+    $.heroesContainer.animate(listLoadedAnimation);
 	});
 
 	$.index.open();
@@ -41,7 +41,7 @@ function transformFunction(model) {
   var rowIndex = Alloy.Globals.heroesListIndex;
   
   transform.name = transform.name[Ti.Locale.currentLanguage];
-  transform.portraitUrl = transform.skins[0].icon;
+//  transform.portraitBlob = Ti.Utils.base64decode(transform.portrait);
   
   if(rowIndex < 3)
   	topPosition = '0';
@@ -54,21 +54,6 @@ function transformFunction(model) {
   Alloy.Globals.heroesListIndex++;
   
   return transform;
-}
-
-function openHero(event){
-  var heroId = event.source.heroId;
-  var model = null;
-  
-  heroesFactory.getHero(heroId)
-  .then(function(response){
-    model = response;
-
-    Alloy.createController('heroDetails',{"model" : model}).getView().open({
-      modal: (OS_IOS) ? true : false,
-      modalStyle: (OS_IOS) ? Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN : null
-    });
-  });
 }
 
 function scrollListener(event){

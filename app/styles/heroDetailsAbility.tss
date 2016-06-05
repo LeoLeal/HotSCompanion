@@ -78,19 +78,21 @@
 }
 
 ".icon": {
-	image: 'http://us.battle.net/heroes/static/images/heroes/skills/icons/li-ming_disintegrate.jpg',
-	width: 64,
-	height: 72,
-	top: 0,
-	left: 0,
-	zIndex: 1
+	width: 48,
+	height: 48,
+	borderRadius: 24,
+	center: {
+		x: '50%',
+		y: '50%'
+	},
+	zIndex: 0
 }
 ".iconborder": {
 	width: 64,
 	height: 72,
 	top: 0,
 	left: 0,
-	zIndex: 0
+	zIndex: 1
 }
 
 ".shortcut": {

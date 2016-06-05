@@ -11,7 +11,7 @@ var HIDDEN_PROPERTIES = {
 init();
 
 function init(){
-  $.icon.image = skill.icon;
+  $.icon.image = Ti.Utils.base64decode(skill.icon);
   
   $.shortcut.text = skill.shortcut || '';
   $.shortcut1.text = skill.shortcut || '';
@@ -37,7 +37,7 @@ function init(){
     if(skill.cost[0] > 0)
       $.manacost.text = String.format(L('manacostpersecond'), skill.cost[0].toString(), (skill.cost[1]/1000).toString());
     else 
-      $.skillInfo.remove($.manacost);//.applyProperties(HIDDEN_PROPERTIES);    
+      $.skillInfo.remove($.manacost);//.applyProperties(HIDDEN_PROPERTIES);
   }
     
   if(skill.cooldown > 0)
