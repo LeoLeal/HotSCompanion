@@ -8,7 +8,7 @@
 "#statusBar": {
 	top: 0,
 	width: Ti.UI.FILL,
-	height: 25,
+	height: 24,
 	backgroundColor: "#5e35b1",
 	opacity: 0,
 	zIndex: 4

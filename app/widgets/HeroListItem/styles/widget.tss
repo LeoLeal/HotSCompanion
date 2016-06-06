@@ -11,25 +11,19 @@
 }
 
 ".portraitContainer": {
-	borderRadius: 37,
-	width: 74,
-	height: 74,
+	center: {
+		y: '49%',
+		x: '49%'
+	},
+	borderRadius: 33,
+	width: 72,
+	height: 72,
 	touchEnabled: false
 }
 
-/*
 ".heroPortrait": {
-	width: 500,
-	height: 256,
-	center: {
-		x: '-100%',
-		y: '80%'
-	},
-	touchEnabled: false
-}*/
-".heroPortrait": {
-	width: 74,
-	height: 74,
+	width: 72,
+	height: 72,
 	touchEnabled: false
 }
 

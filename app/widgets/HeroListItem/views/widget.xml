@@ -1,7 +1,7 @@
 <Alloy>
   <View class="hero" id="heroView" heroId="{id}" onClick="openHero" top="{topPosition}" left="{leftPosition}">
     <View class="portraitContainer">
-      <ImageView class="heroPortrait" id="portraitView" width="74" height="74"></ImageView>
+      <ImageView class="heroPortrait" id="portraitView"></ImageView>
     </View>
     <ImageView class="heroPortraitBorder" image="/images/portrait.png"></ImageView>
     <Label class="heroName">{name}</Label>
