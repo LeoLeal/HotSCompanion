@@ -133,7 +133,7 @@
         "pt": "Após 3 segundos, fogo explode ao seu redor causando 500 (+4% por nível) de dano aos inimigos. Pode ser usado durante Massacre Implacável."
       },
       "cost": 75,
-      "charges": 2,
+      "charges": 1,
       "cooldown": 80000,
       "type": "heroic",
       "shortcut": "R"
