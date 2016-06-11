@@ -15,6 +15,7 @@
     
     <string name="regen_text">%s por seg.</string>
     <string name="increment_text">+%s%% por nível</string>
+    <string name="increment_text_flat">+%s por nível</string>
     <string name="increment_na">Sem incremento</string>
     <string name="speed_text">Alveja a cada %s segundo(s)</string>
     

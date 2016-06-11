@@ -15,6 +15,7 @@
     
     <string name="regen_text">%s per sec.</string>
     <string name="increment_text">+%s%% per level</string>
+    <string name="increment_text_flat">+%s per level</string>
     <string name="increment_na">No increment</string>
     <string name="speed_text">Hits every %s second(s)</string>
     
