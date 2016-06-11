@@ -61,7 +61,7 @@ function init(){
   
   if (typeof stats.mana.regen == "object"){
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen[0]));
-    $.manaRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.mana.regen[1]*100)).replace('%%', '%');  
+    $.manaRegenIncrement.text = String.format(L('increment_text_flat'), String.formatDecimal(stats.mana.regen[1]));
   } else {
     $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
     $.manaRegenIncrement.text = L('increment_na');
