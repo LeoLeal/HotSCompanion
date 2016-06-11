@@ -35,6 +35,8 @@
     
     <string name="heroic">Heróica</string>
     <string name="trait">Especialização</string>
+
+    <string name="no_stats">Este herói não possui atributos.</string>
     
     <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
     <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>

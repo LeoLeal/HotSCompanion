@@ -14,7 +14,7 @@ init();
 function init(){
   var stats = selectedHero.stats;
   var attributes = selectedHero.attributes;
-  
+
   $.loreData.text = selectedHero.lore[Ti.Locale.currentLanguage];
 
   $.survivabilityContainer.add(generateAttribute('survival'));
@@ -22,55 +22,58 @@ function init(){
   $.utilityContainer.add(generateAttribute('utility'));
   $.complexityContainer.add(generateAttribute('complexity'));
   
-
-  if(stats.hp.pool == 0){
-    $.hpContainer.applyProperties(HIDDEN_PROPERTIES);
-  }
-  if(stats.mana.pool == 0){
-    $.manaContainer.applyProperties(HIDDEN_PROPERTIES);
-  }
-  if(stats.attack.damage[0] == 0){
-    $.attackContainer.applyProperties(HIDDEN_PROPERTIES);
-  }
-
-  if (typeof stats.hp.pool == "object"){
-    $.initialHealth.text =  stats.hp.pool[0];
-    $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1])).replace('%%', '%');  
+  if(stats.hp.pool == 0 && stats.mana.pool == 0 && stats.attack.damage == 0) {
+    $.statsContainer.applyProperties(HIDDEN_PROPERTIES);
+    $.noStatsLabel.show();
   } else {
-    $.initialHealth.text =  stats.hp.pool;
-    $.initalHealthIncrement.applyProperties(HIDDEN_PROPERTIES);
-    $.initialHealth.top = 4;
-    $.initialHealth.bottom = 4;
-  }
+    if(stats.hp.pool == 0){
+      $.hpContainer.applyProperties(HIDDEN_PROPERTIES);
+    }
+    if(stats.mana.pool == 0){
+      $.manaContainer.applyProperties(HIDDEN_PROPERTIES);
+    }
+    if(stats.attack.damage == 0){
+      $.attackContainer.applyProperties(HIDDEN_PROPERTIES);
+    }
 
-  if (typeof stats.hp.regen == "object"){
-    $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen[0]));
-    $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1])).replace('%%', '%');  
-  } else {
-    $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen));
-    $.healthRegenIncrement.text = L('increment_na');
-  }
-  
-  if (typeof stats.mana.pool == "object"){
-    $.initialMana.text = stats.mana.pool[0];
-    $.initalManaIncrement.text = String.format(L('increment_text_flat'), String.formatDecimal(stats.mana.pool[1]));  
-  } else {
-    $.initialMana.text = stats.mana.pool;
-    $.initalManaIncrement.text = L('increment_na');
-  }
-  
-  if (typeof stats.mana.regen == "object"){
-    $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen[0]));
-    $.manaRegenIncrement.text = String.format(L('increment_text_flat'), String.formatDecimal(stats.mana.regen[1]));
-  } else {
-    $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
-    $.manaRegenIncrement.text = L('increment_na');
-  }
+    if (typeof stats.hp.pool == "object"){
+      $.initialHealth.text =  stats.hp.pool[0];
+      $.initalHealthIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.pool[1])).replace('%%', '%');  
+    } else {
+      $.initialHealth.text =  stats.hp.pool;
+      $.initalHealthIncrement.applyProperties(HIDDEN_PROPERTIES);
+      $.initialHealth.top = 4;
+      $.initialHealth.bottom = 4;
+    }
 
-  $.initialDamage.text = stats.attack.damage[0];
-  $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1])).replace('%%', '%');
-  $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(stats.attack.speed));
-  
+    if (typeof stats.hp.regen == "object"){
+      $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen[0]));
+      $.healthRegenIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.hp.regen[1])).replace('%%', '%');  
+    } else {
+      $.healthRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.hp.regen));
+      $.healthRegenIncrement.text = L('increment_na');
+    }
+    
+    if (typeof stats.mana.pool == "object"){
+      $.initialMana.text = stats.mana.pool[0];
+      $.initalManaIncrement.text = String.format(L('increment_text_flat'), String.formatDecimal(stats.mana.pool[1]));  
+    } else {
+      $.initialMana.text = stats.mana.pool;
+      $.initalManaIncrement.text = L('increment_na');
+    }
+    
+    if (typeof stats.mana.regen == "object"){
+      $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen[0]));
+      $.manaRegenIncrement.text = String.format(L('increment_text_flat'), String.formatDecimal(stats.mana.regen[1]));
+    } else {
+      $.manaRegen.text = String.format(L('regen_text'), String.formatDecimal(stats.mana.regen));
+      $.manaRegenIncrement.text = L('increment_na');
+    }
+
+    $.initialDamage.text = stats.attack.damage[0];
+    $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1])).replace('%%', '%');
+    $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(stats.attack.speed));
+  }
 }
 
 function generateAttribute(attrParam){

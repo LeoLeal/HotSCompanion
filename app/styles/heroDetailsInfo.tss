@@ -39,6 +39,18 @@
 	height: Ti.UI.SIZE
 }
 
+"#noStatsLabel": {
+	text: L('no_stats'),
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: Ti.UI.FILL,
+	height: 48,
+	font: {
+  	fontSize: 14
+	},
+	color: '#cccccc',
+	visible: false
+}
+
 ".statsContainer": {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,

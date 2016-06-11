@@ -35,6 +35,8 @@
     
     <string name="heroic">Heroic</string>
     <string name="trait">Trait</string>
+
+    <string name="no_stats">This hero has no stats.</string>
     
     <string name="error_loading_heroes_list">There has been an error loading the Heroes List. Try again later.</string>
     <string name="error_loading_hero">There has been an error loading the Hero Data. Try again later.</string>

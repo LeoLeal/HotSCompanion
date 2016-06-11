@@ -18,7 +18,8 @@
 		<View class="separator"></View>
 		
 		<View class="statsBlock">
-  		<View class="statsContainer">
+			<Label id="noStatsLabel"></Label>
+  		<View class="statsContainer" id="statsContainer">
   		  <View class="stat" id="hpContainer">
           <Label class="statLabel" id="initialHealth"></Label>
           <Label class="statLabel2" id="initalHealthIncrement"></Label>
@@ -42,7 +43,7 @@
   		</View>
 		</View>
 		
-		<View class="separator"></View>
+		<View class="separator" id="statsSeparator"></View>
 		
 		<View class="loreContainer">
 			<Label id="loreData"></Label>
