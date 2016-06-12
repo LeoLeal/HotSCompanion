@@ -3415,7 +3415,7 @@
 			"id": "GallHurryUpOaf",
 			"icon": "storm_ui_icon_chogall_mount.dds",
 			"name": "Hurry Up, Oaf!",
-			"description": "Increases your Movement Speed by 59.52%. This effect decays over 3 seconds.",
+			"description": "  ",
 			"cooldown": 45,
 			"shortcut": "Z",
 			"mount": true
