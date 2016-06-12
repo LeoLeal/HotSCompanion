@@ -54,7 +54,7 @@
   		"video": "http://media.blizzard.com/heroes/videos/heroes/skins/worgen_ringmasterGreymaneWorgen.mp4"
   	}
   ],
-  "fightDistance": "melee",
+  "fightDistance": "ranged",
   "role": "assassin",
   "universe": "warcraft",
   "lore": {
