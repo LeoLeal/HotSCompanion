@@ -36,6 +36,14 @@
       },
       "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_crownPrinceArthas.jpg",
       "video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_crownPrinceArthas.mp4"
+    },
+    {
+      "name": {
+        "en": "Crimson Count",
+        "pt": "Conde Carmesin"
+      },
+      "icon": "http://us.battle.net/heroes/static/images/heroes/skins/thumbnails/arthas_crimsonCountArthas.jpg",
+      "video": "http://media.blizzard.com/heroes/videos/heroes/skins/arthas_crimsonCountArthas.mp4"
     }
   ],
   "fightDistance": "melee",
