@@ -45,8 +45,8 @@
   },
   "stats": {
   	"hp": {
-  		"pool": [1168,4],
-  		"regen": [2.4296,4]
+  		"pool": [1260,4],
+  		"regen": [2.625,4]
   	},
   	"mana": {
   		"pool": [500,10],
@@ -65,8 +65,8 @@
         "pt": "Impacto de Areia"
       },
       "description": {
-        "en": "After 1 second, fire a missile that deals 390 (+4% per level) damage to the first enemy Hero hit.",
-        "pt": "Após 1 segundo, dispara um míssil que causa 390 (+4% por nível) de dano ao primeiro herói inimigo atingido."
+        "en": "After 1 second, fire a missile that deals 400 (+4% per level) damage to the first enemy Hero hit.",
+        "pt": "Após 1 segundo, dispara um míssil que causa 400 (+4% por nível) de dano ao primeiro herói inimigo atingido."
       },
       "cost": 20,
       "charges": 1,
@@ -81,8 +81,8 @@
         "pt": "Sopro de Dragão"
       },
       "description": {
-        "en": "Fire a blast into the air that lands after 1.5 seconds, dealing 440 (+4% per level) damage to enemies in an area. Enemies cannot see where the blast will land.",
-        "pt": "Dispara uma rajada no ar que acerta depois de 1,5 segundos, causando 440 (+4% por nível) de dano a inimigos na área. Os inimigos não veem onde o impacto acontecerá."
+        "en": "Fire a blast into the air that lands after 1.5 seconds, dealing 480 (+4% per level) damage to enemies in an area. Enemies cannot see where the blast will land.",
+        "pt": "Dispara uma rajada no ar que acerta depois de 1,5 segundos, causando 480 (+4% por nível) de dano a inimigos na área. Os inimigos não veem onde o impacto acontecerá."
       },
       "cost": 70,
       "charges": 1,
