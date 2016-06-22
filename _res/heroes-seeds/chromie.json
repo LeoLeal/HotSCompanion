@@ -100,7 +100,7 @@
         "en": "Place a Time Trap that arms and Stealths after 2 seconds. The first enemy Hero to touch it will be put into Stasis for 2 seconds. Only 1 trap can exist at once.",
         "pt": "Deixa uma Armadilha Temporal que fica ativa depois de 2 segundos. O primeiro herói a entrar em contato com ela ficará em estase por 2 segundos. Apenas 1 armadilha pode existir por vez."
       },
-      "cost": 50,
+      "cost": 25,
       "charges": 1,
       "cooldown": 62.5,
       "type": "basic",
