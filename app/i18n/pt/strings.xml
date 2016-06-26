@@ -12,6 +12,7 @@
     <string name="Complexity">Complexidade</string>
     <string name="Utility">Utilidade</string>
     <string name="NA">N/D</string>
+    <string name="legacy">Clássico</string>
     
     <string name="regen_text">%s por seg.</string>
     <string name="increment_text">+%s%% por nível</string>

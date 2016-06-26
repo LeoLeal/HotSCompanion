@@ -7,10 +7,14 @@ var currentSelectedSkin = 0;
 init();
 
 function init(){
-  
+
+  var universeLabel = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
+  if(selectedHero.universe == 'legacy')
+    universeLabel = L('legacy');
+
   $.headerName.text = selectedHero.name[Ti.Locale.currentLanguage].toUpperCase();
   $.headerUniverseIcon.image = '/images/dark/touchable_universe-'+selectedHero.universe+'.png';
-  $.headerUniverseLabel.text = selectedHero.universe.charAt(0).toUpperCase() + selectedHero.universe.slice(1);
+  $.headerUniverseLabel.text = universeLabel;
   $.headerRoleIcon.image = '/images/dark/touchable_role-' + selectedHero.role + '.png';
   $.headerRoleLabel.text = L(selectedHero.fightDistance + '_' + selectedHero.role);
 
