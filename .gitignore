@@ -10,5 +10,6 @@ tmp
 Thumbs.db
 tiapp.xml
 /platform
+/_res
 i18n
 *.keystore
