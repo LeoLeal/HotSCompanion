@@ -72,7 +72,7 @@ function init(){
 
     $.initialDamage.text = stats.attack.damage[0];
     $.damageIncrement.text = String.format(L('increment_text'), String.formatDecimal(stats.attack.damage[1])).replace('%%', '%');
-    $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(stats.attack.speed));
+    $.damageSpeed.text = String.format(L('speed_text'), String.formatDecimal(1/stats.attack.speed));
   }
 }
 

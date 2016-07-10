@@ -101,7 +101,7 @@ function cardsListener(event){
       cardHeight = $.contentScroll.rect.height - HEADER_HEIGHT;
   
     $.contentWrapper.height = cardHeight;
-  },125);
+  },200);
 }
 
 // EVENT HANDLERS
