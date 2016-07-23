@@ -18,7 +18,6 @@ function getHeroesList() {
 	
 	return eventsFactory.getLatestHeroesUpdate()
 	.then(function(updateResponse){
-	  Ti.API.info('[HEROES FACTORY][LATEST HEROES UPDATE] ' + updateResponse); 
 		return repository.queryObject({
 			objClass: "Heroes",
 			refDate: updateResponse
@@ -38,15 +37,17 @@ function getHeroesList() {
 				eventsFactory.setLatestHeroesUpdate(dateNow.toISOString());
 			}
 
-      var jsonRes = Heroes.toJSON().sort(function(a,b){
-        var aName = a['name'][Ti.Locale.currentLanguage].toLowerCase();
-        var bName = b['name'][Ti.Locale.currentLanguage].toLowerCase();
-        if (aName < bName) //sort string ascending
-          return -1;
-        if (aName > bName)
-          return 1;
-        return 0;
-      });
+      var jsonRes = _.defer(function(){
+      	Heroes.toJSON().sort(function(a,b){
+	        var aName = a['name'][Ti.Locale.currentLanguage].toLowerCase();
+	        var bName = b['name'][Ti.Locale.currentLanguage].toLowerCase();
+	        if (aName < bName) //sort string ascending
+	          return -1;
+	        if (aName > bName)
+	          return 1;
+	        return 0;
+	      });
+	    });
 
 			return jsonRes;
 		});

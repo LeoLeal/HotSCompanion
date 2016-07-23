@@ -1,4 +1,5 @@
-var heroesFactory = require("heroesFactory"); 
+var updateFactory = require("updateFactory");
+var heroesFactory = require("heroesFactory");
 var targetSize;
 var targetOpacity;
 
@@ -25,6 +26,10 @@ function init(){
 		$.searchField.animate(fadeIn);	
 	},1000);*/
 
+  updateFactory.getLatestVersion()
+  .then(function(response){
+
+  });
 	heroesFactory.getHeroesList()
 	.then(function(response){
     $.listActivity.hide();
