@@ -26,7 +26,7 @@ function queryObject(options){
 			queryObj.where["updated_at"] = {"$gt": refDate};
 
 		Cloud.Objects.query(queryObj, function (e) {
-		  Ti.API.info('[REPOSITORY][CLOUD QUERY RESULT] '+ JSON.stringify(e));
+		  Ti.API.info('[REPOSITORY][CLOUD QUERY RESULT] '+ e.Heroes.length);
 			if (e.success) {
 				resolve(e);
 			} else {
