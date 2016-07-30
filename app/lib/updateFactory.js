@@ -31,12 +31,12 @@ function getLatestHeroesUpdate(){
 			Ti.App.Properties.setString('last_update_check', TODAY.toISOString());
 			
 			var responseDate = new Date(this.responseText);
-			var latestHeroesUpdate = new Date(Ti.App.Properties.getString('latest_heroes_update'));
+			var latestHeroesUpdate = new Date(Ti.App.Properties.getString('latest_heroes_update') || '2000-01-01T00:00:00');
 			var shouldUpdate = (latestHeroesUpdate.getTime() < responseDate.getTime());
 
 			Ti.App.Properties.setString('latest_heroes_update', this.responseText);
 			resolve({
-				"latestUpdate": this.responseText,
+				"latestUpdate": latestHeroesUpdate,
 				"shouldUpdate": shouldUpdate
 			});
 		}
