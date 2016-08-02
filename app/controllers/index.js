@@ -37,6 +37,7 @@ function init(){
     $.heroesContainer.animate(listLoadedAnimation);
 	})
   .catch(function(err){
+    $.listActivity.hide();
     $.message.applyProperties({
       text: L('error_loading_heroes_list'),
       visible: true

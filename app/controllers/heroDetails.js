@@ -1,5 +1,5 @@
 var args = arguments[0] || {};
-Ti.API.info('[DETAILS CONTROLLER][ARGS]: '+ JSON.stringify(args));
+Ti.API.debug('[DETAILS CONTROLLER][ARGS]: '+ JSON.stringify(args));
 var selectedHero;
 var targetScroll;
 var targetOpacity;

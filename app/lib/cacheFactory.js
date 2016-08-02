@@ -11,7 +11,7 @@ exports.getFile = getFile;
 function getFile(options){
   var remoteUrl = options.url;
   var fileName = utils.slugfy(remoteUrl.replace('http://','').replace('https://', ''));
-  Ti.API.info('[CACHE FACTORY][FILENAME]' + fileName);
+  Ti.API.debug('[CACHE FACTORY][FILENAME]' + fileName);
   return Q.Promise(function(resolve, reject, notify){
 
   });

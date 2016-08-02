@@ -9,7 +9,7 @@ function queryObject(options){
 	var objClass = options.objClass;
 	var objId = options.objId;
 	var refDate = options.refDate;
-	Ti.API.info('[REPOSITORY][REF DATE] '+refDate);
+	Ti.API.debug('[REPOSITORY][REF DATE] '+refDate);
 	
 	var queryPromise = Q.Promise(function(resolve,reject){
 		var queryObj = {
@@ -26,7 +26,7 @@ function queryObject(options){
 			queryObj.where["updated_at"] = {"$gt": refDate};
 
 		Cloud.Objects.query(queryObj, function (e) {
-		  Ti.API.info('[REPOSITORY][CLOUD QUERY RESULT] '+ e.Heroes.length);
+		  Ti.API.debug('[REPOSITORY][CLOUD QUERY RESULT] '+ e.Heroes.length);
 			if (e.success) {
 				resolve(e);
 			} else {

@@ -19,7 +19,7 @@ _.defer(function(){
 function getHeroesList() {
 	return updateFactory.getLatestHeroesUpdate()
 	.then(function(updateResponse){
-		Ti.API.info('[HEROES FACTORY] response: '+ JSON.stringify(updateResponse));
+		Ti.API.debug('[HEROES FACTORY] response: '+ JSON.stringify(updateResponse));
 		if(updateResponse.shouldUpdate === true){
 			return repository.queryObject({
 				objClass: "Heroes",
@@ -40,6 +40,8 @@ function getHeroesList() {
 				}
 
 	      var jsonRes = processJSONRes();
+	      if(jsonRes.length == 0)
+          throw "error_loading_heroes_list"; 
 				return jsonRes;
 			});
 		} else {
@@ -59,12 +61,12 @@ function getHeroesList() {
 		} //IF
 	})
 	.fail(function(err){
-		Ti.API.info("[HEROES FACTORY] Sem Internet");
-		Ti.API.info('[HEROES FACTORY] ' + JSON.stringify(err));
+		Ti.API.debug("[HEROES FACTORY] Sem Internet");
+		Ti.API.debug('[HEROES FACTORY] ' + JSON.stringify(err));
 		return Q.Promise(function(resolve,reject){
 			if(Heroes.length > 0){
         var jsonRes = processJSONRes();
-        Ti.API.info('[HEROES FACTORY] jsonRes: ' + jsonRes);
+        Ti.API.debug('[HEROES FACTORY] jsonRes: ' + jsonRes);
         resolve(jsonRes);
 			}
 			else
@@ -75,10 +77,10 @@ function getHeroesList() {
 }
 
 function getHeroById(heroId) {
-  Ti.API.info("[HEROES FACTORY] getHeroById: " + heroId);
+  Ti.API.debug("[HEROES FACTORY] getHeroById: " + heroId);
 	return Q.Promise(function(resolve,reject,notify){
 		var heroObj = Heroes.get(heroId);
-		Ti.API.info("[HEROES FACTORY][PROMISE OBJECT] " + JSON.stringify(heroObj));
+		Ti.API.debug("[HEROES FACTORY][PROMISE OBJECT] " + JSON.stringify(heroObj));
 
 		if(!!heroObj == true){
 			resolve(heroObj);

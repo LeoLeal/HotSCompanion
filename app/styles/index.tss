@@ -42,6 +42,7 @@
 "#message": {
 	visible: false,
 	color: Alloy.Globals.color.colorSwitchThumbNormal,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	top: '55%',
 	font: {
 		fontSize: 16,
