@@ -39,6 +39,15 @@
 		y: '50%'
 	}
 }
+"#message": {
+	visible: false,
+	color: Alloy.Globals.color.colorSwitchThumbNormal,
+	top: '55%',
+	font: {
+		fontSize: 16,
+		fontFamily: 'MetronicProBold'
+	}
+}
 
 // SEARCH BOX
 /*

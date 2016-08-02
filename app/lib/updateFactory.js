@@ -13,7 +13,7 @@ var TIME_MULTIPLIER = ((1000*60)*60)*24;
 exports.getLatestHeroesUpdate = getLatestHeroesUpdate;
 
 function getLatestHeroesUpdate(){
-	return Q.Promise(function(resolve,reject){
+	return Q.Promise(function(resolve, reject, notify){
 		if((TODAY.getTime()/TIME_MULTIPLIER) - (LAST_UPDATE_CHECK.getTime()/TIME_MULTIPLIER) < DAYS_CHECK_INTERVAL){
 			resolve({
 				"latestUpdate": Ti.App.Properties.getString('latest_heroes_update') || "2000-01-01T00:00:00",

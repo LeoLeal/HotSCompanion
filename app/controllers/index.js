@@ -24,11 +24,24 @@ function init(){
 		$.searchField.visible = true;
 		$.searchField.animate(fadeIn);	
 	},1000);*/
+  $.message.applyProperties({
+    text: L('loading_heroes'),
+    visible: true
+  });
 	heroesFactory.getHeroesList()
 	.then(function(response){
     $.listActivity.hide();
+    $.message.applyProperties({
+      visible: false
+    });
     $.heroesContainer.animate(listLoadedAnimation);
-	});
+	})
+  .catch(function(err){
+    $.message.applyProperties({
+      text: L('error_loading_heroes_list'),
+      visible: true
+    });
+  });
 
 	$.index.open();
 }

@@ -23,6 +23,7 @@
 
 			<ImageView id="appLogo" image="/images/logo.png"></ImageView>
       <ActivityIndicator id="listActivity"></ActivityIndicator>
+      <Label id="message" />
 			<ScrollView id="scrollList">
 <!--
 				<View class="legendContainer">

@@ -4,15 +4,17 @@ var updateFactory = require("updateFactory");
 var Q = require('q');
 var Heroes = Alloy.Collections.instance('Heroes');
 
-Heroes.fetch({
-	success: function(model, response, options){
-		Alloy.Globals.heroesListIndex = 0;
-	}
-});
-
 // PUBLIC METHODS
 exports.getHeroesList = getHeroesList;
 exports.getHero = getHeroById;
+
+_.defer(function(){
+  Heroes.fetch({
+    success: function(model, response, options){
+      Alloy.Globals.heroesListIndex = 0;
+    }
+  });
+});
 
 function getHeroesList() {
 	return updateFactory.getLatestHeroesUpdate()
