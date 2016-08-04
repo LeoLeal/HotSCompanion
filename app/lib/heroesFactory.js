@@ -69,8 +69,10 @@ function getHeroesList() {
         Ti.API.debug('[HEROES FACTORY] jsonRes: ' + jsonRes);
         resolve(jsonRes);
 			}
-			else
+			else {
+				Ti.App.Properties.setString('last_update_check', '2000-01-01T00:00:00');
 				reject("error_loading_heroes_list");
+			}
 		});
 	});
 	

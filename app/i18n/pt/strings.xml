@@ -38,7 +38,7 @@
     <string name="trait">Especialização</string>
 
     <string name="no_stats">Este herói não possui atributos.</string>
-    <string name="loading_heroes">Carregando Heróis</string>
+    <string name="loading_heroes">Carregando Heróis\nIsso pode levar um tempinho...</string>
     <string name="error_loading_heroes_list">Ocorreu um erro ao carregar\na lista de heróis.\n\nTente novamente mais tarde.</string>
     <string name="error_loading_hero">Ocorreu um erro ao carregar\nos dados do herói.\n\nTente novamente mais tarde.</string>
 </resources>

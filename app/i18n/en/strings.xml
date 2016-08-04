@@ -39,7 +39,7 @@
 
     <string name="no_stats">This hero has no stats.</string>
     
-    <string name="loading_heroes">Loading Heroes</string>
+    <string name="loading_heroes">Loading Heroes\n\nBe patient.\nThis may take a while...</string>
     <string name="error_loading_heroes_list">There has been an error\nloading the Heroes List.\n\nTry again later.</string>
     <string name="error_loading_hero">There has been an error\nloading the Hero Data.\n\nTry again later.</string>
 </resources>

@@ -7,7 +7,7 @@ function init(){
   $.portraitView.image = Ti.Utils.base64decode(args.portraitImage);
 }
 
-function openHero(event){
+var openHero = _.throttle(function(event){
   var heroId = event.source.heroId;
   var model = null;
   
@@ -20,4 +20,4 @@ function openHero(event){
       modalStyle: (OS_IOS) ? Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN : null
     });
   });
-}
+}, 1000, {trailing: false});

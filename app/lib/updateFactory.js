@@ -19,9 +19,10 @@ function getLatestHeroesUpdate(){
 	return Q.Promise(function(resolve, reject, notify){
 		Ti.API.debug('[UPDATE FACTORY] LAST_UPDATE_CHECK: ' + LAST_UPDATE_CHECK.toISOString());
 		Ti.API.debug('[UPDATE FACTORY] DAYS_CHECK_INTERVAL: ' + DAYS_CHECK_INTERVAL);
+		Ti.API.debug('[UPDATE FACTORY] DAYS DIFF: ' + ((TODAY.getTime()/TIME_MULTIPLIER) - (LAST_UPDATE_CHECK.getTime()/TIME_MULTIPLIER)));
 		Ti.API.debug('[UPDATE FACTORY] Property latest_heroes_update: ' + Ti.App.Properties.getString('latest_heroes_update'));
 		Ti.API.debug('[UPDATE FACTORY] Property last_update_check: ' + Ti.App.Properties.getString('last_update_check'));
-		if((TODAY.getTime()/TIME_MULTIPLIER) - (LAST_UPDATE_CHECK.getTime()/TIME_MULTIPLIER) >= DAYS_CHECK_INTERVAL || (TODAY.getDay() >= 2 && TODAY.getDay() <= 3)){
+		if((TODAY.getTime()/TIME_MULTIPLIER) - (LAST_UPDATE_CHECK.getTime()/TIME_MULTIPLIER) >= DAYS_CHECK_INTERVAL || (TODAY.getDay() >= 2 && TODAY.getDay() <= 3 && ((TODAY.getTime()/TIME_MULTIPLIER) - (LAST_UPDATE_CHECK.getTime()/TIME_MULTIPLIER) >= 0.5))){
       http.setOnload(onLoadCallback);
       http.setOnerror(onErrorCallback);
       http.setTimeout(5000);
@@ -40,7 +41,7 @@ function getLatestHeroesUpdate(){
 			
 			var responseDate = new Date(this.responseText);
 			var latestHeroesUpdate = new Date(Ti.App.Properties.getString('latest_heroes_update') || '2000-01-01T00:00:00');
-			var shouldUpdate = (latestHeroesUpdate.getTime() < responseDate.getTime());
+			var shouldUpdate = true;//(latestHeroesUpdate.getTime() < responseDate.getTime());
 
 			Ti.App.Properties.setString('latest_heroes_update', this.responseText);
 			resolve({
