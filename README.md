@@ -5,13 +5,13 @@ This is an OpenSource Heroes of the Storm companion app for Android and iOS crea
 
 This app is designed for iOS and Android smartphones only. Tablet Layout will be released later in the development.
 
-How to Install: (Not Yet! just wait a bit more)
+How to Install:
 -
-Just download the app at the Google Play Store or Apple AppStore. Search for "Heroes Companion" and you should be able to find this app, published by me under the publisher name "LeoLeal".
+Just download the app at the Google Play Store or Apple AppStore. Search for "Companion Heroes of the Storm" and you should be able to find this app, published by me under the publisher name "LeoLeal".
 
 Features already present:
 -
-* Heroes selection and browsing with Lore, basic info, skills, talent trees and skins
+* Heroes selection and browsing with Lore, basic info, skills and skins
 
 ToDo
 -
