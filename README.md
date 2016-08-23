@@ -7,7 +7,10 @@ This app is designed for iOS and Android smartphones only. Tablet Layout will be
 
 How to Install:
 -
-Just download the app at the Google Play Store or Apple AppStore. Search for "Companion Heroes of the Storm" and you should be able to find this app, published by me under the publisher name "LeoLeal".
+Just download the app at the Google Play Store or Apple AppStore, or Search for "Companion Heroes of the Storm" and you should be able to find this app, published by me under the publisher name "LeoLeal".
+
+**iOS:** https://itunes.apple.com/us/app/companion-for-heroes-storm/id1141699184?ls=1&mt=8
+**Android:** https://play.google.com/store/apps/details?id=br.com.leoleal.hotscompanion
 
 Features already present:
 -
