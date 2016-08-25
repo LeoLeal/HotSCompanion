@@ -17,7 +17,7 @@ var openHero = _.throttle(function(event){
 
     Alloy.createController('heroDetails',{"model" : model}).getView().open({
       modal: (OS_IOS) ? true : false,
-      modalStyle: (OS_IOS) ? Ti.UI.iPhone.MODAL_PRESENTATION_FULLSCREEN : null
+      modalStyle: (OS_IOS) ? Ti.UI.iOS.MODAL_PRESENTATION_FULLSCREEN : null
     });
   });
 }, 1000, {trailing: false});

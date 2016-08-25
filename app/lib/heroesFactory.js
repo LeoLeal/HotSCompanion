@@ -1,6 +1,6 @@
 var repository = require('repository');
 var eventsFactory = require('eventsFactory');
-var updateFactory = require("updateFactory");
+var updateFactory = require('updateFactory');
 var Q = require('q');
 var Heroes = Alloy.Collections.instance('Heroes');
 

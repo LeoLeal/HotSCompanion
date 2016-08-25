@@ -1,4 +1,5 @@
 // Arguments passed into this controller can be accessed off of the `$.args` object directly or:
+var imageFactory = require('imageFactory');
 var args = $.args;
 var selectedHero = args.selectedHero;
 var skinSelectorArray = [];
@@ -20,20 +21,24 @@ function init(){
 
   videoInitPreloader();
   for(var i=0; i<selectedHero.skins.length; i++){
-    skinSelectorArray.push(
-      Ti.UI.createImageView({
-        image: selectedHero.skins[i].icon,
-        width: 32,
-        height: 32,
-        left: 0,
-        right: 2,
-        borderRadius: 16,
-        borderColor: '#48acef',
-        borderWidth: 1,
-        skinIndex: i
-      })
-    );
+    var cacheImage = imageFactory.getImage(selectedHero.skins[i].icon);
+    var skinImage = Ti.UI.createImageView({
+      image: cacheImage.image,
+      width: 32,
+      height: 32,
+      left: 0,
+      right: 2,
+      borderRadius: 16,
+      borderColor: '#48acef',
+      borderWidth: 1,
+      skinIndex: i
+    });
+    skinImage.addEventListener('load', function(){
+      cacheImage.fireEvent('load', {image: skinImage.toImage()});
+    });
+    skinSelectorArray.push(skinImage);
     skinSelectorArray[i].addEventListener('click',selectSkinListener);
+
     $.skinSelectContainer.add(skinSelectorArray[i]);
   }
   selectSkin(0);

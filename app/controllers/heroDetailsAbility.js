@@ -1,5 +1,8 @@
+var imageFactory = require('imageFactory');
 var args = $.args;
 var skill = $.args.skill;
+
+var BASE_URL = "https://sites.google.com/a/leoleal.com.br/hotscompanion/home/";
 var HIDDEN_PROPERTIES = {
   height: 0,
   width: 0,
@@ -11,8 +14,12 @@ var HIDDEN_PROPERTIES = {
 init();
 
 function init(){
-  $.icon.image = Ti.Utils.base64decode(skill.icon);
-  
+  var cacheImage = imageFactory.getImage(BASE_URL + skill.icon);
+  $.icon.image = cacheImage.image;
+  $.icon.addEventListener('load', function(){
+    cacheImage.fireEvent('load', {image:$.icon.toImage()});
+  });
+
   $.shortcut.text = skill.shortcut || '';
   $.shortcut1.text = skill.shortcut || '';
   $.shortcut2.text = skill.shortcut || '';
