@@ -13,9 +13,10 @@
         <Labels>
           <Label>L('Info')</Label>
           <Label>L('Abilities')</Label>
+          <Label>L('Talents')</Label>
         </Labels>
       </TabbedBar>
-      <Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities')))" platform="android" />
+      <Widget src="TabbedBar" id="actionTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
     </View>
 
     <ScrollView id="contentScroll" class="contentScroll">
@@ -26,13 +27,15 @@
             <Labels>
               <Label>L('Info')</Label>
               <Label>L('Abilities')</Label>
+              <Label>L('Talents')</Label>
             </Labels>
           </TabbedBar>
-          <Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities')))" platform="android" />
+          <Widget src="TabbedBar" id="contentTabObj" tabs="L('Info').concat(','.concat(L('Abilities').concat(','.concat(L('Talents')))))" platform="android" />
         </View>
         <ScrollableView id="scrollableCards" class="tabContent">
           <View id="page_0"></View>
           <View id="page_1"></View>
+          <View id="page_2"></View>
         </ScrollableView>
       </View>
 

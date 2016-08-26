@@ -43,6 +43,13 @@ function populateViewObjects(){
   });  
   var DetailsAbilitiesView = DetailsAbilitiesController.getView(); 
   $.page_1.add(DetailsAbilitiesView);
+
+  var DetailsTalentsController = Alloy.createController('heroDetailsTalents', { 
+    id: "page_2View",
+    selectedHero: selectedHero
+  });  
+  var DetailsTalentsView = DetailsTalentsController.getView(); 
+  $.page_2.add(DetailsTalentsView);
   
 }
 
