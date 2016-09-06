@@ -1,0 +1,188 @@
+".talentsContainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	top: 8,
+	left: 8,
+	right: 8,
+	layout: 'absolute'
+}
+
+".iconContainer": {
+	top: 0,
+	left: 8,
+	right: 8,
+	bottom: 8,
+	width: 64,
+	height: Ti.UI.SIZE,
+}
+
+".textContainer": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+	left: 80,
+	top: 0,
+	right: 8,
+	bottom: 12
+}
+
+".talentInfo": {
+	layout: 'horizontal',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 8
+}
+
+".talentDetails": {
+  color: Alloy.Globals.color.colorText,
+  top: 4,
+  right: 8,
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontFamily: 'MetronicProBold',
+  	fontSize: 11,
+  	fontWeight: 'bold'
+  }
+}
+"#manacost": {
+	color: '#48acef'
+}
+"#cooldown": {
+	color: '#48af66'
+}
+"#charges": {
+	color: '#bb9648'
+}
+".description": {
+  color: Alloy.Globals.color.colorText,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  left: 8,
+  right: 8,
+  top: 0,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 11
+  }
+}
+
+".icon": {
+	width: 48,
+	height: 48,
+	borderRadius: 24,
+	center: {
+		x: '50%',
+		y: '50%'
+	},
+	zIndex: 0
+}
+".iconborder": {
+	width: 64,
+	height: 72,
+	top: 0,
+	left: 0,
+	zIndex: 1
+}
+
+".shortcut": {
+  color: '#fff',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  center: {
+  	x: '56',
+  	y: '50'
+  },
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 2
+}
+".shortcutShadow1": {
+  center: {x: 55, y: 49},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow2": {
+  center: {x: 55, y: 51},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow3": {
+  center: {x: 57, y: 49},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow4": {
+  center: {x: 57, y: 51},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow5": {
+  center: {x: 56, y: 49},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow6": {
+  center: {x: 56, y: 51},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow7": {
+  center: {x: 55, y: 50},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
+".shortcutShadow8": {
+  center: {x: 57, y: 50},
+  color: '#000',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  height: Ti.UI.SIZE,
+  font: {
+  	fontSize: 16,
+  	fontFamily: 'MetronicProBlack'
+  },
+  zIndex: 1
+}
