@@ -13,13 +13,14 @@ function init(){
   		left: 16,
   		right: ((OS_IOS) ? 0 : 16),
   		height: Ti.UI.SIZE,
-  		top: 8
+  		top: 4,
+      bottom: 4
   	});
   	
   	var separatorLine = Ti.UI.createView({
   		height: 1,
   		width: Ti.UI.FILL,
-  		backgroundColor: '#bbb'
+  		backgroundColor: '#eee'
   	});
 		separator.add(separatorLine);
 
@@ -27,11 +28,11 @@ function init(){
   		text: '  ' + String.format(L('level_text'), level).toUpperCase() + '  ',
   		width: Ti.UI.SIZE,
   		backgroundColor: '#fff',
-  		color: '#999',
+  		color: '#ccc',
   		font: {
   			fontSize: 12
   		},
-  		left: (OS_IOS)?0:null
+  		left: (OS_IOS)?-4:null
   	});
   	separator.add(separatorLabel);
 
@@ -57,7 +58,7 @@ function init(){
 	      $.pageContainer.add(separator);
 	    else
 	    	$.pageContainer.add(Ti.UI.createView({
-	    		height: 16
+	    		height: 8
 	    	}));
 		}
   }

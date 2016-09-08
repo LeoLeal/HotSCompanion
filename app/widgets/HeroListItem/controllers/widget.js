@@ -1,10 +1,16 @@
 var args = arguments[0] || {};
 var heroesFactory = require("heroesFactory");
+var imageFactory = require('imageFactory');
 
+var BASE_URL = "https://sites.google.com/a/leoleal.com.br/hotscompanion/home/";
 init();
 
 function init(){
-  $.portraitView.image = Ti.Utils.base64decode(args.portraitImage);
+  var cacheImage = imageFactory.getImage(BASE_URL + args.portraitImage);
+  $.portraitView.image = cacheImage.image;
+  $.portraitView.addEventListener('load', function(){
+    cacheImage.fireEvent('load', {image:$.portraitView.toImage()});
+  });
 }
 
 var openHero = _.throttle(function(event){
